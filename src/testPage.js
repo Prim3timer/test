@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 const TestPage = ({ next,
     quiz,
     inputRef,
@@ -9,19 +9,33 @@ const TestPage = ({ next,
     handleSubmit,
     handlePrevious,
     radioCheck,
-    handleNext})=>{
-
+    handleNext,
+    started
+  })=>{
+    const [clock, setClock]= useState(0)
         let showButtons = next < 24 ? <article> <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
         <button onClick={()=> handleNext(next)}>Next</button>
         </article> :  <button onClick={(e)=> handleSubmit(e)}>Submit</button>
-
+            
+            
+useEffect(()=> {
+  const interval = setInterval(()=>{
+      if (started === true) {
+      setClock(clock + 1)
+    }
+    }, 1000)
+  return ()=> clearInterval(interval)
+}, [clock])
         return (
 
             quiz.map((exam, index)=> {
                 if(index === next){
+              
                 
                   return (
                     <div key={exam.id} id="test-page">
+                    
+                      <h4 id="clock">{clock}</h4>
                       <article id='test-canvas'>
                
                       <span>{exam.id}.</span>

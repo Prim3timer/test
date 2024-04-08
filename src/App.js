@@ -34,6 +34,9 @@ function App() {
   const [view, setView]= useState(false)
   const [truth, setTruth] = useState(false)
   const [sendError, setSendError] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+
+
  
 
 
@@ -47,6 +50,8 @@ const inputRef3 = useRef('')
         
             
               const handleSubmit = async (e)=> {
+                setStarted(false)
+                setIsLoading(true)
                 const qnArray = []
                 const qsArray = []
                 const answersArray  = []
@@ -76,8 +81,9 @@ const inputRef3 = useRef('')
                 setSendError(errorCheck)
               if (response){
 
-                setIsDone(true)   
-                setStarted(false)
+                // setIsDone(true)   
+                setIsLoading(false)
+                setIsDone(true)
               } else throw new Error('Network error please try again')
         
              } catch (error) {
@@ -141,20 +147,22 @@ const handlePrevious =(index)=> {
 
 
 const getResult = async ()=> {
-  
+                  setIsLoading(true)
                   const report = await axios.get(`https://dosal.onrender.com/results`)
                   console.log(report.data.questions)
-
+                  
                   if (report){
+                    setIsDone(false)
+                    setPresent(true)
+                    setIsLoading(false)
                    const currentResult = report.data.questions.find((assess)=> assess.date === date)
                    console.log(currentResult)
-                
+                    
                   }
                   setTimeout(()=> {
                 
                   }, 2000)
-                  setIsDone(false)
-  setPresent(true)
+               
 
 }             
          
@@ -198,7 +206,7 @@ const getResult = async ()=> {
     next={next}
     quiz={quiz}
     inputRef={inputRef}
-    inputRef1={inputRef1}
+    inputRef1={inputRef1} 
     inputRef2={inputRef2}
     inputRef3={inputRef3}
     attemptTracker={attemptTracker}
@@ -206,13 +214,18 @@ const getResult = async ()=> {
     handlePrevious={handlePrevious}
     handleNext={handleNext}
     radioCheck={radioCheck}
+   started={started}
 
     /> : ''
+
     let done = isDone ? <CheckResult getResult={getResult}
     setPresent={setPresent}
     setIsDone={setIsDone}
     /> : ''
-    let drumRoll = present ?   <Assessment
+
+    let loader = isLoading === true && starting === false  ? <h2>Submiting Result...</h2> : ''
+    let loader2 = isLoading === true && isDone === true ? <h2>Gettting Result</h2> : ''
+      let drumRoll = present ?   <Assessment
     candidate={candidate}
     date={date}
     setPresent={setPresent}
@@ -232,8 +245,12 @@ const getResult = async ()=> {
     candidate={candidate}
     setFinal={setFinal}
     next={next}/> : '' 
+
+    let insideLoad = loader || done
+    let insideLoad2 = loader2 || drumRoll
+
   
-    let allOptions = isStarting || hasStarted || done || drumRoll || impact
+    let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
 
               return  (
            <div>

@@ -8,8 +8,8 @@ let quiz = [
     {
       id: 2,
       quiz: "How many legs does a spider have?",
-      options: [2, 4, 6, 8],
-      answer: 8,
+      options: ['2', '4', '6', '8'],
+      answer: '8',
     },
     {
       id: 3,
@@ -108,8 +108,8 @@ let quiz = [
     {
       id: 17,
       quiz: " 6.2 X 3",
-      options: [22.6, 18.6, 19.6, 20.6],
-      answer: 18.6,
+      options: ['22.6', '18.6', '19.6', '20.6'],
+      answer: '18.6',
     },
 
     {
@@ -132,14 +132,14 @@ let quiz = [
     {
       id: 20,
       quiz: " How many persons have ever landed on the moon?",
-      options: [1, 12, 6, 8],
-      answer: 12,
+      options: ['1', '12', '6', '8'],
+      answer: '12',
     },
     {
       id: 21,
       quiz: " How many cloud types are there in the sky?",
-      options: [7, 1, 4, 9],
-      answer: 9,
+      options: ['7', '1', '4', '9'],
+      answer: '9',
     },
     {
       id: 22,
