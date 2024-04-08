@@ -59,7 +59,7 @@ code {
 
 div button {
   margin: 0 2rem 0 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
   width: 6rem;
   /* padding: 1rem; */
   width: 10rem;
@@ -142,7 +142,7 @@ ul li a:hover{
 }
 .interview {
   
-  width: 30rem;
+  width: 25rem;
   height: 3rem;
 }
 table {

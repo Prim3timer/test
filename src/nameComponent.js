@@ -5,7 +5,7 @@ error})=> {
     return (
         <section>
         <input
-        style={{fontSize: '3rem', margin: '2rem  0 0 10rem',
+        style={{fontSize: '3rem', margin: '2rem  0 0 2rem',
     borderWidth: '3px'}}
         type='text'
         value={candidate}
