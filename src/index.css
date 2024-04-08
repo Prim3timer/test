@@ -45,7 +45,7 @@ code {
   
 }
 #test-page {
-  margin: 5rem  0 0 30rem;
+  margin: 1rem  0 0 3rem;
 }
 
 
@@ -68,7 +68,10 @@ div button {
   border-radius: 5px;
 }
 section {
-  margin: 20rem 0 0 20rem;
+  margin: 2rem 0 0 0rem;
+}
+#error {
+  margin-left: 15rem;
 }
 #previous {
   margin: 2rem 2rem 0 0;

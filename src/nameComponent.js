@@ -11,7 +11,7 @@ error})=> {
         onChange={(e) => setCandidate(e.target.value)}
         placeholder='Please Enter Your Name'
         /> 
-        <h2>{error}</h2><br/>
+        <h2 id="error">{error}</h2><br/>
         <button style={{fontSize: '4rem', margin: '2rem 0 0 20rem'}}
         onClick={verifyName}>Continue</button> 
 </section>
