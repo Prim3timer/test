@@ -22,7 +22,7 @@ const TestPage = ({ next,
                 
                   return (
                     <div key={exam.id} id="test-page">
-                      <article >
+                      <article id='test-canvas'>
                
                       <span>{exam.id}.</span>
                       <h4 className='interview'>{exam.quiz}</h4>
