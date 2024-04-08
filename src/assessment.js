@@ -21,7 +21,7 @@ setFinal})=> {
   
     const fetchResult = async() => {
         try {
-            const response = await axios.get('http://localhost:5000/results')
+            const response = await axios.get('https://dosal.onrender.com/results')
             if (response){
                 const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate)
                 const allProps = {

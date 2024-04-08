@@ -71,7 +71,7 @@ const inputRef3 = useRef('')
         
               
              try {             
-                const response = await axios.post('http://localhost:5000/results', result)
+                const response = await axios.post('https://dosal.onrender.com/results', result)
                 let errorCheck = response ? '' : error.message
                 setSendError(errorCheck)
               if (response){
@@ -142,7 +142,7 @@ const handlePrevious =(index)=> {
 
 const getResult = async ()=> {
   
-                  const report = await axios.get(`http://localhost:5000/results`)
+                  const report = await axios.get(`https://dosal.onrender.com/results`)
                   console.log(report.data.questions)
 
                   if (report){
