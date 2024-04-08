@@ -260,13 +260,7 @@ h3 {
 
   }
  
-ul {
-  padding-bottom: 2rem;
-  width: 91rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 
- 
 }
 li {
   font-size: 4rem;
