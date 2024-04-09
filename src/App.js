@@ -223,7 +223,7 @@ const getResult = async ()=> {
     setIsDone={setIsDone}
     /> : ''
 
-    let loader = isLoading === true && starting === false  ? <h2>Submiting Result...</h2> : ''
+    let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
     let loader2 = isLoading === true && isDone === true ? <h2>Gettting Result</h2> : ''
       let drumRoll = present ?   <Assessment
     candidate={candidate}
