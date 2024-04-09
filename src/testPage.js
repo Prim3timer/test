@@ -21,11 +21,11 @@ const TestPage = ({ next,
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
-        if (clock < 1) setClock(0)
-      setClock(clock - 1)
-    }
+        setClock(clock - 1)
+      }
     }, 100)
-  return ()=> clearInterval(interval)
+    if (clock < 1) setClock(0)
+    return ()=> clearInterval(interval)
 }, [clock])
         return (
 
@@ -37,7 +37,7 @@ useEffect(()=> {
                     <div key={exam.id} id="test-page">
                     
                       {/* <h4 id="clock">{clock}</h4> */}
-                      <h4 id="clock">{clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` : `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4>
+                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` :   `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4>
                       <article id='test-canvas'>
                
                       <span>{exam.id}.</span>
