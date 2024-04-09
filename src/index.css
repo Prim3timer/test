@@ -20,8 +20,8 @@ code {
 }
 
 #tableA {
-  width: 90%;
-  margin: 5rem 0 0 5rem
+  width: 130rem;
+  margin: 5rem 0 0 1rem
 }
 #tableA tr, td, th {
   font-size:  2rem;
