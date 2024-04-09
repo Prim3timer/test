@@ -109,17 +109,17 @@ span {
 ul {
   list-style-type: none;
   padding: .5rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin-left: 4rem;
 }
 li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 li input {
   width: 1.5rem; 
   height: 1.5rem; 
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 a td {
   list-style-type: none;
@@ -146,7 +146,7 @@ ul li a:hover{
   
 }
 .interview {
-  
+  font-size: 1.8rem;
   width: 25rem;
   height: 3rem;
 }
