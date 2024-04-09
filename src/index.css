@@ -21,7 +21,7 @@ code {
 
 #tableA {
   width: 90%;
-  margin: 20rem 0 2rem 5rem
+  margin: 5rem 0 0 5rem
 }
 #tableA tr, td, th {
   font-size:  2rem;
@@ -29,14 +29,12 @@ code {
 }
 
 #cred {
-  /* display: flex; */
-  position: absolute;
-  width: 80rem;
-  margin:4rem 0 5rem 40rem;
+  width: 60rem;
+  margin:2rem 0 0 20rem;
 }
 #name {
   font-size: 5rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 #score{
   font-size: 5rem;
