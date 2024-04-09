@@ -206,7 +206,8 @@ const getResult = async ()=> {
     verifyName={verifyName}
     candidate={candidate}
     setCandidate={setCandidate}
-    error={error}/> : ''
+    error={error}
+    quiz={quiz}/> : ''
 
     const hasStarted = started ? <TestPage
     next={next}

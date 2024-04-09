@@ -1,13 +1,18 @@
 const NameComponent = ({verifyName,
 candidate,
 setCandidate,
+quiz,
 error})=> {
+    let time = quiz.length * 10
     return (
         <section>
-            <h2
-            style={{margin: '0 0 0 2rem'}}>Enter your name to take a general knowledge test</h2>
+        
+            <h4
+            style={{margin: '0 0 0 10rem',
+            width: '40rem'}}>You have {Math.floor(time/60)}:{time % 60} to complete a 
+            general knowledge test. Enter you name and click the the continue button to begin.</h4>
         <input
-        style={{fontSize: '2rem', margin: '2rem  0 0 10rem',
+        style={{fontSize: '2rem', margin: '2rem  0 0 8rem',
     borderWidth: '3px'}}
         type='text'
         value={candidate}
