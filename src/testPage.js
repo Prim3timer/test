@@ -91,7 +91,8 @@ useEffect(()=>{
                         </ul>
                         <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
                         <button onClick={()=> handleNext(next)}>Next</button>
-                {showSubmit}
+                {/* {showSubmit} */}
+                <button onClick={(e)=> handleSubmit(e)}>Submit</button>
                     </div> 
                 )
                 }
