@@ -16,16 +16,19 @@ const TestPage = ({ next,
   })=>{
     const [clock, setClock]= useState(quiz.length * 10)
 
-        let showSubmit = submitButton ? <button onClick={(e)=> handleSubmit(e)}>Submit</button> :  ''
-            
-            
+           let showStopper = submitButton ? <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+           <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : next > 23 ?<section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+        <button onClick={()=> handleNext(next)}>Next</button></section> : clock === 0 ?<section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> :  <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+            <button onClick={()=> handleNext(next)}>Next</button></section>
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 1000)
-    if (clock < 1) setClock(0)
+    }, 100)
+    if (clock < 1) {
+      setClock(0)
+    }
     return ()=> clearInterval(interval)
 }, [clock])
 useEffect(()=>{
@@ -40,7 +43,16 @@ useEffect(()=>{
                 
                   return (
                     <div key={exam.id} id="test-page">
-                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` :   `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4>
+                      <article
+                      style={{display: 'grid',
+                    gridTemplateColumns: 'repeat(4, 200px'}}
+                      >
+
+                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` :   `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4><span
+                      style={{fontWeight:'bold'}}
+                      >{clock === 0 ? `Time's Up` : ''}
+                      </span>
+                      </article>
                       <article id='test-canvas'>
                
                       <span>{exam.id}.</span>
@@ -89,10 +101,14 @@ useEffect(()=>{
                             {exam.options[3]}
                           </li>
                         </ul>
-                        <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-                        <button onClick={()=> handleNext(next)}>Next</button>
-                {/* {showSubmit} */}
-                <button onClick={(e)=> handleSubmit(e)}>Submit</button>
+                        {/* <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+                        <button onClick={()=> handleNext(next)}>Next</button> */}
+                     
+                {/* {showSubmit}
+                 */}
+                 {showStopper}
+                {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
+                {/* {navButtons} */}
                     </div> 
                 )
                 }
