@@ -21,9 +21,10 @@ const TestPage = ({ next,
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
+        if (clock < 1) setClock(0)
       setClock(clock - 1)
     }
-    }, 1000)
+    }, 100)
   return ()=> clearInterval(interval)
 }, [clock])
         return (
