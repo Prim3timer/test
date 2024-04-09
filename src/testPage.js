@@ -10,13 +10,13 @@ const TestPage = ({ next,
     handlePrevious,
     radioCheck,
     handleNext,
-    started
+    started,
+    setSubmitButton,
+    submitButton
   })=>{
     const [clock, setClock]= useState(quiz.length * 10)
 
-        let showButtons = next < 24 ? <article> <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-        <button onClick={()=> handleNext(next)}>Next</button>
-        </article> :  <button onClick={(e)=> handleSubmit(e)}>Submit</button>
+        let showSubmit = submitButton ? <button onClick={(e)=> handleSubmit(e)}>Submit</button> :  ''
             
             
 useEffect(()=> {
@@ -28,6 +28,10 @@ useEffect(()=> {
     if (clock < 1) setClock(0)
     return ()=> clearInterval(interval)
 }, [clock])
+useEffect(()=>{
+  if (next === 24) setSubmitButton(true)
+  console.log(next)
+}, [next])
         return (
 
             quiz.map((exam, index)=> {
@@ -85,8 +89,9 @@ useEffect(()=> {
                             {exam.options[3]}
                           </li>
                         </ul>
-            
-                {showButtons}
+                        <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+                        <button onClick={()=> handleNext(next)}>Next</button>
+                {showSubmit}
                     </div> 
                 )
                 }

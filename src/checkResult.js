@@ -4,10 +4,11 @@ const CheckResult = ({setPresent, setIsDone, date, getResult})=> {
      
     return (
         <button onClick={getResult}
-style={{margin: '20rem 0 0 40rem',
-fontSize: '3rem',
-width: '30rem',
-padding: '1rem 2rem'}}
+style={{margin: '10rem 0 0 15rem',
+fontSize: '2rem',
+width: '20rem',
+padding: '1rem'}}
+id="check-result"
 >Check Result</button>
     )
 }

@@ -55,9 +55,14 @@ setFinal})=> {
         <div id="result-sheet">
             
                
- <p style={{fontSize: '4rem', width: '40rem',
-margin: '10rem 0 0 40rem'}}>Your Result is Ready</p>
-<button onClick={arrival} id='view-result'>View Result</button>
+ <p style={{fontSize: '2rem', width: '40rem',
+margin: '8rem 0 0 18rem'}}>Your Result is Ready</p>
+<button onClick={arrival} 
+style={{fontSize: '2rem', width: '20rem',
+margin: '12rem 0 0 0',
+padding: '1rem'
+}}
+>View Result</button>
 <h2>{errorMessage.message}</h2>
  
         </div>

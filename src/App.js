@@ -36,6 +36,7 @@ function App() {
   const [sendError, setSendError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isAltLoadding, setIsAltLoading] = useState(false)
+  const [submitButton, setSubmitButton] = useState(false)
 
 
  
@@ -110,7 +111,7 @@ const attemptTracker = (e, index)=> {
 const handleNext = (index)=> {
   for (let i = 0; i < quiz.length; i++){
     if (attempPop === false){
-
+      
       colator.push('unattempted')
     }
     
@@ -119,8 +120,13 @@ const handleNext = (index)=> {
 
   if (index < 24) {
     setNext(next + 1)
-  }else setNext(24)
-}
+  }else {
+     
+     setNext(24)
+     
+    }
+    
+  }
 const radioCheck = ()=> {
   for (let key of inputArray){
     if (next > 0){ 
@@ -150,12 +156,11 @@ const handlePrevious =(index)=> {
 const getResult = async ()=> {
                   setIsAltLoading(true)
                   const report = await axios.get(`https://dosal.onrender.com/results`)
-                  console.log(report.data.questions)
                   
                   if (report){
+                    setIsAltLoading(false)
                     setIsDone(false)
                     setPresent(true)
-                    setIsAltLoading(false)
                    const currentResult = report.data.questions.find((assess)=> assess.date === date)
                    console.log(currentResult)
                     
@@ -216,6 +221,8 @@ const getResult = async ()=> {
     handleNext={handleNext}
     radioCheck={radioCheck}
    started={started}
+   setSubmitButton={setSubmitButton}
+   submitButton={submitButton}
 
     /> : ''
 
@@ -225,8 +232,9 @@ const getResult = async ()=> {
     /> : ''
 
     // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
-    let loader = isLoading === true  ? <h2>Submiting Work...</h2> : ''
-    let loader2 = isAltLoadding === true ? <h2>Gettting Result</h2> : ''
+    let loader = isLoading === true  ? <h2 style={{margin: '10rem  0 0 20rem'}}>Submiting Work...</h2> : ''
+    let loader2 = isAltLoadding === true ? <h2 style={{fontSize: '4rem'}}>Gettting Result</h2> : ''
+
       let drumRoll = present ?   <Assessment
     candidate={candidate}
     date={date}
@@ -241,6 +249,7 @@ const getResult = async ()=> {
     final={final}
     setFinal={setFinal}
     /> : ''
+
     let impact = view ? <ResultSheet 
     showSheet={showSheet}
     final={final}
