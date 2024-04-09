@@ -20,7 +20,7 @@ error})=> {
         placeholder='Please Enter Your Name'
         /> 
         <h2 id="error">{error}</h2><br/>
-        <button style={{fontSize: '2rem', margin: '1rem 0 0 10rem'}}
+        <button style={{fontSize: '2rem', margin: '1rem 0 0 15rem'}}
         onClick={verifyName}>Continue</button> 
 </section>
     )

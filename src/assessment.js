@@ -56,10 +56,10 @@ setFinal})=> {
             
                
  <p style={{fontSize: '2rem', width: '40rem',
-margin: '8rem 0 0 18rem'}}>Your Result is Ready</p>
+margin: '8rem 0 0 12rem'}}>Your Result is Ready</p>
 <button onClick={arrival} 
 style={{fontSize: '2rem', width: '20rem',
-margin: '12rem 0 0 0',
+margin: '2rem 0 0 10rem',
 padding: '1rem'
 }}
 >View Result</button>

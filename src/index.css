@@ -20,11 +20,11 @@ code {
 }
 
 #tableA {
-  width: 100rem;
+  width: 120rem;
   margin: 5rem 0 0 1rem
 }
 #tableA tr, td, th {
-  font-size:  2rem;
+  font-size:  3rem;
   padding: 1.5rem;
 }
 
@@ -50,8 +50,8 @@ code {
   width: 20rem;
 }
 #result-sheet{
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
+  /* display: grid;
+  grid-template-columns: repeat(3, 300px); */
 }
 
 div button {
