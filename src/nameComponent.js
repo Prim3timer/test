@@ -8,7 +8,7 @@ error})=> {
         <section>
         
             <h4
-            style={{margin: '0 0 0 10rem',
+            style={{margin: '0 0 0 5rem',
             width: '40rem'}}>You have {Math.floor(time/60)}:{time % 60} to complete a 
             general knowledge test. Enter you name and click the the continue button to begin.</h4>
         <input
@@ -20,7 +20,7 @@ error})=> {
         placeholder='Please Enter Your Name'
         /> 
         <h2 id="error">{error}</h2><br/>
-        <button style={{fontSize: '2rem', margin: '1rem 0 0 20rem'}}
+        <button style={{fontSize: '2rem', margin: '1rem 0 0 10rem'}}
         onClick={verifyName}>Continue</button> 
 </section>
     )
