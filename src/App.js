@@ -35,6 +35,7 @@ function App() {
   const [truth, setTruth] = useState(false)
   const [sendError, setSendError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [isAltLoadding, setIsAltLoading] = useState(false)
 
 
  
@@ -147,14 +148,14 @@ const handlePrevious =(index)=> {
 
 
 const getResult = async ()=> {
-                  setIsLoading(true)
+                  setIsAltLoading(true)
                   const report = await axios.get(`https://dosal.onrender.com/results`)
                   console.log(report.data.questions)
                   
                   if (report){
                     setIsDone(false)
                     setPresent(true)
-                    setIsLoading(false)
+                    setIsAltLoading(false)
                    const currentResult = report.data.questions.find((assess)=> assess.date === date)
                    console.log(currentResult)
                     
@@ -223,8 +224,9 @@ const getResult = async ()=> {
     setIsDone={setIsDone}
     /> : ''
 
-    let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
-    let loader2 = isLoading === true && isDone === true ? <h2>Gettting Result</h2> : ''
+    // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
+    let loader = isLoading === true  ? <h2>Submiting Work...</h2> : ''
+    let loader2 = isAltLoadding === true ? <h2>Gettting Result</h2> : ''
       let drumRoll = present ?   <Assessment
     candidate={candidate}
     date={date}
@@ -263,6 +265,9 @@ const getResult = async ()=> {
 }
 
 
+
+
+// clock.innerHTML = ticker % 60 >= 10 ? `${Math.floor(ticker / 60)} : ${ticker % 60}` : `${Math.floor(ticker / 60)} : 0${ticker % 60}`
 
 
 export default App;

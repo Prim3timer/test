@@ -13,6 +13,7 @@ const TestPage = ({ next,
     started
   })=>{
     const [clock, setClock]= useState(quiz.length * 10)
+
         let showButtons = next < 24 ? <article> <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
         <button onClick={()=> handleNext(next)}>Next</button>
         </article> :  <button onClick={(e)=> handleSubmit(e)}>Submit</button>
@@ -23,7 +24,7 @@ useEffect(()=> {
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 100)
+    }, 1000)
     if (clock < 1) setClock(0)
     return ()=> clearInterval(interval)
 }, [clock])
@@ -35,8 +36,6 @@ useEffect(()=> {
                 
                   return (
                     <div key={exam.id} id="test-page">
-                    
-                      {/* <h4 id="clock">{clock}</h4> */}
                       <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` :   `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4>
                       <article id='test-canvas'>
                
