@@ -15,6 +15,20 @@ code {
   margin: 10rem 0 0 15rem;
 }
 
+#instructions {
+  margin: 0 0 0 2rem;
+    width: 40rem;
+}
+#name-taker {
+  font-size: 2rem;
+   margin: 2rem  0 0 8rem;
+    border-width: 3px;
+}
+#continuity {
+  font-size: 2rem;
+   margin: 0 0 0 18rem;
+}
+
 #clock {
   margin-left: 10rem;
   width: 4rem;
@@ -226,14 +240,10 @@ h3 {
 @media screen and (max-width: 576px) {
 
   
-  article {
-    position: relative;
-  }
- 
-  h2 {
-      margin-left: 35rem;
-      width: 6rem;
-  }
+
+#tableA {
+  width: 90rem
+}
  
  
 ul {
@@ -252,16 +262,6 @@ li {
 }
 
 
-#edit-exercise form input {
-  font-size: 4rem;
-}
-
-.pop {
-  /* margin: auto; */
-  width: 30rem;
-  font-size: 4rem;
-  padding: 2rem;
-}
 
 
 label {

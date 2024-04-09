@@ -7,20 +7,18 @@ error})=> {
     return (
         <section>
         
-            <h4
-            style={{margin: '0 0 0 2rem',
-            width: '40rem'}}>You have {Math.floor(time/60)}:{time % 60} to complete a 
+            <h4 id="instructions"
+           >You have {Math.floor(time/60)}:{time % 60} to complete a 
             general knowledge test. Enter you name and click the the continue button to begin.</h4>
-        <input
-        style={{fontSize: '2rem', margin: '2rem  0 0 8rem',
-    borderWidth: '3px'}}
+        <input id="name-taker"
+        
         type='text'
         value={candidate}
         onChange={(e) => setCandidate(e.target.value)}
         placeholder='Please Enter Your Name'
         /> 
         <h2 id="error">{error}</h2><br/>
-        <button style={{fontSize: '2rem', margin: '1rem 0 0 18rem'}}
+        <button id="continuity" style={{fontSize: '2rem', margin: '0 0 0 18rem'}}
         onClick={verifyName}>Continue</button> 
 </section>
     )
