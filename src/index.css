@@ -281,12 +281,12 @@ span {
   margin: 3rem 0 2rem 25rem;
   font-size: 6rem;
   width: 20rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   border-radius: 5px;
 
 }
-#test-canvas {
-   /* width: 40rem; */
+#time-up {
+   margin: 0 0 0 35rem;
 
  }
  
@@ -303,9 +303,9 @@ li {
   /* width: 30rem; */
 }
 li input {
-  height: 4rem;
-  width: 4rem;
-  border-width: 100px;
+  height: 5rem;
+  width: 5rem;
+ 
 }
 #first {
   margin-left: 1.5rem;

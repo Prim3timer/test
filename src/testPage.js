@@ -26,7 +26,7 @@ useEffect(()=> {
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 1000)
+    }, 100)
     if (clock < 1) {
       setClock(0)
     }
