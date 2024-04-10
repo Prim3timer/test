@@ -250,9 +250,15 @@ h3 {
   #name-taker {
     margin:  1rem;
   }
+  #error {
+    width: 20rem;
+  }
 
 #tableA {
   width: 90rem
+}
+#continuity {
+  margin: 0 0 0 5rem;
 }
  
  
