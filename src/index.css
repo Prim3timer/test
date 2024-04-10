@@ -256,6 +256,10 @@ h3 {
 
   }
 
+  #test-canvas{
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+  }
 #tableA {
   width: 90rem
 }
