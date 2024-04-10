@@ -53,7 +53,7 @@ useEffect(()=>{
                       style={{backgroundColor: 'teal',
                     color: 'white'}}
                       >{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)} : 0${clock % 60}`
-                      }</h4><span
+                      }</h4><span id="time-up"
                       style={{fontWeight:'bold'}}
                       >{clock === 0 ? `Time's Up` : ''}
                       </span>
