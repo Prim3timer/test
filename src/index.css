@@ -267,6 +267,10 @@ h3 {
 .interview {
   font-size: 8rem;
 }
+span {
+  font-size: 8rem;
+  
+}
 #test-canvas {
    width: 40rem;
 
