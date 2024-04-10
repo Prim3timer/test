@@ -310,12 +310,13 @@ li input {
 }
 
 #test-page button {
-  font-size: 6rem;
-  width: 30rem;
+  font-size: 4rem;
+  padding: 1rem;
+  width: 25rem;
 }
 #test-page section {
   display: grid;
-  grid-template-columns: repeat(3, 550px);
+  grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
   margin: 6rem 0 0 0
 }
