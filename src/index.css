@@ -166,6 +166,12 @@ ul li a:hover{
 #submitting {
   margin: 10rem  0 0 15rem;
 }
+#check-result {
+  margin: 10rem 0 0 10rem;
+    font-size: 2rem;
+    width: 20rem;
+    padding: 1rem;
+}
 table {
   margin: auto;
   margin-bottom: 2rem;
@@ -265,8 +271,12 @@ h3 {
     grid-template-columns: repeat(2, 150px);
     margin: 2rem 0 8rem 1rem;
   }
-  #submitting {
+  #submitting #check-result {
     margin: 10rem  0 0 5rem;
+  }
+
+  #check-result{
+
   }
 #tableA {
   width: 90rem
