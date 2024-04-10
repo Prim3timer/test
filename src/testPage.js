@@ -18,7 +18,7 @@ const TestPage = ({ next,
   })=>{
     
 
-    let showStopper = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
+    let showSubmit = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
     onClick={()=> handlePrevious(next)} id="previous">Previous</button>
         <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
       <button onClick={()=> handleNext(next)}>Next</button></section>
@@ -27,7 +27,7 @@ useEffect(()=> {
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 100)
+    }, 1000)
     if (clock < 1) {
       setClock(0)
     }
@@ -108,9 +108,9 @@ useEffect(()=>{
                         <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
                         <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section>
                      
-                {/* {showSubmit}
-                 */}
-                 {/* {showStopper} */}
+                {/* {showSubmit} */}
+                
+              
                 {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
                 {/* {navButtons} */}
                     </div> 
