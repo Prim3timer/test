@@ -273,11 +273,11 @@ h3 {
   width: 80rem;
 }
 span {
-  font-size: 8rem;
+  font-size: 6rem;
   
 }
 #clock {
-  margin: 3rem 0 0 20rem;
+  margin: 3rem 0 2rem 20rem;
   font-size: 8rem;
   width: 20rem
 
@@ -297,7 +297,7 @@ ul {
 li {
   font-size: 6rem;
   /* margin-right: -10rem; */
-  width: 30rem;
+  /* width: 30rem; */
 }
 li input {
   height: 4rem;
