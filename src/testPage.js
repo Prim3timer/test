@@ -49,7 +49,10 @@ useEffect(()=>{
                     gridTemplateColumns: 'repeat(4, 200px'}}
                       >
 
-                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)} : 0${clock % 60}`
+                      <h4 id="clock"
+                      style={{backgroundColor: 'teal',
+                    color: 'white'}}
+                      >{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)} : 0${clock % 60}`
                       }</h4><span
                       style={{fontWeight:'bold'}}
                       >{clock === 0 ? `Time's Up` : ''}
