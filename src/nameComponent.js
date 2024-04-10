@@ -2,14 +2,15 @@ const NameComponent = ({verifyName,
 candidate,
 setCandidate,
 quiz,
+clock,
 error})=> {
     let time = quiz.length * 10
     return (
         <section id="name-component">
         
             <h4 id="instructions"
-           >You have {Math.floor(time/60)}:{time % 60} to complete a 
-            general knowledge test. Enter you name and click the the continue button to begin.</h4>
+           >You have {Math.floor(time/60)} munites {time % 60}{clock % 60 === 0 ? '' : ' seconds'} to complete a 
+            general knowledge test. Enter you name and click the the continue button to start.</h4>
         <input id="name-taker"
         
         type='text'

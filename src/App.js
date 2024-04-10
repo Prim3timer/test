@@ -37,6 +37,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [isAltLoadding, setIsAltLoading] = useState(false)
   const [submitButton, setSubmitButton] = useState(false)
+  const [clock, setClock]= useState(quiz.length * 10)
 
 
  
@@ -207,6 +208,7 @@ const getResult = async ()=> {
     candidate={candidate}
     setCandidate={setCandidate}
     error={error}
+    clock={clock}
     quiz={quiz}/> : ''
 
     const hasStarted = started ? <TestPage
@@ -224,6 +226,8 @@ const getResult = async ()=> {
    started={started}
    setSubmitButton={setSubmitButton}
    submitButton={submitButton}
+   clock={clock}
+   setClock={setClock}
 
     /> : ''
 
@@ -273,11 +277,6 @@ const getResult = async ()=> {
   );
   
 }
-
-
-
-
-// clock.innerHTML = ticker % 60 >= 10 ? `${Math.floor(ticker / 60)} : ${ticker % 60}` : `${Math.floor(ticker / 60)} : 0${ticker % 60}`
 
 
 export default App;

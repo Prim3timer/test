@@ -12,9 +12,11 @@ const TestPage = ({ next,
     handleNext,
     started,
     setSubmitButton,
-    submitButton
+    submitButton,
+    clock,
+    setClock
   })=>{
-    const [clock, setClock]= useState(quiz.length * 10)
+    
 
     let showStopper = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
         <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
@@ -24,7 +26,7 @@ useEffect(()=> {
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 100)
+    }, 1000)
     if (clock < 1) {
       setClock(0)
     }
