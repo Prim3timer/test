@@ -18,22 +18,22 @@ code {
   justify-content: center;
 }
 
-/* #instructions {
+#instructions {
   margin: 0 0 0 2rem;
     width: 40rem;
-} */
-/* #name-taker {
+}
+#name-taker {
   font-size: 2rem;
    margin: 2rem  0 0 8rem;
     border-width: 3px;
-} */
+}
 #continuity {
   font-size: 2rem;
    margin: 0 0 0 18rem;
 }
 
 #clock {
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   width: 4rem;
 }
 
