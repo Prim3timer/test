@@ -248,10 +248,12 @@ h3 {
     margin: 0 0 0 2rem;
   }
   #name-taker {
-    margin:  1rem;
+    margin:  2rem 0 0 2rem;
   }
   #error {
-    width: 20rem;
+    width: 25rem;
+    margin: 0 0 0 2rem;
+
   }
 
 #tableA {
