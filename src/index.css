@@ -279,7 +279,9 @@ span {
 #clock {
   margin: 3rem 0 2rem 25rem;
   font-size: 6rem;
-  width: 20rem
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 5px;
 
 }
 #test-canvas {
@@ -290,7 +292,7 @@ span {
 ul {
   padding-bottom: 2rem;
   width: 91rem;
-  margin: 30rem 0 0 10rem;
+  margin: 35rem 0 0 10rem;
  
  
 }
