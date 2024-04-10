@@ -278,6 +278,7 @@ span {
 }
 #clock {
   font-size: 8rem;
+  width: 20rem
 
 }
 #test-canvas {
