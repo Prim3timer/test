@@ -266,9 +266,11 @@ h3 {
 }
 .interview {
   font-size: 8rem;
-  width: 40rem;
 }
- 
+#test-canvas {
+   width: 40rem;
+
+ }
  
 ul {
   padding-bottom: 2rem;
