@@ -308,6 +308,15 @@ li input {
   margin-right: 2rem;
  
 }
+
+#test-page button {
+  font-size: 6rem;
+  width: 30rem;
+}
+#test-page section {
+  display: grid;
+  grid-template-columns: repeat(3, 600px);
+}
 #first {
   margin-left: 1.5rem;
 }
