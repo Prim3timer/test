@@ -15,15 +15,15 @@ code {
   margin: 10rem 0 0 15rem;
 }
 
-#instructions {
+/* #instructions {
   margin: 0 0 0 2rem;
     width: 40rem;
-}
-#name-taker {
+} */
+/* #name-taker {
   font-size: 2rem;
    margin: 2rem  0 0 8rem;
     border-width: 3px;
-}
+} */
 #continuity {
   font-size: 2rem;
    margin: 0 0 0 18rem;
@@ -242,6 +242,10 @@ h3 {
   #instructions {
     font-size: 2.5rem;
     width: 30rem;
+    margin: 0 0 0 2rem;
+  }
+  #name-taker {
+    margin:  0;
   }
 
 #tableA {

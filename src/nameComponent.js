@@ -5,7 +5,7 @@ quiz,
 error})=> {
     let time = quiz.length * 10
     return (
-        <section>
+        <section id="name-component">
         
             <h4 id="instructions"
            >You have {Math.floor(time/60)}:{time % 60} to complete a 
@@ -18,7 +18,7 @@ error})=> {
         placeholder='Please Enter Your Name'
         /> 
         <h2 id="error">{error}</h2><br/>
-        <button id="continuity" style={{fontSize: '2rem', margin: '0 0 0 18rem'}}
+        <button id="continuity" 
         onClick={verifyName}>Continue</button> 
 </section>
     )
