@@ -105,12 +105,12 @@ useEffect(()=>{
                             {exam.options[3]}
                           </li>
                         </ul>
-                        {/* <button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-                        <button onClick={()=> handleNext(next)}>Next</button> */}
+                        <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+                        <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section>
                      
                 {/* {showSubmit}
                  */}
-                 {showStopper}
+                 {/* {showStopper} */}
                 {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
                 {/* {navButtons} */}
                     </div> 
