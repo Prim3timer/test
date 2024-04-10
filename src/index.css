@@ -339,8 +339,8 @@ span {
  #cred {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-    /* width: 60rem; */
-    margin:2rem 0 0 10rem;
+    width: 60rem;
+    margin: 4rem 0 0 10rem;
   }
  
 ul {
