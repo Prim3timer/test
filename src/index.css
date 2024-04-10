@@ -67,9 +67,16 @@ code {
 .questions {
   width: 20rem;
 }
-#result-sheet{
-  /* display: grid;
-  grid-template-columns: repeat(3, 300px); */
+#result-sheet p {
+  font-size: 2rem;
+   width: 40rem;
+    margin: 8rem 0 0 12rem;
+}
+#result-sheet button {
+  font-size: 2rem;
+  width: 20rem;
+    margin: 2rem 0 0 10rem;
+    padding: 1rem;
 }
 
 div button {
@@ -278,6 +285,17 @@ h3 {
   #check-result{
     margin: 15rem  0 0 2rem;
 
+  }
+  #result-sheet p {
+    font-size: 2rem;
+   width: 40rem;
+    margin: 8rem 0 0 12rem;
+}
+  #result-sheet button {
+    font-size: 2rem;
+    /* width: 20rem; */
+      margin: 2rem 0 0 10rem;
+      padding: 1rem;
   }
 #tableA {
   width: 90rem
