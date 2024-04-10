@@ -259,6 +259,7 @@ h3 {
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 100px);
+    margin-bottom: 2rem;
   }
 #tableA {
   width: 90rem
