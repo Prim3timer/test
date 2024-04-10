@@ -234,7 +234,7 @@ const getResult = async ()=> {
     let done = isDone ? <CheckResult getResult={getResult}
     setPresent={setPresent}
     setIsDone={setIsDone}
-    /> : ''                        style={{margin: '10rem  0 0 15rem'}}
+    /> : ''                      
 
     // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
     let loader = isLoading === true  ? <h2 id='submitting' >Submiting Work...</h2> : ''
