@@ -301,7 +301,8 @@ h3 {
       padding: 1rem;
   }
 #tableA {
-  width: 90rem
+  width: 90rem;
+  border-color: purple 
 }
 #continuity {
   margin: 2rem 0 0 5rem;
