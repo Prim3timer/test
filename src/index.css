@@ -47,12 +47,14 @@ code {
 }
 
 #cred {
-  width: 60rem;
+display: grid;
+grid-template-columns: repeat(2, 300px);
+  /* width: 60rem; */
   margin:2rem 0 0 20rem;
 }
 #name {
   font-size: 5rem;
-  /* margin-right: 2rem; */
+
 }
 #score{
   font-size: 5rem;
@@ -302,7 +304,7 @@ h3 {
   }
 #tableA {
   font-size: 3rem;
-  width: 90rem;
+  width: 130rem;
   border-color: purple 
 }
 #continuity {
@@ -330,6 +332,13 @@ span {
    margin: 0 0 0 35rem;
 
  }
+
+ #cred {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+    /* width: 60rem; */
+    margin:2rem 0 0 10rem;
+  }
  
 ul {
   padding-bottom: 2rem;
