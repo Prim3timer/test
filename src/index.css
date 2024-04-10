@@ -245,7 +245,7 @@ h3 {
   #instructions {
     font-size: 2rem;
     width: 25rem;
-    margin: 0 0 0 2rem;
+    margin: 1rem 0 0 2rem;
   }
   #name-taker {
     margin:  2rem 0 0 2rem;
@@ -261,6 +261,7 @@ h3 {
 }
 #continuity {
   margin: 2rem 0 0 6rem;
+  width: 10rem
 }
  
  
