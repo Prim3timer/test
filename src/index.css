@@ -304,10 +304,10 @@ h3 {
   }
 #tableA {
 
-  width: 130rem;
+  width: 140rem;
   border-color: purple 
 }
-#tableA tr td {
+#tableA tr, td {
   font-size: 4rem;
 }
 #continuity {
@@ -339,7 +339,7 @@ span {
  #cred {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-    width: 60rem;
+    width: 80rem;
     margin: 4rem 0 0 10rem;
   }
  

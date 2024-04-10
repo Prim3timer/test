@@ -22,6 +22,7 @@ const TestPage = ({ next,
     onClick={()=> handlePrevious(next)} id="previous">Previous</button>
         <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
       <button onClick={()=> handleNext(next)}>Next</button></section>
+
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
@@ -105,10 +106,10 @@ useEffect(()=>{
                             {exam.options[3]}
                           </li>
                         </ul>
-                        <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-                        <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section>
+                        {/* <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+                        <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> */}
                      
-                {/* {showSubmit} */}
+                {showSubmit}
                 
               
                 {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
