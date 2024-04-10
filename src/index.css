@@ -258,7 +258,7 @@ h3 {
 
   #test-canvas{
     display: grid;
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(2, 150px);
     margin: 2rem 0 10rem 0;
   }
 #tableA {
@@ -305,6 +305,7 @@ li {
 li input {
   height: 5rem;
   width: 5rem;
+  margin-right: 2rem;
  
 }
 #first {
