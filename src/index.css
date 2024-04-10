@@ -258,7 +258,7 @@ h3 {
 
   #test-canvas{
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 100px);
   }
 #tableA {
   width: 90rem
@@ -277,8 +277,8 @@ span {
   
 }
 #clock {
-  margin: 3rem 0 2rem 20rem;
-  font-size: 8rem;
+  margin: 3rem 0 2rem 25rem;
+  font-size: 6rem;
   width: 20rem
 
 }
@@ -290,7 +290,7 @@ span {
 ul {
   padding-bottom: 2rem;
   width: 91rem;
-  margin: 20rem 0 0 10rem;
+  margin: 30rem 0 0 10rem;
  
  
 }
