@@ -258,7 +258,7 @@ h3 {
 
   #test-canvas{
     display: grid;
-    grid-template-columns: repeat(2, 60px);
+    grid-template-columns: repeat(2, 100px);
   }
 #tableA {
   width: 90rem
@@ -294,9 +294,9 @@ ul {
  
 }
 li {
-  font-size: 4rem;
+  font-size: 10rem;
   /* margin-right: -10rem; */
-  width: 5rem;
+  width: 25rem;
 }
 #first {
   margin-left: 1.5rem;
