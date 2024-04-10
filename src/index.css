@@ -270,11 +270,15 @@ h3 {
 }
 .interview {
   font-size: 8rem;
-  width: 60rem;
+  width: 80rem;
 }
 span {
   font-size: 8rem;
   
+}
+#clock {
+  font-size: 8rem;
+
 }
 #test-canvas {
    /* width: 40rem; */
