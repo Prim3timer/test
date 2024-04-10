@@ -290,7 +290,7 @@ span {
 ul {
   padding-bottom: 2rem;
   width: 91rem;
-  margin: 15rem 0 0 10rem;
+  margin: 20rem 0 0 10rem;
  
  
 }
@@ -300,8 +300,8 @@ li {
   width: 30rem;
 }
 li input {
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
 }
 #first {
   margin-left: 1.5rem;
