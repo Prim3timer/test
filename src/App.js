@@ -182,12 +182,12 @@ const getResult = async ()=> {
     const verifyName = ()=> {
       try {
         
+        setStarted(true)
+        setStarting(false)
         if (candidate){
-          // setIsOn(true)
-          setStarted(true)
-          setStarting(false)
         }else throw new Error('Enter your name for unique ID')
-      } catch (error) {
+      } 
+      catch (error) {
         setError(error.message)
       }
 
