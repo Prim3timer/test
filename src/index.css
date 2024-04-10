@@ -14,6 +14,9 @@ code {
 #qcanvas {
   margin: 10rem 0 0 15rem;
 }
+#name-component {
+  justify-content: center;
+}
 
 /* #instructions {
   margin: 0 0 0 2rem;
