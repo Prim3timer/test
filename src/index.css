@@ -277,7 +277,7 @@ span {
   
 }
 #clock {
-  margin: 2rem 0 0 20rem;
+  margin: 3rem 0 0 20rem;
   font-size: 8rem;
   width: 20rem
 
@@ -290,14 +290,18 @@ span {
 ul {
   padding-bottom: 2rem;
   width: 91rem;
-  margin: 10rem 0 0 10rem;
+  margin: 15rem 0 0 10rem;
  
  
 }
 li {
-  font-size: 4rem;
+  font-size: 6rem;
   /* margin-right: -10rem; */
   width: 30rem;
+}
+li input {
+  height: 2rem;
+  width: 2rem;
 }
 #first {
   margin-left: 1.5rem;
