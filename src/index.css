@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -48,7 +48,7 @@ code {
 
 #cred {
 display: grid;
-grid-template-columns: repeat(2, 300px);
+grid-template-columns: repeat(2, 500px);
   /* width: 60rem; */
   margin:2rem 0 0 20rem;
 }
@@ -337,12 +337,12 @@ span {
  }
 
  #cred {
+   width: 80rem;
   display: grid;
-  grid-template-columns: repeat(2, 300px);
-    width: 80rem;
-    margin: 4rem 0 0 10rem;
-  }
- 
+  grid-template-columns: repeat(2, 500px);
+  margin: 4rem 0 0 4rem;
+}
+
 ul {
   padding-bottom: 2rem;
   width: 82rem;

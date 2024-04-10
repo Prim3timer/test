@@ -29,7 +29,7 @@ console.log(score)
         <article >
             <main id='cred'>
 
-            <h2 id='name'>Name: {candidate}</h2>
+            <h2 id='name'>Name: {candidate},</h2>
             <h2 id='score'>Score: {score}%</h2>
             </main>
             <table id='tableA'>
