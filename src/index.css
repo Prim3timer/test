@@ -258,7 +258,7 @@ h3 {
 
   #test-canvas{
     display: grid;
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(2, 200px);
   }
 #tableA {
   width: 90rem
@@ -269,8 +269,8 @@ h3 {
   width: 15rem;
 }
 .interview {
-  font-size: 8rem;
-  width: 75rem;
+  font-size: 6rem;
+  width: 80rem;
 }
 span {
   font-size: 8rem;
