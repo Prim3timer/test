@@ -23,17 +23,17 @@ code {
     width: 40rem;
 }
 #name-taker {
-  font-size: 2rem;
+  font-size: 1.5rem;
    margin: 2rem  0 0 8rem;
     border-width: 3px;
 }
 #continuity {
   font-size: 2rem;
-   margin: 0 0 0 18rem;
+   margin: 0 0 0 15rem;
 }
 
 #clock {
-  /* margin-left: 10rem; */
+  margin-left: 10rem;
   width: 4rem;
 }
 
@@ -248,7 +248,7 @@ h3 {
     margin: 0 0 0 2rem;
   }
   #name-taker {
-    margin:  0;
+    margin:  1rem;
   }
 
 #tableA {
