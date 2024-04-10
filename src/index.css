@@ -265,13 +265,15 @@ h3 {
   width: 15rem;
 }
 .interview {
-  font-size: 4rem;
+  font-size: 8rem;
+  width: 25rem;
 }
  
  
 ul {
   padding-bottom: 2rem;
   width: 91rem;
+  margin: 4rem 0 0 0;
  
  
 }
@@ -284,18 +286,9 @@ li {
   margin-left: 1.5rem;
 }
 
-
-
-
 label {
   font-size: 5rem;
 }
-
-
-
-
-
-
 
 }
 
