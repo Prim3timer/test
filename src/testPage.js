@@ -16,16 +16,15 @@ const TestPage = ({ next,
   })=>{
     const [clock, setClock]= useState(quiz.length * 10)
 
-           let showStopper = submitButton ? <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-           <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : next > 23 ?<section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-        <button onClick={()=> handleNext(next)}>Next</button></section> : clock === 0 ?<section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> :  <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-            <button onClick={()=> handleNext(next)}>Next</button></section>
+    let showStopper = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+        <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+      <button onClick={()=> handleNext(next)}>Next</button></section>
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
         setClock(clock - 1)
       }
-    }, 1000)
+    }, 100)
     if (clock < 1) {
       setClock(0)
     }
@@ -48,7 +47,8 @@ useEffect(()=>{
                     gridTemplateColumns: 'repeat(4, 200px'}}
                       >
 
-                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` :   `${Math.floor(clock / 60)} : 0${clock % 60}`}</h4><span
+                      <h4 id="clock">{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)} : ${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)} : 0${clock % 60}`
+                      }</h4><span
                       style={{fontWeight:'bold'}}
                       >{clock === 0 ? `Time's Up` : ''}
                       </span>

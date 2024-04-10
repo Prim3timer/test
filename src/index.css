@@ -239,7 +239,10 @@ h3 {
 
 @media screen and (max-width: 576px) {
 
-  
+  #instructions {
+    font-size: 3rem;
+    width: 10rem;
+  }
 
 #tableA {
   width: 90rem
