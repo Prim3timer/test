@@ -287,14 +287,14 @@ h3 {
 
   }
   #result-sheet p {
-    font-size: 2rem;
+    font-size: 6rem;
    width: 40rem;
     margin: 8rem 0 0 12rem;
 }
   #result-sheet button {
-    font-size: 2rem;
-    /* width: 20rem; */
-      margin: 2rem 0 0 10rem;
+    font-size: 6rem;
+    width: 60rem;
+      margin: 2rem 0 0 3rem;
       padding: 1rem;
   }
 #tableA {
