@@ -278,8 +278,7 @@ h3 {
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 1rem 0 8rem 2rem;
-    width: 90rem
+    margin: 2rem 0 8rem 1rem;
   }
   #submitting {
     margin: 15rem  0 0 5rem;
@@ -318,8 +317,7 @@ h3 {
 }
 .interview {
   font-size: 5rem;
-  /* width: 77rem; */
-
+  width: 77rem;
 }
 span {
   font-size: 5rem;
