@@ -24,6 +24,7 @@ function App() {
   const [candidate, setCandidate] = useState('')
   const [error, setError] = useState(null)
   const [final, setFinal] = useState('')
+  
 
   const [date, setDate] = useState(new Date())
   const [starting, setStarting] = useState(true)
@@ -35,7 +36,7 @@ function App() {
   const [truth, setTruth] = useState(false)
   const [sendError, setSendError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  const [isAltLoadding, setIsAltLoading] = useState(false)
+  const [isAltLoading, setIsAltLoading] = useState(false)
   const [submitButton, setSubmitButton] = useState(false)
   const [clock, setClock]= useState(quiz.length * 10)
 
@@ -87,6 +88,7 @@ const inputRef3 = useRef('')
                 // setIsDone(true)   
                 setIsLoading(false)
                 setIsDone(true)
+               
               } else throw new Error('Network error please try again')
         
              } catch (error) {
@@ -156,12 +158,12 @@ const handlePrevious =(index)=> {
 
 
 const getResult = async ()=> {
+  setIsDone(false)
                   setIsAltLoading(true)
                   const report = await axios.get(`https://dosal.onrender.com/results`)
                   
                   if (report){
                     setIsAltLoading(false)
-                    setIsDone(false)
                     setPresent(true)
                    const currentResult = report.data.questions.find((assess)=> assess.date === date)
                    console.log(currentResult)
@@ -204,15 +206,79 @@ const getResult = async ()=> {
       setView(true)
       console.log('on arrival')
      }
-    let isStarting  = starting ?  <NameComponent
-    verifyName={verifyName}
-    candidate={candidate}
-    setCandidate={setCandidate}
-    error={error}
-    clock={clock}
-    quiz={quiz}/> : ''
+  //   let isStarting  = starting ?  <NameComponent
+  //   verifyName={verifyName}
+  //   candidate={candidate}
+  //   setCandidate={setCandidate}
+  //   error={error}
+  //   clock={clock}
+  //   quiz={quiz}/> : ''
 
-    const hasStarted = started ? <TestPage
+  //   const hasStarted = started ? <TestPage
+  //   next={next}
+  //   quiz={quiz}
+  //   inputRef={inputRef}
+  //   inputRef1={inputRef1} 
+  //   inputRef2={inputRef2}
+  //   inputRef3={inputRef3}
+  //   attemptTracker={attemptTracker}
+  //   handleSubmit={handleSubmit}
+  //   handlePrevious={handlePrevious}
+  //   handleNext={handleNext}
+  //   radioCheck={radioCheck}
+  //  started={started}
+  //  setSubmitButton={setSubmitButton}
+  //  submitButton={submitButton}
+  //  clock={clock}
+  //  setClock={setClock}
+
+  //   /> : ''
+
+  //   let done = isDone ? <CheckResult getResult={getResult}
+  //   setPresent={setPresent}
+  //   setIsDone={setIsDone}
+  //   /> : ''                      
+
+  //   // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
+  //   let loader = isLoading === true  ? <h2 id='submitting' >Submiting Work...</h2> : ''
+  //   let loader2 = isAltLoadding === true ? <h2 style={{fontSize: '4rem'}}>Gettting Result</h2> : ''
+
+  //     let drumRoll = present ?   <Assessment
+  //   candidate={candidate}
+  //   date={date}
+  //   setPresent={setPresent}
+  //   setIsDone={setIsDone}
+  //   colator={colator}
+  //   quiz={quiz}
+  //   getResult={getResult}
+  //   setView={setView}
+  //   setTruth={setTruth}
+  //   arrival={arrival}
+  //   final={final}
+  //   setFinal={setFinal}
+  //   /> : ''
+
+  //   let impact = view ? <ResultSheet 
+  //   showSheet={showSheet}
+  //   final={final}
+  //   candidate={candidate}
+  //   setFinal={setFinal}
+  //   next={next}/> : '' 
+
+  //   let insideLoad = loader || done
+  //   let insideLoad2 = loader2 || drumRoll
+
+  
+  //   let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
+
+
+  let allOptions = starting ? <NameComponent
+  verifyName={verifyName}
+  candidate={candidate}
+setCandidate={setCandidate}
+  error={error}
+  clock={clock}
+  quiz={quiz}/> :  started ? <TestPage
     next={next}
     quiz={quiz}
     inputRef={inputRef}
@@ -229,45 +295,34 @@ const getResult = async ()=> {
    submitButton={submitButton}
    clock={clock}
    setClock={setClock}
-
-    /> : ''
-
-    let done = isDone ? <CheckResult getResult={getResult}
-    setPresent={setPresent}
-    setIsDone={setIsDone}
-    /> : ''                      
-
-    // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
-    let loader = isLoading === true  ? <h2 id='submitting' >Submiting Work...</h2> : ''
-    let loader2 = isAltLoadding === true ? <h2 style={{fontSize: '4rem'}}>Gettting Result</h2> : ''
-
-      let drumRoll = present ?   <Assessment
-    candidate={candidate}
-    date={date}
-    setPresent={setPresent}
-    setIsDone={setIsDone}
-    colator={colator}
-    quiz={quiz}
-    getResult={getResult}
-    setView={setView}
-    setTruth={setTruth}
-    arrival={arrival}
-    final={final}
-    setFinal={setFinal}
-    /> : ''
-
-    let impact = view ? <ResultSheet 
+  setCandidate
+    /> : isLoading ? <h2 id='submitting' >Submitting Work...</h2> : isDone ?
+    <CheckResult getResult={getResult}
+  setPresent={setPresent}
+  setIsDone={setIsDone} 
+ 
+  /> : isAltLoading ? <h2 id='getting'>Gettting Result</h2> : present ?
+  <Assessment
+ candidate={candidate}
+  date={date}
+  setPresent={setPresent}
+  setIsDone={setIsDone}
+  colator={colator}
+  quiz={quiz}
+  getResult={getResult}
+  setView={setView}
+  setTruth={setTruth}
+  arrival={arrival}
+  final={final}
+  setFinal={setFinal}
+  /> : <ResultSheet 
     showSheet={showSheet}
     final={final}
-    candidate={candidate}
+   candidate={candidate}
+    setCandidate={setCandidate}
     setFinal={setFinal}
-    next={next}/> : '' 
+    next={next}/>
 
-    let insideLoad = loader || done
-    let insideLoad2 = loader2 || drumRoll
-
-  
-    let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
 
               return  (
            <div>
