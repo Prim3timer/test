@@ -307,10 +307,13 @@ h3 {
   width: 140rem;
   border-color: purple 
 }
-#tableA tr td {
+#tableA tr {
   font-size: 4rem;
 }
-#tableA td 
+#tableA tr td {
+  font-size: 4rem;
+
+}
 #continuity {
   margin: 2rem 0 0 5rem;
   padding: .5rem 0;
