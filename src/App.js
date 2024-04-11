@@ -117,9 +117,10 @@ const handleNext = (index)=> {
     }
     
   }
+  console.log(colator)
   setAttempPop(true)
 
-  if (index < 24) {
+  if (index < quiz.length -1) {
     setNext(next + 1)
   }else {
      

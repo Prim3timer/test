@@ -35,7 +35,7 @@ useEffect(()=> {
     return ()=> clearInterval(interval)
 }, [clock])
 useEffect(()=>{
-  if (next === 24) setSubmitButton(true)
+  if (next === quiz.length - 1) setSubmitButton(true)
   console.log(next)
 }, [next])
         return (
