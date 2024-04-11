@@ -262,7 +262,7 @@ h3 {
 @media screen and (max-width: 576px) {
 
   #instructions {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 25rem;
     margin: 1rem 0 0 2rem;
   }
@@ -278,7 +278,7 @@ h3 {
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2rem 0 10rem 1rem;
+    margin: 2rem 0 8rem 1rem;
   }
   #submitting {
     margin: 15rem  0 0 5rem;
@@ -317,7 +317,7 @@ h3 {
 }
 .interview {
   font-size: 5rem;
-  width: 78rem;
+  width: 77rem;
 }
 span {
   font-size: 6rem;
