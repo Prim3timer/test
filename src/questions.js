@@ -1,7 +1,7 @@
 let quiz = [
     {
       id: 1,
-      quiz: "Which of these adjectives best qualifies an elephant?",
+      quiz: "Which of these adjectives best applies to an elephant?",
       options: ["Indian", "European", "Australian", "American"],
       answer: "Indian",
     },
@@ -37,19 +37,19 @@ let quiz = [
     },
     {
       id: 7,
-      quiz: "What is the oldest sports in the world",
+      quiz: "What is the oldest sports in the world?",
       options: ["Baseball", "Wrestling", "Football", "Swimming"],
       answer: "Wrestling",
     },
     {
       id: 8,
-      quiz: "What is the longest river in the world",
+      quiz: "What is the longest river in the world?",
       options: ["Nile", "Mississippi", "Rhine", "Mersy"],
       answer: "Nile",
     },
     {
       id: 9,
-      quiz: "If 4 cubes cost $1, how much will 18 cubes cost",
+      quiz: "If 4 cubes cost $1, how much will 18 cubes cost?",
       options: ["$5", "$4.5", "$10", "$3.25"],
       answer: "$4.5",
     },
@@ -161,7 +161,7 @@ let quiz = [
     },
     {
       id: 25,
-      quiz: " Which of these animals lay egg?",
+      quiz: " Which of these animals lays eggs?",
       options: ["Whales", "Dolphins", "Sharks", "Anaconda"],
       answer: "Sharks",
     },
