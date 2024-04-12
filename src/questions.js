@@ -161,7 +161,7 @@ let quiz = [
     },
     {
       id: 25,
-      quiz: " Which of these animals lays eggs?",
+      quiz: " Which of these animals lay eggs?",
       options: ["Whales", "Dolphins", "Sharks", "Anaconda"],
       answer: "Sharks",
     },
