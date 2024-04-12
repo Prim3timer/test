@@ -284,7 +284,7 @@ h3 {
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2rem 0 2rem 1rem;
+    margin: 2rem 0 4rem 1rem;
   }
   #submitting {
     margin: 15rem  0 0 5rem;
@@ -366,7 +366,7 @@ span {
 ul {
   padding-bottom: 2rem;
   width: 82rem;
-  margin: 0rem 0 0 10rem;
+  /* margin:20rem 0 0 10rem; */
  
  
 }
