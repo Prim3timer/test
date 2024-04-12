@@ -325,7 +325,7 @@ setCandidate={setCandidate}
 
 
               return  (
-           <div>
+           <div id='app'>
             {allOptions}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
           </div>
