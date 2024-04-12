@@ -303,8 +303,8 @@ h3 {
 }
   #result-sheet button {
     font-size: 6rem;
-    /* width: 60rem; */
-      margin: 2rem 0 0 3rem;
+    width: 40rem;
+      /* margin: 2rem 0 0 3rem; */
       padding: 1rem;
   }
 #tableA {
