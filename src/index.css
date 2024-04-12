@@ -39,7 +39,7 @@ code {
 
 #tableA {
   width: 120rem;
-  margin: 5rem 0 4rem 1rem
+  margin: 1rem 0 4rem 1rem
 
 }
 #tableA tr, td, th {
@@ -51,7 +51,7 @@ code {
 display: grid;
 grid-template-columns: repeat(2, 700px);
   /* width: 60rem; */
-  margin:2rem 0 0 0rem;
+  margin: 6rem 0 0 20rem;
 }
 #name {
   font-size: 5rem;
@@ -380,7 +380,7 @@ h3 {
    width: 80rem;
   display: grid;
   grid-template-columns: repeat(2, 700px);
-  margin: 4rem 0 0 16rem;
+  margin: 6rem 0 0 16rem;
 }
 
 ul {
