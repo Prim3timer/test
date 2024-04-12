@@ -272,7 +272,7 @@ const getResult = async ()=> {
   //   let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
 
 
-  let allOptions = starting ? <NameComponent
+  let allComponents = starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}
 setCandidate={setCandidate}
@@ -326,7 +326,7 @@ setCandidate={setCandidate}
 
               return  (
            <div id='app'>
-            {allOptions}
+            {allComponents}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
           </div>
                
