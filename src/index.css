@@ -289,11 +289,13 @@ h3 {
   #submitting {
     margin: 15rem  0 0 5rem;
   }
-    #getting {
-      
-      margin: 15rem  0 0 5rem;
-    }
+  #getting {
+    
+    margin: 15rem  0 0 5rem;
+  }
   #result-sheet {
+    /* margin: 15rem  0 0 2rem; */
+    margin: 15rem  0 0 2rem;
     /* width: 80rem; */
     /* margin: 15rem 0 0 0; */
   }
