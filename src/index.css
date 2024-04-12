@@ -318,7 +318,8 @@ h3 {
   #tableA {
     
     width: 140rem;
-    border-color: purple 
+    border-color: purple;
+    margin:  0 0 2rem 0;
   }
   #tableA tr th {
     font-size: 4rem;

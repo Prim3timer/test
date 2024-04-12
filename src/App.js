@@ -129,6 +129,7 @@ const handleNext = (index)=> {
      setNext(24)
      
     }
+    // console.log(score)
     
   }
 const radioCheck = ()=> {
