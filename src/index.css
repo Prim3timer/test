@@ -264,9 +264,9 @@ h3 {
 }
 
 @media screen and (max-width: 576px) {
-
-
-
+  
+  
+  
   #instructions {
     font-size: 1.5rem;
     width: 25rem;
@@ -278,7 +278,7 @@ h3 {
   #error {
     width: 25rem;
     margin: 0 0 0 2rem;
-
+    
   }
 
   #test-canvas{
@@ -302,58 +302,66 @@ h3 {
   
   #check-result{
     margin: 15rem  0 0 2rem;
-
+    
   }
   #result-sheet p {
     font-size: 5rem;
-   /* width: rem; */
+    /* width: rem; */
     /* margin: 8rem 0 0 8rem; */
-}
+  }
   #result-sheet button {
     font-size: 5rem;
     width: 40rem;
-      /* margin: 2rem 0 0 3rem; */
-      padding: 1rem;
+    /* margin: 2rem 0 0 3rem; */
+    padding: 1rem;
   }
-#tableA {
-
-  width: 140rem;
-  border-color: purple 
-}
-#tableA tr th {
-  font-size: 4rem;
-}
-#tableA tr td {
-  font-size: 4rem;
-
-}
-#gettin {
-  margin: auto;
-}
-#continuity {
-  margin: 2rem 0 0 5rem;
-  padding: .5rem 0;
-  width: 15rem;
-}
-.interview {
-  font-size: 5rem;
-  width: 77rem;
-}
-span {
-  font-size: 5rem;
-  
-}
-#clock {
-  margin: 3rem 0 2rem 25rem;
-  font-size: 6rem;
-  width: 20rem;
-  padding: 1rem 1rem 1rem 2rem;
-  border-radius: 5px;
-
-}
-#time-up {
-   margin: 0 0 0 35rem;
-
+  #tableA {
+    
+    width: 140rem;
+    border-color: purple 
+  }
+  #tableA tr th {
+    font-size: 4rem;
+  }
+  #tableA tr td {
+    font-size: 4rem;
+    
+  }
+  #gettin {
+    margin: auto;
+  }
+  #continuity {
+    margin: 2rem 0 0 5rem;
+    padding: .5rem 0;
+    width: 15rem;
+  }
+  .interview {
+    font-size: 5rem;
+    width: 77rem;
+  }
+  span {
+    font-size: 5rem;
+    
+  }
+  #clock {
+    margin: 3rem 0 2rem 25rem;
+    font-size: 6rem;
+    width: 20rem;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    
+  }
+  #time-up {
+    margin: 0 0 0 35rem;
+    
+  }
+  #previous {
+    text-align: left;
+    font-weight: bold;
+  }
+  #next {
+    font-weight: bold;
+  text-align: right;
  }
 
  #cred {
@@ -383,8 +391,12 @@ li input {
 }
 
 #test-page button {
-  font-size: 4rem;
+  font-size: 5rem;
+  /* font-weight: bold; */
+  width: 2rem;
+  
   padding: 1rem;
+  /* height: 10rem; */
   width: 25rem;
 }
 #test-page section {
