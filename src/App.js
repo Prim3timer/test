@@ -53,6 +53,19 @@ const inputRef3 = useRef('')
   const inputArray = [inputRef, inputRef1, inputRef2,  inputRef3]
         
             
+
+  const attemptTracker = (e, index)=> {
+    for (let key of inputArray) {
+      if (key.current.checked){
+  
+        colator.splice(index, 1, e.target.value)
+  
+    }
+    
+  console.log(colator)
+    
+  }
+  }
               const handleSubmit = async (e)=> {
                 setStarted(false)
                 setIsLoading(true)
@@ -98,21 +111,14 @@ const inputRef3 = useRef('')
              
             }
                
-const attemptTracker = (e, index)=> {
-  for (let key of inputArray) {
-    if (key.current.checked){
 
-      colator.splice(index, 1, e.target.value)
 
-  }
-  
-
-  
-}
-}
+// useEffect(()=> {
+//   attemptTracker()
+// }, next)
 
 const handleNext = (index)=> {
-  for (let i = 0; i < quiz.length; i++){
+  for (let i = 0; i < quiz.length -1; i++){
     if (attempPop === false){
       
       colator.push('unattempted')

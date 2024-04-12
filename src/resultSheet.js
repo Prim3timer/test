@@ -14,6 +14,7 @@ for (let i = 0; i < quiz.length; i++){
     }
     assessmentArray.push(assessmentObject)
 }
+console.log(assessmentArray)
 let score = 0
 for (let i = 0; i < quiz.length; i++){
     if (assessmentArray[i].attempt === assessmentArray[i].correctAnswer){

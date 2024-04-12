@@ -39,7 +39,8 @@ code {
 
 #tableA {
   width: 120rem;
-  margin: 5rem 0 0 1rem
+  margin: 5rem 0 4rem 1rem
+
 }
 #tableA tr, td, th {
   font-size:  3rem;
@@ -287,10 +288,12 @@ h3 {
     margin: 2rem 0 6rem 1rem;
   }
   #submitting {
+    font-size: 6rem;
     margin: 15rem  0 0 5rem;
   }
   #getting {
     
+    font-size: 6rem;
     margin: 15rem  0 0 5rem;
   }
   #result-sheet {
@@ -319,7 +322,7 @@ h3 {
     
     width: 140rem;
     border-color: purple;
-    margin:  0 0 2rem 0;
+    margin:  0 0 4rem 0;
   }
   #tableA tr th {
     font-size: 4rem;
@@ -357,12 +360,17 @@ h3 {
     
   }
   #previous {
-    text-align: left;
-    font-weight: bold;
+    /* text-align: left; */
+    /* font-weight: bold; */
+    /* background-color: green; */
+    /* padding-left: 2rem; */
+    width: 20rem
   }
   #next {
-    font-weight: bold;
-  text-align: right;
+    /* width: 10rem; */
+    /* font-weight: 1000; */
+  /* text-align: right; */
+ 
  }
 
  #cred {
@@ -375,7 +383,8 @@ h3 {
 ul {
   padding-bottom: 2rem;
   width: 82rem;
-  /* margin:20rem 0 0 10rem; */
+  margin:20rem 0 0 20rem;
+  /* background-color: blue; */
  
  
 }
@@ -394,7 +403,8 @@ li input {
 #test-page button {
   font-size: 5rem;
   /* font-weight: bold; */
-  width: 2rem;
+  /* width: 2rem; */
+
   
   padding: 1rem;
   /* height: 10rem; */
@@ -404,7 +414,7 @@ li input {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  /* margin: 6rem 0 0 0 */
+  margin: 6rem 0 0 0
 }
 #first {
   margin-left: 1.5rem;
