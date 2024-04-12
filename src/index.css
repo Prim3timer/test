@@ -341,7 +341,6 @@ h3 {
     width: 15rem;
   }
   .interview {
-    background-color: aquamarine;
     font-size: 6rem;
     width: 70rem;
     height: 20rem;
@@ -387,7 +386,7 @@ ul {
   padding-bottom: 2rem;
   width: 82rem;
   margin:20rem 0 0 15rem;
-  /* background-color: blue; */
+  
  
  
 }
@@ -399,7 +398,7 @@ li {
 li input {
   height: 5rem;
   width: 5rem;
-  margin-right: 2rem;
+
  
 }
 
