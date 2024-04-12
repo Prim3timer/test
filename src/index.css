@@ -48,9 +48,9 @@ code {
 
 #cred {
 display: grid;
-grid-template-columns: repeat(2, 500px);
+grid-template-columns: repeat(2, 700px);
   /* width: 60rem; */
-  margin:2rem 0 0 20rem;
+  margin:2rem 0 0 0rem;
 }
 #name {
   font-size: 5rem;
@@ -264,7 +264,9 @@ h3 {
 }
 
 @media screen and (max-width: 576px) {
-
+  
+  
+  
   #instructions {
     font-size: 1.5rem;
     width: 25rem;
@@ -276,85 +278,103 @@ h3 {
   #error {
     width: 25rem;
     margin: 0 0 0 2rem;
-
+    
   }
 
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2rem 0 8rem 1rem;
+    margin: 2rem 0 6rem 1rem;
   }
   #submitting {
     margin: 15rem  0 0 5rem;
   }
+  #getting {
+    
+    margin: 15rem  0 0 5rem;
+  }
   #result-sheet {
-    width: 80rem;
+    /* margin: 15rem  0 0 2rem; */
+    margin: 15rem  0 0 2rem;
+    /* width: 80rem; */
+    /* margin: 15rem 0 0 0; */
   }
   
   #check-result{
     margin: 15rem  0 0 2rem;
-
+    
   }
   #result-sheet p {
-    font-size: 6rem;
-   width: 40rem;
-    margin: 8rem 0 0 12rem;
-}
-  #result-sheet button {
-    font-size: 6rem;
-    width: 60rem;
-      margin: 2rem 0 0 3rem;
-      padding: 1rem;
+    font-size: 5rem;
+    /* width: rem; */
+    /* margin: 8rem 0 0 8rem; */
   }
-#tableA {
-
-  width: 140rem;
-  border-color: purple 
-}
-#tableA tr {
-  font-size: 4rem;
-}
-#tableA tr td {
-  font-size: 4rem;
-
-}
-#continuity {
-  margin: 2rem 0 0 5rem;
-  padding: .5rem 0;
-  width: 15rem;
-}
-.interview {
-  font-size: 5rem;
-  width: 77rem;
-}
-span {
-  font-size: 5rem;
-  
-}
-#clock {
-  margin: 3rem 0 2rem 25rem;
-  font-size: 6rem;
-  width: 20rem;
-  padding: 1rem 1rem 1rem 2rem;
-  border-radius: 5px;
-
-}
-#time-up {
-   margin: 0 0 0 35rem;
-
+  #result-sheet button {
+    font-size: 5rem;
+    width: 40rem;
+    /* margin: 2rem 0 0 3rem; */
+    padding: 1rem;
+  }
+  #tableA {
+    
+    width: 140rem;
+    border-color: purple 
+  }
+  #tableA tr th {
+    font-size: 4rem;
+  }
+  #tableA tr td {
+    font-size: 4rem;
+    
+  }
+  #gettin {
+    margin: auto;
+  }
+  #continuity {
+    margin: 2rem 0 0 5rem;
+    padding: .5rem 0;
+    width: 15rem;
+  }
+  .interview {
+    font-size: 5rem;
+    width: 77rem;
+  }
+  span {
+    font-size: 5rem;
+    
+  }
+  #clock {
+    margin: 3rem 0 2rem 25rem;
+    font-size: 6rem;
+    width: 20rem;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 5px;
+    
+  }
+  #time-up {
+    margin: 0 0 0 35rem;
+    
+  }
+  #previous {
+    text-align: left;
+    font-weight: bold;
+  }
+  #next {
+    font-weight: bold;
+  text-align: right;
  }
 
  #cred {
    width: 80rem;
   display: grid;
-  grid-template-columns: repeat(2, 500px);
-  margin: 4rem 0 0 4rem;
+  grid-template-columns: repeat(2, 700px);
+  margin: 4rem 0 0 16rem;
 }
 
 ul {
   padding-bottom: 2rem;
   width: 82rem;
-  margin: 0rem 0 0 10rem;
+  /* margin:20rem 0 0 10rem; */
  
  
 }
@@ -371,15 +391,19 @@ li input {
 }
 
 #test-page button {
-  font-size: 4rem;
+  font-size: 5rem;
+  /* font-weight: bold; */
+  width: 2rem;
+  
   padding: 1rem;
+  /* height: 10rem; */
   width: 25rem;
 }
 #test-page section {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  margin: 6rem 0 0 0
+  /* margin: 6rem 0 0 0 */
 }
 #first {
   margin-left: 1.5rem;

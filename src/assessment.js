@@ -55,13 +55,16 @@ setFinal})=> {
         <div id="result-sheet">
             
                
- <p style={{fontSize: '2rem', width: '40rem',
-margin: '8rem 0 0 12rem'}}>Your Result is Ready</p>
-<button onClick={arrival} 
-style={{fontSize: '2rem', width: '20rem',
-margin: '2rem 0 0 10rem',
-padding: '1rem'
-}}
+ <p 
+//  tyle={{fontSize: '2rem', width: '40rem',
+// margin: '8rem 0 0 12rem'}}
+>Your Result is Ready</p>
+<button
+ onClick={arrival} 
+// style={{fontSize: '2rem', width: '20rem',
+// margin: '2rem 0 0 10rem',
+// padding: '1rem'
+// }}
 >View Result</button>
 <h2>{errorMessage.message}</h2>
  

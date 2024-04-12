@@ -185,9 +185,9 @@ const getResult = async ()=> {
     const verifyName = ()=> {
       try {
         
+        setStarted(true)
+        setStarting(false)
         if (candidate){
-          setStarted(true)
-          setStarting(false)
         }else throw new Error('Enter your name for unique ID')
       } 
       catch (error) {
@@ -272,7 +272,7 @@ const getResult = async ()=> {
   //   let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
 
 
-  let allOptions = starting ? <NameComponent
+  let allComponents = starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}
 setCandidate={setCandidate}
@@ -325,8 +325,8 @@ setCandidate={setCandidate}
 
 
               return  (
-           <div>
-            {allOptions}
+           <div id='app'>
+            {allComponents}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
           </div>
                
