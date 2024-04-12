@@ -49,9 +49,9 @@ code {
 
 #cred {
 display: grid;
-grid-template-columns: repeat(2, 700px);
+grid-template-columns: repeat(2, 900px);
   /* width: 60rem; */
-  margin: 6rem 0 0 20rem;
+  margin: 6rem 0 0 10rem;
 }
 #name {
   font-size: 5rem;
@@ -378,8 +378,8 @@ h3 {
   #cred {
     width: 80rem;
     display: grid;
-    grid-template-columns: repeat(2, 700px);
-    margin: 6rem 0 0 16rem;
+    grid-template-columns: repeat(2, 900px);
+    margin: 6rem 0 0 2rem;
   }
   
   ul {
