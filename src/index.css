@@ -297,8 +297,8 @@ h3 {
   }
   #result-sheet p {
     font-size: 6rem;
-   width: 40rem;
-    margin: 8rem 0 0 12rem;
+   width: 60rem;
+    margin: 8rem 0 0 8rem;
 }
   #result-sheet button {
     font-size: 6rem;
@@ -317,6 +317,9 @@ h3 {
 #tableA tr td {
   font-size: 4rem;
 
+}
+#gettin {
+  margin: auto;
 }
 #continuity {
   margin: 2rem 0 0 5rem;
