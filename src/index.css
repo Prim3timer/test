@@ -311,7 +311,7 @@ h3 {
   width: 140rem;
   border-color: purple 
 }
-#tableA tr {
+#tableA tr th {
   font-size: 4rem;
 }
 #tableA tr td {
@@ -347,8 +347,8 @@ span {
  #cred {
    width: 80rem;
   display: grid;
-  grid-template-columns: repeat(2, 500px);
-  margin: 4rem 0 0 4rem;
+  grid-template-columns: repeat(2, 700px);
+  margin: 4rem 0 0 16rem;
 }
 
 ul {
