@@ -350,7 +350,7 @@ h3 {
     
   }
   #clock {
-    margin: 3rem 0 2rem 25rem;
+    margin: 1rem 0 2rem 25rem;
     font-size: 6rem;
     width: 20rem;
     padding: 1rem 1rem 1rem 2rem;
@@ -417,7 +417,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  /* margin: 8rem 0 0 0 */
+  margin: 8rem 0 0 0
 }
 #first {
   margin-left: 1.5rem;
