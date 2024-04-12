@@ -297,7 +297,7 @@ h3 {
 
   }
   #result-sheet p {
-    font-size: 5rem;
+    font-size: rem;
    /* width: rem; */
     /* margin: 8rem 0 0 8rem; */
 }
@@ -383,7 +383,7 @@ li input {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  margin: 6rem 0 0 0
+  /* margin: 6rem 0 0 0 */
 }
 #first {
   margin-left: 1.5rem;
