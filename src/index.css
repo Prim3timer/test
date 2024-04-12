@@ -286,6 +286,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 150px);
     margin: 2rem 0 6rem 1rem;
+    /* width: 90rem; */
   }
   #submitting {
     font-size: 6rem;
@@ -340,8 +341,10 @@ h3 {
     width: 15rem;
   }
   .interview {
-    font-size: 5rem;
-    width: 77rem;
+    background-color: aquamarine;
+    font-size: 6rem;
+    width: 70rem;
+    height: 20rem;
   }
   span {
     font-size: 5rem;
@@ -383,7 +386,7 @@ h3 {
 ul {
   padding-bottom: 2rem;
   width: 82rem;
-  margin:20rem 0 0 20rem;
+  margin:20rem 0 0 15rem;
   /* background-color: blue; */
  
  
@@ -414,7 +417,7 @@ li input {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  margin: 6rem 0 0 0
+  margin: 8rem 0 0 0
 }
 #first {
   margin-left: 1.5rem;

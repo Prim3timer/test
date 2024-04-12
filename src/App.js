@@ -54,18 +54,7 @@ const inputRef3 = useRef('')
         
             
 
-  const attemptTracker = (e, index)=> {
-    for (let key of inputArray) {
-      if (key.current.checked){
   
-        colator.splice(index, 1, e.target.value)
-  
-    }
-    
-  console.log(colator)
-    
-  }
-  }
               const handleSubmit = async (e)=> {
                 setStarted(false)
                 setIsLoading(true)
@@ -111,7 +100,18 @@ const inputRef3 = useRef('')
              
             }
                
-
+            const attemptTracker = (e, index)=> {
+              for (let key of inputArray) {
+                if (key.current.checked){
+            
+                  colator.splice(index, 1, e.target.value)
+            
+              }
+              
+            console.log(colator)
+              
+            }
+            }
 
 // useEffect(()=> {
 //   attemptTracker()
