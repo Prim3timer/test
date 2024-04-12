@@ -323,7 +323,7 @@ h3 {
     
     width: 140rem;
     border-color: purple;
-    margin:  0 0 4rem 0;
+    margin:  2rem 0 4rem 0;
   }
   #tableA tr th {
     font-size: 4rem;
@@ -401,9 +401,7 @@ h3 {
     
     
   }
-  #test-page {
-    margin: 15rem  0 0 2rem;
-  }
+
 
 #test-page button {
   font-size: 5rem;
