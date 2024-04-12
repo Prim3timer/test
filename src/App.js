@@ -192,9 +192,9 @@ const getResult = async ()=> {
     const verifyName = ()=> {
       try {
         
-        setStarted(true)
-        setStarting(false)
         if (candidate){
+          setStarted(true)
+          setStarting(false)
         }else throw new Error('Enter your name for unique ID')
       } 
       catch (error) {
@@ -213,71 +213,6 @@ const getResult = async ()=> {
       setView(true)
       console.log('on arrival')
      }
-  //   let isStarting  = starting ?  <NameComponent
-  //   verifyName={verifyName}
-  //   candidate={candidate}
-  //   setCandidate={setCandidate}
-  //   error={error}
-  //   clock={clock}
-  //   quiz={quiz}/> : ''
-
-  //   const hasStarted = started ? <TestPage
-  //   next={next}
-  //   quiz={quiz}
-  //   inputRef={inputRef}
-  //   inputRef1={inputRef1} 
-  //   inputRef2={inputRef2}
-  //   inputRef3={inputRef3}
-  //   attemptTracker={attemptTracker}
-  //   handleSubmit={handleSubmit}
-  //   handlePrevious={handlePrevious}
-  //   handleNext={handleNext}
-  //   radioCheck={radioCheck}
-  //  started={started}
-  //  setSubmitButton={setSubmitButton}
-  //  submitButton={submitButton}
-  //  clock={clock}
-  //  setClock={setClock}
-
-  //   /> : ''
-
-  //   let done = isDone ? <CheckResult getResult={getResult}
-  //   setPresent={setPresent}
-  //   setIsDone={setIsDone}
-  //   /> : ''                      
-
-  //   // let loader = isLoading === true && starting === false  ? <h2>Submiting Work...</h2> : ''
-  //   let loader = isLoading === true  ? <h2 id='submitting' >Submiting Work...</h2> : ''
-  //   let loader2 = isAltLoadding === true ? <h2 style={{fontSize: '4rem'}}>Gettting Result</h2> : ''
-
-  //     let drumRoll = present ?   <Assessment
-  //   candidate={candidate}
-  //   date={date}
-  //   setPresent={setPresent}
-  //   setIsDone={setIsDone}
-  //   colator={colator}
-  //   quiz={quiz}
-  //   getResult={getResult}
-  //   setView={setView}
-  //   setTruth={setTruth}
-  //   arrival={arrival}
-  //   final={final}
-  //   setFinal={setFinal}
-  //   /> : ''
-
-  //   let impact = view ? <ResultSheet 
-  //   showSheet={showSheet}
-  //   final={final}
-  //   candidate={candidate}
-  //   setFinal={setFinal}
-  //   next={next}/> : '' 
-
-  //   let insideLoad = loader || done
-  //   let insideLoad2 = loader2 || drumRoll
-
-  
-  //   let allOptions = isStarting || hasStarted || insideLoad|| insideLoad2 || impact
-
 
   let allComponents = starting ? <NameComponent
   verifyName={verifyName}

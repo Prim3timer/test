@@ -63,7 +63,7 @@ grid-template-columns: repeat(2, 700px);
 }
 
 #test-page {
-  margin: 3rem  0 0 2rem;
+  margin: 1rem  0 0 2rem;
 }
 
 
@@ -416,7 +416,7 @@ li input {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   padding-left: 1rem;
-  margin: 8rem 0 0 0
+  /* margin: 8rem 0 0 0 */
 }
 #first {
   margin-left: 1.5rem;
