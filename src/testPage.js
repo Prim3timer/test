@@ -19,8 +19,15 @@ const TestPage = ({ next,
     
 
     let showSubmit = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
-    onClick={()=> handlePrevious(next)} id="previous">Previous</button>
-        <button onClick={()=> handleNext(next)}>Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
+    onClick={()=> handlePrevious(next)} id="previous"
+    >Previous</button>
+        <button onClick={()=> handleNext(next)}
+         style={{backgroundColor: `${next > 23 ? 'gray' : 'dodgerblue'}`,
+         borderColor: `${next > 23 ? 'gray' : 'dodgerblue'}`}}
+        >Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous"
+        style={{backgroundColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
+      borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
+        >Previous</button>
       <button onClick={()=> handleNext(next)}>Next</button></section>
 
 useEffect(()=> {

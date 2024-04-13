@@ -18,7 +18,7 @@ console.log(assessmentArray)
 let score = 0
 for (let i = 0; i < quiz.length; i++){
     if (assessmentArray[i].attempt === assessmentArray[i].correctAnswer){
-        score += 4
+        score += 100 / quiz.length
     }
     
 }
