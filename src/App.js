@@ -113,12 +113,8 @@ const inputRef3 = useRef('')
             }
             }
 
-// useEffect(()=> {
-//   attemptTracker()
-// }, next)
-
-const handleNext = (index)=> {
-  for (let i = 0; i < quiz.length -1; i++){
+useEffect(()=> {
+  for (let i = 0; i < quiz.length; i++){
     if (attempPop === false){
       
       colator.push('unattempted')
@@ -127,6 +123,10 @@ const handleNext = (index)=> {
   }
   console.log(colator)
   setAttempPop(true)
+}, [])
+
+const handleNext = (index)=> {
+ 
 
   if (index < quiz.length -1) {
     setNext(next + 1)
@@ -135,7 +135,6 @@ const handleNext = (index)=> {
      setNext(24)
      
     }
-    // console.log(score)
     
   }
 const radioCheck = ()=> {
