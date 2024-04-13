@@ -35,11 +35,11 @@ console.log(score)
             </main>
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>
-                    <th>Qno.</th>
-                    <th>questons</th>
+                    <th>Q. n.</th>
+                    <th>questions</th>
                     <th>your answer</th>
                     <th>correct answer</th>
-                    <th>Comment</th>
+                    <th>comment</th>
                 </tr>
             
                 {/* const {q_no, qs, yourAnswer, correctAnswer, comment} = final */}
