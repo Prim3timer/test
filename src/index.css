@@ -98,11 +98,34 @@ section {
 }
 
 #error {
-  margin-left: 15rem;
+  margin-left: 5rem;
   
 }
 #previous {
   margin: 0 2rem 0 0;
+  box-shadow: 0.2em 0.3em 0.4em gray;
+}
+#next {
+  box-shadow: 0.2em 0.3em 0.4em gray;
+}
+#submit {
+  box-shadow: 0.2em 0.3em 0.4em gray;
+
+}
+#previous:active {
+  box-shadow: 0em 0em 0em gray;
+  transition-property: box-shadow scale;
+  transform: scale(0.9, 0.9);
+  box-shadow: 0em 0e 0em;
+  transition-duration: 0.1s;
+} 
+
+#next:active {
+  box-shadow: 0em 0em 0em gray;
+  transition-property: box-shadow scale;
+  transform: scale(0.9, 0.9);
+  box-shadow: 0em 0e 0em;
+  transition-duration: 0.1s;
 }
 button{
   margin: 2rem 0 0 1rem;
@@ -174,10 +197,13 @@ ul li a:hover{
 }
 
 #submitting {
-  margin: 10rem  0 0 15rem;
+  margin: 10rem  0 0 13rem;
+  font-size: 4rem;
+  
 }
 #getting {
-  margin: 10rem  0 0 15rem;
+  font-size: 4rem;
+  margin: 10rem  0 0 13rem;
 
 }
 #check-result {

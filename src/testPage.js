@@ -18,19 +18,28 @@ const TestPage = ({ next,
   })=>{
     
 
-    let showSubmit = clock === 0 ? <section><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
+    let showSubmit = clock === 0 ? <section><button 
+    id="submit"
+    style={{marginLeft: '10rem'}}
+    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
     onClick={()=> handlePrevious(next)} id="previous"
     style={{backgroundColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
       borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
     >Previous</button>
-        <button onClick={()=> handleNext(next)}
+        <button onClick={()=> handleNext(next)} id="next"
          style={{backgroundColor: `${next > 23 ? 'gray' : 'dodgerblue'}`,
          borderColor: `${next > 23 ? 'gray' : 'dodgerblue'}`}}
-        >Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous"
+        >Next</button><button onClick={(e)=> handleSubmit(e)}
+        id="submit"
+        >Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous"
         style={{backgroundColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
       borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
         >Previous</button>
-      <button onClick={()=> handleNext(next)}>Next</button></section>
+      <button onClick={()=> handleNext(next)}
+      id="next"
+      >Next</button></section>
+
+  
 
 useEffect(()=> {
   const interval = setInterval(()=>{
@@ -61,7 +70,7 @@ useEffect(()=>{
                       >
 
                       <h4 id="clock"
-                      >{clock < 60 ? `:${clock % 60}` : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
+                      >{clock < 10 ? `:0${clock % 60}` : clock < 60 ? `:${clock % 60}`  : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
                       }</h4><span id="time-up"
                       style={{fontWeight:'bold'}}
                       >{clock === 0 ? `Time's Up` : ''}
@@ -120,7 +129,7 @@ useEffect(()=>{
                      
                 {showSubmit}
                 
-              
+    
                 {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
                 {/* {navButtons} */}
                     </div> 
