@@ -27,8 +27,8 @@ const TestPage = ({ next,
       borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
     >Previous</button>
         <button onClick={()=> handleNext(next)} id="next"
-         style={{backgroundColor: `${next > 23 ? 'gray' : 'dodgerblue'}`,
-         borderColor: `${next > 23 ? 'gray' : 'dodgerblue'}`}}
+         style={{backgroundColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`,
+         borderColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`}}
         >Next</button><button onClick={(e)=> handleSubmit(e)}
         id="submit"
         >Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous"

@@ -9,8 +9,8 @@ error})=> {
         <section id="name-component">
         
             <h4 id="instructions"
-           >You have {Math.floor(time/60)} munites{time % 60 ? ',': ''} {time % 60}{clock % 60 === 0 ? '' : ' seconds'} to complete a 
-            general knowledge test. Enter your name and click the 'Continue' button to start.</h4>
+           >You have {Math.floor(time/60)} munites{time % 60 ? `, ${time % 60} seconds`: ''}  to complete a 
+            general knowledge test comprising of {quiz.length} questions. Enter your name and click the 'Continue' button to start.</h4>
         <input id="name-taker"
         
         type='text'
