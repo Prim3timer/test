@@ -39,6 +39,7 @@ function App() {
   const [isAltLoading, setIsAltLoading] = useState(false)
   const [submitButton, setSubmitButton] = useState(false)
   const [clock, setClock]= useState(quiz.length * 10)
+  const [revisit, setRevisit]= useState(false)
 
 
  
@@ -126,8 +127,7 @@ useEffect(()=> {
 }, [])
 
 const handleNext = (index)=> {
- 
-
+ setRevisit(true)
   if (index < quiz.length -1) {
     setNext(next + 1)
   }else {
@@ -139,7 +139,7 @@ const handleNext = (index)=> {
   }
 const radioCheck = ()=> {
   for (let key of inputArray){
-    if (next > 0){ 
+    if (revisit){ 
 
       if(key.current.value === colator[next]){
          console.log('we have a match!')
