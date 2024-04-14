@@ -26,11 +26,13 @@ const TestPage = ({ next,
     id="submit"
     style={{marginLeft: '10rem'}}
     onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
-    onClick={()=> handlePrevious(next)} id="previous"
+    onClick={()=> handlePrevious(next)} 
+    id={next < 1 ? 'nbu' : 'previous'}
     style={{backgroundColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
       borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
     >Previous</button>
-        <button onClick={()=> handleNext(next)} id="next"
+        <button onClick={()=> handleNext(next)}
+         id={next > 23 ? 'ozo' : 'next'}
          style={{backgroundColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`,
          borderColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`}}
         >Next</button><button onClick={(e)=> handleSubmit(e)}
@@ -43,7 +45,7 @@ const TestPage = ({ next,
    }}
         >Previous</button>
       <button 
-        id={next > quiz.length - 2 ? 'ozo' : 'next'}
+        id={next > 23 ? 'ozo' : 'next'}
       onClick={()=> handleNext(next)}
       >Next</button></section>
 
