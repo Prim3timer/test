@@ -128,6 +128,7 @@ useEffect(()=> {
 
 const handleNext = (index)=> {
  setRevisit(true)
+//  console.log(next)
   if (index < quiz.length -1) {
     setNext(next + 1)
   }else {

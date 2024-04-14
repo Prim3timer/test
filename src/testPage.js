@@ -16,6 +16,10 @@ const TestPage = ({ next,
     clock,
     setClock
   })=>{
+
+
+
+
     
 
     let showSubmit = clock === 0 ? <section><button 
@@ -31,12 +35,16 @@ const TestPage = ({ next,
          borderColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`}}
         >Next</button><button onClick={(e)=> handleSubmit(e)}
         id="submit"
-        >Submit</button></section> : <section><button onClick={()=> handlePrevious(next)} id="previous"
+        >Submit</button></section> : <section><button 
+        id={next < 1 ? 'nbu' : 'previous'}
+        onClick={()=> handlePrevious(next)}
         style={{backgroundColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
-      borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
+      borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`,
+   }}
         >Previous</button>
-      <button onClick={()=> handleNext(next)}
-      id="next"
+      <button 
+        id={next > quiz.length - 2 ? 'ozo' : 'next'}
+      onClick={()=> handleNext(next)}
       >Next</button></section>
 
   
