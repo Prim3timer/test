@@ -122,8 +122,12 @@ section {
 } 
 
 #nbu {
-  box-shadow: 'none';
-transform:  'scale(0.9, 0.9)'
+  /* box-shadow: '0 0 0'; */
+  box-shadow: 0.2em 0.3em 0.4em gray;
+  /* transform:  'scale(0.9, 0.9)' */
+  transform:  'none'; 
+  /* box-shadow: 'none'; */
+  transform:  'scale(0.9, 0.9)'
 }
 
 #next:active {
@@ -134,7 +138,8 @@ transform:  'scale(0.9, 0.9)'
   transition-duration: 0.1s;
 }
 #ozo {
-  box-shadow: 'none';
+  /* box-shadow: 'none'; */
+  box-shadow: 0.2em 0.3em 0.4em gray;
 transform:  'scale(0.9, 0.9)'
 }
 button{
