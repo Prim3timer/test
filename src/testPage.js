@@ -32,7 +32,7 @@ const TestPage = ({ next,
       borderColor: `${next < 1 ? 'gray' : 'dodgerblue'}`}}
     >Previous</button>
         <button onClick={()=> handleNext(next)}
-         id={next > 23 ? 'ozo' : 'next'}
+         id={next > quiz.length - 2 ? 'ozo' : 'next'}
          style={{backgroundColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`,
          borderColor: `${next > quiz.length - 2 ? 'gray' : 'dodgerblue'}`}}
         >Next</button><button onClick={(e)=> handleSubmit(e)}
@@ -45,7 +45,7 @@ const TestPage = ({ next,
    }}
         >Previous</button>
       <button 
-        id={next > 23 ? 'ozo' : 'next'}
+        id={next > quiz.length - 2 ? 'ozo' : 'next'}
       onClick={()=> handleNext(next)}
       >Next</button></section>
 

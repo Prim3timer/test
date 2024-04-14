@@ -135,35 +135,35 @@ let quiz = [
       options: ['1', '12', '6', '8'],
       answer: '12',
     },
-    {
-      id: 21,
-      quiz: " How many cloud types are there in the sky?",
-      options: ['7', '1', '4', '9'],
-      answer: '9',
-    },
-    {
-      id: 22,
-      quiz: " What is the name of the longest side of a right angled triangle?",
-      options: ["Hypothenus", "Base", "Tangent", "Adjent"],
-      answer: "Hypothenus",
-    },
-    {
-      id: 23,
-      quiz: " Which of these planets is closest to the sun?",
-      options: ["Sarturn", "Venus", "Earth", "Mars"],
-      answer: "Venus",
-    },
-    {
-      id: 24,
-      quiz: " Through what does insects breathe?",
-      options: ["Miracle", "Spiracle", "Oracle", "Tentacle"],
-      answer: "Spiracle",
-    },
-    {
-      id: 25,
-      quiz: " Which of these animals lay eggs?",
-      options: ["Whales", "Dolphins", "Sharks", "Anaconda"],
-      answer: "Sharks",
-    },
+    // {
+    //   id: 21,
+    //   quiz: " How many cloud types are there in the sky?",
+    //   options: ['7', '1', '4', '9'],
+    //   answer: '9',
+    // },
+    // {
+    //   id: 22,
+    //   quiz: " What is the name of the longest side of a right angled triangle?",
+    //   options: ["Hypothenus", "Base", "Tangent", "Adjent"],
+    //   answer: "Hypothenus",
+    // },
+    // {
+    //   id: 23,
+    //   quiz: " Which of these planets is closest to the sun?",
+    //   options: ["Sarturn", "Venus", "Earth", "Mars"],
+    //   answer: "Venus",
+    // },
+    // {
+    //   id: 24,
+    //   quiz: " Through what does insects breathe?",
+    //   options: ["Miracle", "Spiracle", "Oracle", "Tentacle"],
+    //   answer: "Spiracle",
+    // },
+    // {
+    //   id: 25,
+    //   quiz: " Which of these animals lay eggs?",
+    //   options: ["Whales", "Dolphins", "Sharks", "Anaconda"],
+    //   answer: "Sharks",
+    // },
   ];
   export default quiz
