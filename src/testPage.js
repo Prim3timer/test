@@ -16,12 +16,6 @@ const TestPage = ({ next,
     clock,
     setClock
   })=>{
-
-
-
-
-    
-
     let showSubmit = clock === 0 ? <section><button 
     id="submit"
     style={{marginLeft: '10rem'}}
