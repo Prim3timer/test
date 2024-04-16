@@ -79,14 +79,14 @@ let quiz = [
     },
     {
       id: 14,
-      quiz: " Who invented the light bulb?",
+      quiz: " How many degrees longitude make a timezone?",
       options: [
-        "Michael Faraday",
-        "Marie Curie",
-        "Thomas Edison",
-        "John Dalton",
+        "10",
+        "15",
+        "30",
+        "45",
       ],
-      answer: "Thomas Edison",
+      answer: "15",
     },
     {
       id: 15,

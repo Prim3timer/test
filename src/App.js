@@ -57,6 +57,7 @@ const inputRef3 = useRef('')
 
   
               const handleSubmit = async (e)=> {
+                e.preventDefault()
                 setStarted(false)
                 setIsLoading(true)
                 const qnArray = []
@@ -64,7 +65,6 @@ const inputRef3 = useRef('')
                 const answersArray  = []
               
                
-                e.preventDefault()
                 for (let key of quiz){
                   qnArray.push(key.id)
                   qsArray.push(key.quiz)
@@ -269,6 +269,7 @@ setCandidate={setCandidate}
               return  (
            <div id='app'>
             {allComponents}
+            <i class="fa fa-caret-left" aria-hidden='true'></i>
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
           </div>
                
