@@ -434,7 +434,9 @@ h3 {
   
   ul {
     padding-bottom: 2rem;
-    width: 82rem;
+    /* width: 82rem; */
+
+    width: 100%;
     margin:20rem 0 0 15rem;
     
     
