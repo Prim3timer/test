@@ -451,6 +451,9 @@ h3 {
     
     
   }
+  #test-page {
+    width: 95%;
+  }
 
 
 #test-page button {
