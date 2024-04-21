@@ -334,7 +334,7 @@ h3 {
   #test-canvas{
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2rem 0 6rem 1rem;
+    margin: 0rem 0 6rem 1rem;
     /* width: 90rem; */
   }
   #submitting {
@@ -390,17 +390,17 @@ h3 {
     width: 15rem;
   }
   .interview {
-    font-size: 6rem;
+    font-size: 3rem;
     width: 70rem;
     height: 20rem;
   }
   span {
-    font-size: 5rem;
+    font-size: 3rem;
     
   }
   #clock {
     margin: 2rem 0 0rem 25rem;
-    font-size: 6rem;
+    font-size: 3rem;
     width: 20rem;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 5px;
@@ -435,13 +435,15 @@ h3 {
   ul {
     padding-bottom: 2rem;
     width: 82rem;
+    /* width: 100rem; */
+    /* background-color: blue; */
     margin:20rem 0 0 15rem;
     
     
     
   }
   li {
-    font-size: 6rem;
+    font-size: 3rem;
     /* margin-right: -10rem; */
     /* width: 30rem; */
   }
@@ -452,12 +454,17 @@ h3 {
     
   }
   #test-page {
-    width: 95%;
+    /* width: 95%; */
+    /* position: relative; */
+    /* width: 100%; */
+    width: 100rem;
+    justify-content: center;
+    /* background-color: blue; */
   }
 
 
 #test-page button {
-  font-size: 5rem;
+  font-size: 3rem;
   border-radius: 5px;
   /* font-weight: bold; */
   /* width: 2rem; */

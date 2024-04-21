@@ -103,25 +103,21 @@ const inputRef3 = useRef('')
             }
                
             const attemptTracker = (e, index)=> {
+              let optionVal = e.target.value
               for (let key of inputArray) {
                 if (key.current.checked){
-            
-                  colator.splice(index, 1, e.target.value)
-            
+                  // colator.splice(index, 1, e.target.value)
+                  colator.splice(index, 1, optionVal)
               }
-              
-            console.log(colator)
-              
             }
+            console.log(colator)
             }
 
 useEffect(()=> {
   for (let i = 0; i < quiz.length; i++){
     if (attempPop === false){
-      
       colator.push('unattempted')
-    }
-    
+    } 
   }
   console.log(colator)
   setAttempPop(true)
@@ -141,11 +137,8 @@ const handleNext = (index)=> {
 const radioCheck = ()=> {
   for (let key of inputArray){
     if (revisit){ 
-
       if(key.current.value === colator[next]){
-         console.log('we have a match!')
        key.current.checked =true
-       console.log(colator[next], key.current.value)
       }
     }
   }
@@ -155,32 +148,23 @@ const radioCheck = ()=> {
 }, [next])
 
 const handlePrevious =(index)=> {
- 
-  console.log('index is:',index)
   if (index > 1) {
     setNext(next - 1)
   }else setNext(0)
- 
 }
 
 
 const getResult = async ()=> {
   setIsDone(false)
                   setIsAltLoading(true)
-                  const report = await axios.get(`https://dosal.onrender.com/results`)
-                  
-                  if (report){
+                  const report = await axios.get(`https://dosal.onrender.com/results`)                  
+                 if (report){
                     setIsAltLoading(false)
                     setPresent(true)
                    const currentResult = report.data.questions.find((assess)=> assess.date === date)
                    console.log(currentResult)
                     
                   }
-                  setTimeout(()=> {
-                
-                  }, 2000)
-               
-
 }             
          
     const removeExcercise = async (id)=>{
