@@ -313,7 +313,7 @@ h3 {
   color: var(--clr-primary-5);
 }
 
-@media screen and (orientation: portrait) {
+ @media screen and (orientation: portrait) {
   
   
   
@@ -434,9 +434,7 @@ h3 {
   
   ul {
     padding-bottom: 2rem;
-    /* width: 82rem; */
-
-    width: 100%;
+    width: 82rem;
     margin:20rem 0 0 15rem;
     
     
