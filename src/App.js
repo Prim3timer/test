@@ -52,9 +52,6 @@ const inputRef1 = useRef('')
 const inputRef2 = useRef('')
 const inputRef3 = useRef('')
   const inputArray = [inputRef, inputRef1, inputRef2,  inputRef3]
-        
-            
-
   
               const handleSubmit = async (e)=> {
                 e.preventDefault()
@@ -175,7 +172,7 @@ const getResult = async ()=> {
     
     const verifyName = ()=> {
       try {
-        
+          
         if (candidate){
           setStarted(true)
           setStarting(false)

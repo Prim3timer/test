@@ -114,7 +114,7 @@ let quiz = [
 
     {
       id: 18,
-      quiz: " Who is the first person to reach the North Pole",
+      quiz: " Who is the first person to reach the North Pole?",
       options: [
         "Robert Peary",
         "Alexandar the Great",
@@ -144,7 +144,7 @@ let quiz = [
     {
       id: 22,
       quiz: " What is the name of the longest side of a right angled triangle?",
-      options: ["Hypothenus", "Base", "Tangent", "Adjent"],
+      options: ["Hypotenus", "Base", "Tangent", "Adjent"],
       answer: "Hypothenus",
     },
     {
