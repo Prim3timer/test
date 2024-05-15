@@ -18,6 +18,11 @@ code {
   justify-content: center;
 }
 
+#test-page {
+  justify-content: center;
+  
+}
+
 #instructions {
   margin: 0 0 0 2rem;
     width: 40rem;

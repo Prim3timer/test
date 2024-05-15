@@ -90,7 +90,7 @@ useEffect(()=>{
                             {exam.options[0]}
                           </li>
                           <li>
-                            <input
+                             <input
                             ref={inputRef1}
                             type='radio'
                             name='answers'
