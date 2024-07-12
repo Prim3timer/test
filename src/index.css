@@ -27,8 +27,8 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 8rem;
-  font-size: 2rem;
+  width: 12rem;
+  font-size: 3rem;
   color: white;
   border-radius: 5px;
 }
@@ -71,7 +71,7 @@ input{
   /* background-color: blue; */
 }
 ul {
-  width: 20vw;
+  width: 30vw;
   margin: 0 auto;
   text-align: left;
   list-style-type: none;
