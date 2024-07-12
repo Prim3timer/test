@@ -18,7 +18,7 @@
 
 #name-taker {
   width: 60vw;
-  /* padding: .8rem; */
+  padding: .5rem;
   border: 2px solid black;
 }
 
@@ -30,7 +30,9 @@
   color: white;
 }
 
-@media screen and (max-width: 576px)  and (orintation: portrait) {
+/* @media screen and (max-width: 576px) { */
+@media screen and (orientation: portrait) {
+
 
   #name-component {
     width: 90vw;
@@ -41,7 +43,7 @@
   }
   
 #instructions {
-  margin: 4rem 0;
+  margin: 10rem 0;
 }
   
 
