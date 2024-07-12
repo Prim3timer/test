@@ -7,18 +7,24 @@
 
 #name-component {
 
-  width: 60vw;
+  width: 80vw;
   margin: 0 auto;
   
 }
 
 #instructions {
-  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#name-taker {
+  width: 60vw;
+  padding: 1rem;
 }
 
 #continuity {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 8rem;
+  width: 12rem;
+  font-size: 2rem;
   color: white;
 }
