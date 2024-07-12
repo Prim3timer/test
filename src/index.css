@@ -126,10 +126,16 @@ ul {
 }
 
 ul {
-  width: 40vw;
+  width: 60vw;
+  padding: 4rem 0;
+  font-size: 2rem;
+
   /* margin: 0 auto;
   text-align: left;
   list-style-type: none; */
+}
+input {
+  /* width: 3rem; */
 }
 
 /* #previous {
