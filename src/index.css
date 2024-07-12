@@ -1,0 +1,11 @@
+#app {
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+  /* padding: 2rem; */
+}
+
+#name-component {
+  width: 60vw;
+  
+}
