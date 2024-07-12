@@ -29,17 +29,19 @@
   color: white;
 }
 
-@media screen  and (orintation: portrait) {
+@media screen and (max-width: 576px)  and (orintation: portrait) {
 
   #name-component {
     width: 90vw;
   }
   #name-taker {
     width: 90vw;
+    font-size: .5rem;
   }
   
 #instructions {
   margin: 4rem 0;
 }
+  
 
 }
