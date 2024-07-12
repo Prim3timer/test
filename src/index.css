@@ -13,7 +13,7 @@
 }
 
 #instructions {
-  padding: 1rem;
+  margin: 2rem 0;
 }
 
 #name-taker {
@@ -27,4 +27,19 @@
   width: 12rem;
   font-size: 2rem;
   color: white;
+}
+
+@media screen  and (orintation: portrait) {
+
+  #name-component {
+    width: 80vw;
+  }
+  #name-taker {
+    width: 80vw;
+  }
+  
+#instructions {
+  margin: 4rem 0;
+}
+
 }
