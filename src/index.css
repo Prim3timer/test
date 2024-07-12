@@ -1,3 +1,4 @@
+
 #app {
   width: 100vw;
   text-align: center;
@@ -23,13 +24,74 @@
   border-radius: 5px;
 }
 
-#continuity {
+button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 12rem;
+  width: 8rem;
   font-size: 2rem;
   color: white;
   border-radius: 5px;
+}
+
+#test-page {
+  width: 60vw;
+ margin: 0 auto;
+}
+
+#previous, #nbu {
+  margin-right: 1rem;
+}
+#next {
+
+  margin-right: 1rem;
+}
+#submit {
+  margin-left: 1rem;
+}
+
+
+
+#test-canvas {
+  margin: 1rem auto;
+  display: flex;
+}
+
+.interview {
+  margin-left: 1rem;
+  /* background-color: blue; */
+  height: 20vh;
+  /* position: absolute; */
+}
+/* #qno {
+  margin-right: 3rem;
+} */
+
+input{
+  padding: 5px;
+  /* background-color: blue; */
+}
+ul {
+  width: 20vw;
+  margin: 0 auto;
+  text-align: left;
+  list-style-type: none;
+}
+
+#submitting {
+  margin-top: 50vh;
+}
+#check-result {
+  margin-top: 50vh;
+}
+#getting {
+  margin-top: 50vh;
+}
+#result-sheet {
+  margin-top: 50vh;
+}
+#result-table {
+  margin: 0 auto;
+  width: 95vw;
 }
 
 /* @media screen and (max-width: 576px) { */
@@ -38,6 +100,11 @@
 
   #name-component {
     width: 90vw;
+  }
+
+  #test-page {
+    width: 90vw;
+   margin: 0 auto;
   }
   #name-taker {
     width: 80vw;
@@ -48,6 +115,34 @@
 #instructions {
   margin: 3rem 0 2rem 0;
 }
-  
 
+
+.interview {
+  position: absolute;
+  margin-left: 2rem;
+  /* background-color: blue; */
+  height: 40vh;
+  /* background-color: blue; */
 }
+
+ul {
+  width: 40vw;
+  /* margin: 0 auto;
+  text-align: left;
+  list-style-type: none; */
+}
+
+/* #previous {
+  width: 4rem;
+}
+
+#next {
+    width: 4rem;
+
+} */
+  
+#result-table {
+  margin: 0 auto;
+  width: 120vw;
+}
+}  

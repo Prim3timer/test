@@ -18,7 +18,7 @@ const TestPage = ({ next,
   })=>{
     let showSubmit = clock === 0 ? <section><button 
     id="submit"
-    style={{marginLeft: '10rem'}}
+    // style={{marginLeft: '10rem'}}
     onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
     onClick={()=> handlePrevious(next)} 
     id={next < 1 ? 'nbu' : 'previous'}
@@ -62,20 +62,24 @@ useEffect(()=>{
                   return (
                     <div key={exam.id} id="test-page">
                       <article
-                      style={{display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 200px'}}
+                    style={{
+                      margin: '2rem  0 1rem 0',
+                    justifyContent: 'center',
+                      display: 'flex'
+                }}
                       >
-
                       <h4 id="clock"
-                      >{clock < 10 ? `:0${clock % 60}` : clock < 60 ? `:${clock % 60}`  : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
-                      }</h4><span id="time-up"
-                      style={{fontWeight:'bold'}}
+                      style={{margin: '0 1rem'}}
+                  >{clock < 10 ? `:0${clock % 60}` : clock < 60 ? `:${clock % 60}`  : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
+                  }</h4>
+
+                  <h4 id="time-up"
                       >{clock === 0 ? `Time's Up` : ''}
-                      </span>
+                      </h4>
                       </article>
                       <article id='test-canvas'>
                
-                      <span>{exam.id}.</span>
+                      <h4 id="qno">{exam.id}.</h4>
                       <h4 className='interview'>{exam.quiz}</h4>
                       </article>
                       <ul>

@@ -27,7 +27,7 @@ for (let i = 0; i < quiz.length; i++){
 console.log(score)
 
     return (
-        <article >
+        <article id='result-table'>
             <main id='cred'>
 
             <h2 id='name'>Name: {candidate},</h2>
