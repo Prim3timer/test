@@ -38,12 +38,12 @@
     width: 90vw;
   }
   #name-taker {
-    width: 90vw;
-    font-size: .5rem;
+    width: 80vw;
+    /* font-size: .5rem; */
   }
   
 #instructions {
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
 }
   
 
