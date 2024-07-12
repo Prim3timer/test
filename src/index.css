@@ -27,7 +27,7 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 12rem;
+  width: 10rem;
   font-size: 3rem;
   color: white;
   border-radius: 5px;
@@ -39,7 +39,7 @@ button {
 }
 
 #previous, #nbu {
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 #next {
 
@@ -138,14 +138,17 @@ input {
   /* width: 3rem; */
 }
 
-/* #previous {
-  width: 4rem;
-}
+
 
 #next {
-    width: 4rem;
-
-} */
+    width: 6rem;
+    
+  }
+  
+  #previous, #nbu {
+  width: 6rem;
+  /* margin-right: 3rem; */
+}
   
 #result-table {
   margin: 0 auto;
