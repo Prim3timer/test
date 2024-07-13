@@ -28,26 +28,29 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 8rem;
-  font-size: 3rem;
+  width: 9rem;
+  /* font-size: 4rem; */
   color: white;
   border-radius: 5px;
 }
 
 #test-page {
   width: 90vw;
- margin: 0 auto;
+  margin: 0 auto;
 }
 
 #previous {
   margin-right: 1rem;
+  font-size: 1.5rem;
 }
 #next {
-
-  margin-right: 1rem;
+  
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
 }
 #submit {
   margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
 
@@ -61,7 +64,7 @@ button {
 .interview {
   margin-left: 1rem;
   /* background-color: blue; */
-  height: 20vh;
+  height: 10vh;
   /* position: absolute; */
 }
 /* #qno {
