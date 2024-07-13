@@ -51,7 +51,7 @@ useEffect(()=> {
 }, [clock])
 useEffect(()=>{
   if (next === quiz.length - 1) setSubmitButton(true)
-  console.log(next)
+  // console.log(next)
 }, [next])
         return (
 

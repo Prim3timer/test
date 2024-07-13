@@ -250,7 +250,7 @@ setCandidate={setCandidate}
               return  (
            <div id='app'>
             {allComponents}
-            <i class="fa fa-caret-left" aria-hidden='true'></i>
+            {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
           </div>
                
