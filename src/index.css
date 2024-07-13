@@ -27,7 +27,7 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 12rem;
+  width: 10rem;
   font-size: 3rem;
   color: white;
   border-radius: 5px;
@@ -39,7 +39,7 @@ button {
 }
 
 #previous, #nbu {
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 #next {
 
@@ -74,10 +74,16 @@ li input {
   margin-right: 1rem;
 }
 ul {
-  width: 30vw;
+  width: 60vw;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: left;
   list-style-type: none;
+}
+
+section {
+  text-align: left;
+  width: 90vw;
 }
 
 #submitting {
@@ -95,6 +101,9 @@ ul {
 #result-table {
   margin: 0 auto;
   width: 95vw;
+}
+#continuity {
+  font-size: 1.5rem;
 }
 
 /* @media screen and (max-width: 576px) { */
