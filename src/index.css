@@ -146,14 +146,14 @@ section {
   /* position: absolute; */
   margin-left: 2rem;
   /* background-color: blue; */
-  height: 40vh;
+  height: 10vh;
   width: 80vw;
   /* background-color: blue; */
 }
 
 ul {
   width: 60vw;
-  padding: 4rem 0;
+  /* padding: 1rem 0; */
   font-size: 2rem;
 
   /* margin: 0 auto;
