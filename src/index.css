@@ -27,7 +27,7 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 10rem;
+  width: 12rem;
   font-size: 3rem;
   color: white;
   border-radius: 5px;
@@ -66,9 +66,12 @@ button {
   margin-right: 3rem;
 } */
 
-input{
-  padding: 5px;
-  /* background-color: blue; */
+
+
+li input {
+  width: 1.3rem; 
+  height: 1.3rem; 
+  margin-right: 1rem;
 }
 ul {
   width: 30vw;
@@ -101,6 +104,13 @@ ul {
   #name-component {
     width: 90vw;
   }
+#continuity {
+
+  font-size: 2rem;
+}
+  button {
+    width: 15rem;
+  }
 
   #test-page {
     width: 90vw;
@@ -122,6 +132,7 @@ ul {
   margin-left: 2rem;
   /* background-color: blue; */
   height: 40vh;
+  width: 80vw;
   /* background-color: blue; */
 }
 
@@ -134,20 +145,29 @@ ul {
   text-align: left;
   list-style-type: none; */
 }
-input {
-  /* width: 3rem; */
+li {
+  font-size: 1.5rem;
+  background-color: yellow;
+  width: 80vw;
+}
+
+#test-canvas {
+  width: 80vw;
 }
 
 
 
 #next {
-    width: 6rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     
   }
   
   #previous, #nbu {
-  width: 6rem;
-  /* margin-right: 3rem; */
+    font-size: 1.5rem;
+  width: 8rem;
+  margin: 0 1rem 1rem 0;
 }
   
 #result-table {
