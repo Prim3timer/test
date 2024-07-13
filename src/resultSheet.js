@@ -35,7 +35,7 @@ console.log(score)
             </main>
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>
-                    <th>Q. n.</th>
+                    <th>Q. no.</th>
                     <th>questions</th>
                     <th>your answer</th>
                     <th>correct answer</th>
