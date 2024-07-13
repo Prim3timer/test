@@ -143,10 +143,12 @@ font-size: 2rem;
 
    #result-table th {
     border: 2px solid brown;
-   }
-   
-   #tableA td {
-    border: 2px solid brown;
+    padding: 5px;
+  }
+  
+  #tableA td {
+     padding: 5px;
+    border: 1px solid brown;
    }
 /* @media screen and (max-width: 576px) { */
 @media screen and (orientation: portrait) {
@@ -232,6 +234,7 @@ text-align: left;
 #submit {
   width: 8rem;
   font-size: 1.5rem;
+  margin: 2rem;
 }
 
 
