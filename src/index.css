@@ -146,7 +146,7 @@ section {
   /* position: absolute; */
   margin-left: 2rem;
   /* background-color: blue; */
-  height: 10vh;
+  /* height: 10vh; */
   width: 80vw;
   /* background-color: blue; */
 }
@@ -167,6 +167,7 @@ li {
 
 #test-canvas {
   width: 80vw;
+  height: 10vh;
 }
 
 
