@@ -10,6 +10,7 @@
 
   width: 80vw;
   margin: 0 auto;
+  text-align: center;
   
 }
 
@@ -27,14 +28,14 @@
 button {
   background-color: dodgerblue;
   border-color: dodgerblue;
-  width: 10rem;
+  width: 8rem;
   font-size: 3rem;
   color: white;
   border-radius: 5px;
 }
 
 #test-page {
-  width: 60vw;
+  width: 90vw;
  margin: 0 auto;
 }
 
@@ -52,6 +53,7 @@ button {
 
 
 #test-canvas {
+  justify-content: center;
   margin: 1rem auto;
   display: flex;
 }
@@ -78,12 +80,15 @@ ul {
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: left;
+  justify-content: center;
   list-style-type: none;
+  /* background-color: yellow; */
 }
 
 section {
   text-align: left;
   width: 90vw;
+  /* background-color: yellow; */
 }
 
 #submitting {
@@ -111,6 +116,7 @@ section {
 
 
   #name-component {
+    text-align: center;
     width: 90vw;
   }
 #continuity {
@@ -156,7 +162,6 @@ ul {
 }
 li {
   font-size: 1.5rem;
-  background-color: yellow;
   width: 80vw;
 }
 
@@ -183,4 +188,9 @@ li {
   margin: 0 auto;
   width: 120vw;
 }
+#submit {
+  width: 8rem;
+  font-size: 1.5rem;
+}
+
 }  
