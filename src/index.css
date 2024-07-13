@@ -58,12 +58,12 @@ button {
 
 #test-canvas {
   justify-content: center;
-  margin: 1rem auto;
+  margin: 0 auto 1rem auto ;
   display: flex;
 }
 
 .interview {
-  margin-left: 1rem;
+  margin-left: .5rem;
   /* background-color: blue; */
   height: 10vh;
   /* position: absolute; */
