@@ -161,21 +161,24 @@ ul {
   list-style-type: none; */
 }
 li {
-  font-size: 1.5rem;
   width: 80vw;
+  font-size: 1.24rem;
 }
 
 #test-canvas {
   width: 80vw;
   height: 20vh;
+  background-color: yellow;
+  
 }
 
 
 
 #next {
     width: 8rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    clear: left;
     
   }
   

@@ -126,7 +126,7 @@ const handleNext = (index)=> {
     setNext(next + 1)
   }else {
      
-     setNext(quiz.length -1)
+     setNext(quiz.length)
      
     }
     
