@@ -52,19 +52,24 @@ setFinal})=> {
 
 
     return (
-        <div id="result-sheet">
+        <div id="result-sheet"
+        style={{justifyContent: 'center'}}
+        >
             
                
- <p 
-//  tyle={{fontSize: '2rem', width: '40rem',
-// margin: '8rem 0 0 12rem'}}
->Your Result is Ready</p>
+ <h5
+ id='ready'
+ style={{fontSize: '2rem', width: '40rem',
+    margin: '0 auto'
+ }}
+>Your Result is Ready</h5>
 <button
+id='see-ready'
  onClick={arrival} 
-// style={{fontSize: '2rem', width: '20rem',
-// margin: '2rem 0 0 10rem',
-// padding: '1rem'
-// }}
+style={{fontSize: '2rem', width: '30rem',
+
+padding: '1rem'
+}}
 >View Result</button>
 <h2>{errorMessage.message}</h2>
  
