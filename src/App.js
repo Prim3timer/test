@@ -53,6 +53,16 @@ const inputRef2 = useRef('')
 const inputRef3 = useRef('')
   const inputArray = [inputRef, inputRef1, inputRef2,  inputRef3]
   
+  const attemptTracker = (e, index)=> {
+    let optionVal = e.target.value
+    for (let key of inputArray) {
+      if (key.current.checked){
+        // colator.splice(index, 1, e.target.value)
+        colator.splice(index, 1, optionVal)
+    }
+  }
+  console.log(colator)
+  }
               const handleSubmit = async (e)=> {
                 e.preventDefault()
                 setStarted(false)
@@ -99,16 +109,16 @@ const inputRef3 = useRef('')
              
             }
                
-            const attemptTracker = (e, index)=> {
-              let optionVal = e.target.value
-              for (let key of inputArray) {
-                if (key.current.checked){
-                  // colator.splice(index, 1, e.target.value)
-                  colator.splice(index, 1, optionVal)
-              }
-            }
-            console.log(colator)
-            }
+            // const attemptTracker = (e, index)=> {
+            //   let optionVal = e.target.value
+            //   for (let key of inputArray) {
+            //     if (key.current.checked){
+            //       // colator.splice(index, 1, e.target.value)
+            //       colator.splice(index, 1, optionVal)
+            //   }
+            // }
+            // console.log(colator)
+            // }
 
 useEffect(()=> {
   for (let i = 0; i < quiz.length; i++){
