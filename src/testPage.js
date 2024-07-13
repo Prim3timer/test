@@ -24,15 +24,15 @@ const TestPage = ({ next,
     id={next < 1 ? 'nbu' : 'previous'}
     >Previous</button>
         <button onClick={()=> handleNext(next)}
-         id={next > quiz.length - 2 ? 'ozo' : 'next'}
+         id='next'
         >Next</button><button onClick={(e)=> handleSubmit(e)}
         id="submit"
         >Submit</button></section> : <section><button 
-        id={next < 1 ? 'nbu' : 'previous'}
+        id= 'previous'
         onClick={()=> handlePrevious(next)}
         >Previous</button>
       <button 
-        id={next > quiz.length - 2 ? 'ozo' : 'next'}
+        id='next'
       onClick={()=> handleNext(next)}
       >Next</button></section>
 
@@ -80,7 +80,7 @@ useEffect(()=>{
                       <article id='test-canvas'>
                
                       <h4 id="qno">{exam.id}.</h4>
-                      <h4 className='interview'>{exam.quiz}</h4>
+                      <h5 className='interview'>{exam.quiz}</h5>
                       </article>
                       <ul>
                           <li>
