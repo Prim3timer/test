@@ -147,7 +147,7 @@ section {
   margin-left: 2rem;
   /* background-color: blue; */
   /* height: 10vh; */
-  width: 80vw;
+  width: 90vw;
   /* background-color: blue; */
 }
 
@@ -166,9 +166,8 @@ li {
 }
 
 #test-canvas {
-  width: 80vw;
-  height: 20vh;
-  background-color: yellow;
+  /* width: 80vw; */
+  height: 10vh;
   
 }
 
@@ -176,7 +175,7 @@ li {
 
 #next {
     width: 8rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     clear: left;
     
