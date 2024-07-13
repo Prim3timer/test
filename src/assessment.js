@@ -53,23 +53,18 @@ setFinal})=> {
 
     return (
         <div id="result-sheet"
-        style={{justifyContent: 'center'}}
+        // style={{justifyContent: 'center'}}
         >
             
                
  <h5
  id='ready'
- style={{fontSize: '2rem', width: '40rem',
-    margin: '0 auto'
- }}
+ 
 >Your Result is Ready</h5>
 <button
 id='see-ready'
  onClick={arrival} 
-style={{fontSize: '2rem', width: '30rem',
 
-padding: '1rem'
-}}
 >View Result</button>
 <h2>{errorMessage.message}</h2>
  

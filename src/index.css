@@ -100,6 +100,10 @@ section {
 #check-result {
   margin-top: 50vh;
 }
+#result-sheet {
+  margin-top: 50vh;
+  /* margin: 0 auto; */
+ }
 #getting {
   margin-top: 50vh;
 }
@@ -121,14 +125,21 @@ section {
 }
 #ready {
   font-size: 2rem;
-   width: 40rem;
-    margin: 0 auto;
+    margin: 1rem auto;
  }
 #see-ready {
 font-size: 2rem;
  width: 30rem;
  
    padding: 1rem;
+   }
+
+   #result-table th {
+    border: 2px solid brown;
+   }
+   
+   #tableA td {
+    border: 2px solid brown;
    }
 /* @media screen and (max-width: 576px) { */
 @media screen and (orientation: portrait) {
@@ -213,16 +224,22 @@ li {
   font-size: 1.5rem;
 }
 
-#ready {
-  font-size: 2rem;
-   /* width: 40rem; */
-    margin: 0 auto;
- }
-#see-ready {
-font-size: 2rem;
- /* width: 30rem; */
- 
-   padding: 1rem;
+
+   #ready {
+    font-size: 2rem;
+      margin: 1rem auto;
    }
+  #see-ready {
+  font-size: 2rem;
+   width: 20rem;
+   
+     }
+
+     #tableA {
+      width: 140%;
+     }
+
+
+ 
 
 }  
