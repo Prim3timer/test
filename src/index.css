@@ -167,10 +167,12 @@ font-size: 2rem;
 
 ul {
   width: 60vw;
-  /* padding: 1rem 0; */
+  padding: 0 0 2rem 0;
   font-size: 2rem;
   text-align: left;
   list-style-type: none; 
+  /* margin: 0 0 21rem 0; */
+  /* background-color: yellow; */
 }
 li {
   width: 80vw;
@@ -179,7 +181,7 @@ li {
 
 #test-canvas {
   /* width: 80vw; */
-  height: 20vh;
+  height: 10vh;
   
 }
 
