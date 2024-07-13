@@ -82,6 +82,8 @@ useEffect(()=>{
                       <h4 id="qno">{exam.id}.</h4>
                       <h5 className='interview'>{exam.quiz}</h5>
                       </article>
+                      <div id="ul-container">
+
                       <ul>
                           <li>
                             <input
@@ -117,14 +119,15 @@ useEffect(()=>{
                         
                             <input
                                ref={inputRef3}
-                            type='radio'
-                            name='answers'
-                            value={exam.options[3]}
-                            onClick={(e) => attemptTracker(e, next)}
-                            />
+                               type='radio'
+                               name='answers'
+                               value={exam.options[3]}
+                               onClick={(e) => attemptTracker(e, next)}
+                               />
                             {exam.options[3]}
                           </li>
                         </ul>
+                        </div>
                         {/* <section><button onClick={()=> handlePrevious(next)} id="previous">Previous</button>
                         <button onClick={()=> handleNext(next)} id="next">Next</button><button onClick={(e)=> handleSubmit(e)}>Submit</button></section> */}
                      
