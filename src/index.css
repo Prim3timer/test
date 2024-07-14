@@ -52,13 +52,19 @@ button {
 #submit {
   margin-left: 1rem;
   font-size: 1.5rem;
+  background-color: coral;
+  border-color: coral;
+}
+
+#time-up {
+  color: red;
 }
 
 
 
 #test-canvas {
   width: 70vw;
-  /* background-color: yellow; */
+  /* background-color: yellow;   */
   margin: 0 auto 1rem auto ;
   display: flex;
   text-align: left;

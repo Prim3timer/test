@@ -53,15 +53,6 @@ const inputRef2 = useRef('')
 const inputRef3 = useRef('')
   const inputArray = [inputRef, inputRef1, inputRef2,  inputRef3]
   
-  const attemptTracker = (e, index)=> {
-    let optionVal = e.target.value
-    for (let key of inputArray) {
-      if (key.current.checked){
-        colator.splice(index, 1, optionVal)
-    }
-  }
-  console.log(colator)
-  }
 
   const year = new Date().getFullYear()
               const handleSubmit = async (e)=> {
@@ -110,16 +101,15 @@ const inputRef3 = useRef('')
              
             }
                
-            // const attemptTracker = (e, index)=> {
-            //   let optionVal = e.target.value
-            //   for (let key of inputArray) {
-            //     if (key.current.checked){
-            //       // colator.splice(index, 1, e.target.value)
-            //       colator.splice(index, 1, optionVal)
-            //   }
-            // }
-            // console.log(colator)
-            // }
+            const attemptTracker = (e, index)=> {
+              let optionVal = e.target.value
+              for (let key of inputArray) {
+                if (key.current.checked){
+                  colator.splice(index, 1, optionVal)
+              }
+            }
+            console.log(colator)
+            }
 
 useEffect(()=> {
   for (let i = 0; i < quiz.length; i++){
@@ -142,6 +132,7 @@ const handleNext = (index)=> {
     }
     
   }
+  // keep the previousy checked button checked
 const radioCheck = ()=> {
   for (let key of inputArray){
     if (revisit){ 
@@ -151,6 +142,7 @@ const radioCheck = ()=> {
     }
   }
 }
+
   useEffect(()=> {
     radioCheck()
 }, [next])
@@ -264,7 +256,7 @@ setCandidate={setCandidate}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
             <sub
-            style={{marginBottom: '1rem'}} 
+            // style={{marginBottom: '1rem'}} 
             >&copy; {year} Amalu productions. All rights reserved </sub>
           </div>
                

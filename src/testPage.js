@@ -21,7 +21,7 @@ const TestPage = ({ next,
     // style={{marginLeft: '10rem'}}
     onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
     onClick={()=> handlePrevious(next)} 
-    id={next < 1 ? 'nbu' : 'previous'}
+    id='previous'
     >Previous</button>
         <button onClick={()=> handleNext(next)}
          id='next'
@@ -36,8 +36,6 @@ const TestPage = ({ next,
       onClick={()=> handleNext(next)}
       >Next</button></section>
 
-      const date = new Date().getFullYear()
-      // const today = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'short' }).format(date)
 
 useEffect(()=> {
   const interval = setInterval(()=>{
@@ -52,7 +50,6 @@ useEffect(()=> {
 }, [clock])
 useEffect(()=>{
   if (next === quiz.length - 1) setSubmitButton(true)
-  // console.log(next)
 }, [next])
         return (
 
