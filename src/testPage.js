@@ -36,7 +36,8 @@ const TestPage = ({ next,
       onClick={()=> handleNext(next)}
       >Next</button></section>
 
-  
+      const date = new Date().getFullYear()
+      // const today = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'short' }).format(date)
 
 useEffect(()=> {
   const interval = setInterval(()=>{
@@ -136,6 +137,7 @@ useEffect(()=>{
     
                 {/* <button onClick={(e)=> handleSubmit(e)}>Submit</button> */}
                 {/* {navButtons} */}
+                {/* <sub>Amalu productions &copy;{date}</sub> */}
                     </div> 
                 )
                 }
