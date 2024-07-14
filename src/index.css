@@ -63,9 +63,9 @@ button {
 
 
 #test-canvas {
-  width: 60vw;
+  width: 80vw;
   /* background-color: yellow;   */
-  margin: 0 2rem 1rem auto;
+  margin: 0 0 1rem 12rem;
   display: flex;
   text-align: left;
 }
@@ -221,6 +221,7 @@ li {
 #test-canvas {
   width: 90vw;
   height: 10vh;
+  margin: 0 auto 1rem auto;
 text-align: left;
   
 }
