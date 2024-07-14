@@ -52,8 +52,8 @@ button {
 #submit {
   margin-left: 1rem;
   font-size: 1.5rem;
-  background-color: coral;
-  border-color: coral;
+  background-color: green;
+  border-color: green;
 }
 
 #time-up {
@@ -64,7 +64,7 @@ button {
 
 #test-canvas {
   width: 75vw;
-  /* background-color: yellow;   */
+  /* background-color: yellow;  */
   margin: 0 auto 1rem 8rem;
   display: flex;
   text-align: left;
