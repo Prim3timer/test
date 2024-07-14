@@ -57,6 +57,8 @@ button {
 
 
 #test-canvas {
+  width: 50vw;
+  background-color: yellow;
   margin: 0 auto 1rem auto ;
   display: flex;
   text-align: left;
