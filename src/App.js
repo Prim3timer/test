@@ -57,7 +57,6 @@ const inputRef3 = useRef('')
     let optionVal = e.target.value
     for (let key of inputArray) {
       if (key.current.checked){
-        // colator.splice(index, 1, e.target.value)
         colator.splice(index, 1, optionVal)
     }
   }
