@@ -66,18 +66,20 @@ useEffect(()=>{
                       display: 'flex'
                 }}
                       >
-                      <h4 id="clock"
-                      style={{margin: '0 1rem'}}
+                      <h5 id="clock"
+                      style={{margin: '0 1rem',
+                        color: 'tomato'
+                      }}
                   >{clock < 10 ? `:0${clock % 60}` : clock < 60 ? `:${clock % 60}`  : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
-                  }</h4>
+                  }</h5>
 
-                  <h4 id="time-up"
+                  <h3 id="time-up"
                       >{clock === 0 ? `Time's Up` : ''}
-                      </h4>
+                      </h3>
                       </article>
                       <article id='test-canvas'>
                
-                      <h4 id="qno">{exam.id}.</h4>
+                      <h5 id="qno">{exam.id}.</h5>
                       <h5 className='interview'>{exam.quiz}</h5>
                       </article>
                       <div id="ul-container">
