@@ -57,7 +57,6 @@ button {
 
 
 #test-canvas {
-  justify-content: center;
   margin: 0 auto 1rem auto ;
   display: flex;
   text-align: left;
@@ -215,6 +214,7 @@ li {
   width: 90vw;
   height: 10vh;
 text-align: left;
+
   /* background-color: blue; */
   
 }
