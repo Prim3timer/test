@@ -263,7 +263,9 @@ setCandidate={setCandidate}
             {allComponents}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
-            <sub>&copy; {year} Amalu productions. All rights reserved </sub>
+            <sub
+            style={{marginBottom: '1rem'}} 
+            >&copy; {year} Amalu productions. All rights reserved </sub>
           </div>
                
   );
