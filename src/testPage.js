@@ -63,7 +63,7 @@ useEffect(()=>{
                     <div key={exam.id} id="test-page">
                       <article
                     style={{
-                      margin: '2rem  0 1rem 0',
+                      margin: '1rem  0 .5rem 0',
                     justifyContent: 'center',
                       display: 'flex'
                 }}
