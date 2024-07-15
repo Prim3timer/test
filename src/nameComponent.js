@@ -10,7 +10,7 @@ error})=> {
         
             <h4 id="instructions"
            >You have {Math.floor(time/60)} munites{time % 60 ? `, ${time % 60} seconds`: ''}  to complete a 
-            general knowledge test comprising of {quiz.length} questions. Enter your name and click the 'Continue' button to start.</h4>
+            general knowledge test comprising of {quiz.length} questions. Enter your name and click the 'Start' button to begin.</h4>
         <input id="name-taker"
         
         type='text'
@@ -22,7 +22,7 @@ error})=> {
             margin: '.5rem 0 0 0'
         }}>{error}</h4><br/>
         <button id="continuity" 
-        onClick={verifyName}>Continue</button> 
+        onClick={verifyName}>Start</button> 
 </section>
     )
 }
