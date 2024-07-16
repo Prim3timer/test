@@ -36,6 +36,7 @@ button {
 }
 
 #test-page {
+  justify-content: center;
   width: 90vw;
   margin: 0 auto;
 }
@@ -68,9 +69,12 @@ button {
 #test-canvas {
   width: 75vw;
   /* background-color: yellow;  */
-  margin: 0 auto 1rem 8rem;
+  margin: 0 auto;
   display: flex;
-  text-align: left;
+  justify-content: center;
+
+
+  /* text-align: center */
 }
 
 .interview {
@@ -80,15 +84,6 @@ button {
   height: 10vh;
   /* position: absolute; */
 }
-/* #qno {
-  margin-right: 3rem;
-  } */
-  
-  /* #ul-container {
-    width: 90vw;
-    text-align: center;
-
-  } */
   
   li input {
     width: 1.3rem; 
@@ -97,11 +92,11 @@ button {
   }
   ul {
     /* background-color: yellow; */
-    width: 70vw;
+    width: 30vw;
     font-size: 1.2rem;
-    margin: 0 0 0 30%;
+    margin: 0 auto;
     text-align: left;
-    /* justify-content: center; */
+    justify-content: center;
     list-style-type: none;
     /* background-color: yellow; */
   }
@@ -167,7 +162,19 @@ font-size: 2rem;
      padding: 5px;
     border: 1px solid brown;
    }
-/* @media screen and (max-width: 576px) { */
+   #ul-container {
+    /* background-color: aqua; */
+    text-align: center;
+    justify-content: center;
+   }
+
+
+/* @media screen and (min-width: 390px) {
+  .interview {
+    font-size: 1.5rem;
+  }
+} */
+
 @media screen and (orientation: portrait) {
 
 
