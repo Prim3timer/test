@@ -85,6 +85,16 @@ button {
   height: 10vh;
   /* position: absolute; */
 }
+
+#ul-container {
+  /* background-color: aqua; */
+  width: 95vw;
+  margin: 0 auto;
+ }
+
+ li {
+  text-align: left;
+ }
   
   li input {
     width: 1.3rem; 
@@ -93,11 +103,11 @@ button {
   }
   ul {
     /* background-color: yellow; */
-    width: 30vw;
+    width: 55vw;
     font-size: 1.2rem;
     margin: 0 auto;
-    text-align: left;
-    justify-content: center;
+    /* text-align: right;
+    justify-content: right; */
     list-style-type: none;
     /* background-color: yellow; */
   }
@@ -163,11 +173,7 @@ font-size: 2rem;
      padding: 5px;
     border: 1px solid brown;
    }
-   #ul-container {
-    /* background-color: aqua; */
-    text-align: center;
-    justify-content: center;
-   }
+  
 
 
 /* @media screen and (min-width: 390px) {
