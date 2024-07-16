@@ -90,10 +90,12 @@ button {
   /* background-color: aqua; */
   width: 95vw;
   margin: 0 auto;
+  justify-content: center;
  }
 
  li {
   text-align: left;
+  /* background-color: yellow; */
  }
   
   li input {
@@ -105,9 +107,9 @@ button {
     /* background-color: yellow; */
     width: 55vw;
     font-size: 1.2rem;
-    margin: 0 auto;
-    /* text-align: right;
-    justify-content: right; */
+    margin:   0  auto 0 30%;
+    /* text-align: left; */
+    /* justify-content: right; */
     list-style-type: none;
     /* background-color: yellow; */
   }
