@@ -67,10 +67,11 @@ button {
 
 
 #test-canvas {
-  width: 75vw;
+  width: 55vw;
   /* background-color: yellow;  */
   margin: 0 auto;
   display: flex;
+  text-align: left;
   justify-content: center;
 
 

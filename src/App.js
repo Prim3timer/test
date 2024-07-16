@@ -256,7 +256,7 @@ setCandidate={setCandidate}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
             <sub
-            style={{top: '50vh'}} 
+            // style={{top: '50vh'}} 
             >&copy; {year} Amalu productions. All rights reserved </sub>
           </div>
                
