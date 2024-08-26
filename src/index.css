@@ -1,6 +1,7 @@
 
 #app {
   width: 100vw;
+  height: 100vh;
   text-align: center;
   justify-content: center;
   padding-bottom: 1rem;
@@ -36,9 +37,11 @@ button {
 }
 
 #test-page {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 90vw;
-  margin: 0 auto;
+  align-items: center;
+  
 }
 
 #previous {
@@ -88,8 +91,8 @@ button {
 
 #ul-container {
   /* background-color: aqua; */
-  width: 95vw;
-  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
   justify-content: center;
  }
 
@@ -104,14 +107,7 @@ button {
     margin-right: 1rem;
   }
   ul {
-    /* background-color: yellow; */
-    width: 55vw;
-    font-size: 1.2rem;
-    margin:   0  auto 0 30%;
-    /* text-align: left; */
-    /* justify-content: right; */
-    list-style-type: none;
-    /* background-color: yellow; */
+   list-style-type: none;
   }
   
   section {
