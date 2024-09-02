@@ -257,7 +257,7 @@ setCandidate={setCandidate}
             <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
             <sub
             // style={{height: '100vh'}} 
-            >&copy; {year} Amalu productions.</sub>
+            >&copy; {year} Amalu Productions.</sub>
           </div>
                
   );
