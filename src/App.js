@@ -264,7 +264,6 @@ setCandidate={setCandidate}
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
-                padding: '2rem',
               
           }}
          >
