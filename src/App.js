@@ -313,7 +313,7 @@ setCandidate={setCandidate}
       
       AND  LAST MONTH STILL $3.52.
       
-       KAMALA HARRISHAS BEEN 
+       KAMALA HARRIS HAS BEEN 
        
        SHORT ON SPECIFICS
       
