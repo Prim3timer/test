@@ -293,7 +293,7 @@ setCandidate={setCandidate}
       
       DOZEN EGGS UNDER TRUMP COST NO
       
-      MORE THAN AS $2.08 AND AS LOW AS 
+      MORE THAN $2.08 AND AS LOW AS 
       
       $1.46. UNDER BIDEN HARRIS LAST MONTH $3.20.
       
