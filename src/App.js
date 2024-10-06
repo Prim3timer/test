@@ -264,21 +264,25 @@ setCandidate={setCandidate}
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
-                padding: '2rem'
+                padding: '2rem',
+              
           }}
          >
           <article
-          style={{width: '300px',
+          style={{width: '80%',
         
           }}>
               <h2
               
               >Donald Trump gave a 24-minute Interview with Sharoll Attkisson. Here is 
-                  an excerpt on the question of inflation
+                  an excerpt on the question of inflation.
               </h2>
               <br/>
               <img src={logo}  style={{width: '300px',
-              height: '200px'}}/>
+              height: '200px',
+              float: 'left',
+                 paddingRight: '1rem'
+             }}/>
               <br/>
               <br/>
               <p >
