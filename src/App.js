@@ -10,7 +10,7 @@ import CheckResult from './checkResult'
 import TestPage from './testPage'
 import ResultSheet from './resultSheet'
 import ResultWindow from './resultWindow'
-import logo from './Screenshot_20241005-174442_YouTube.jpg'
+import logo from './facing.jpg'
 
 import Navbar from './navbar'
 import GetUsers from './users-list'
