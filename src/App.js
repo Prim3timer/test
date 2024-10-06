@@ -281,11 +281,15 @@ setCandidate={setCandidate}
               <img src={logo}  style={{width: '300px',
               height: '200px',
               float: 'left',
-                 paddingRight: '1rem'
+                 padding: '0 1rem 1rem 0',
+         
              }}/>
               <br/>
               <br/>
-              <p >
+              <p
+              //  style={{marginTop: '1rem',
+              //   backgroungColor: 'blue'}}
+              >
                   
       <span style={{fontWeight: 'bold'}}>ATTKISSON:</span> ON THE ECONOMY, AS YOU
       
