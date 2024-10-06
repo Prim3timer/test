@@ -281,7 +281,7 @@ setCandidate={setCandidate}
               <img src={logo}  style={{width: '300px',
               height: '200px',
               float: 'left',
-                 padding: '0 1rem 1rem 0',
+                 margin: '0 1rem 1rem 0',
          
              }}/>
               <br/>
