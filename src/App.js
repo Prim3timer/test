@@ -356,7 +356,7 @@ setCandidate={setCandidate}
       
       WITH PRESIDENT XI WHO I WAS  VERY I TOOK IN
       
-      HUNDREDS OF BILLIONS OF WITH HIM AND
+      HUNDREDS OF BILLIONS OF DOLLARS WITH HIM AND
       
         AND PUTIN: WE
       
