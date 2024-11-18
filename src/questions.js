@@ -75,7 +75,7 @@ let quiz = [
       id: 13,
       quiz: " What is the most populous country in the world?",
       options: ["India", "Nigeria", "USA", "China"],
-      answer: "China",
+      answer: "India",
     },
     {
       id: 14,
