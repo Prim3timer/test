@@ -84,7 +84,7 @@ const inputRef3 = useRef('')
         
               
              try {             
-                const response = await axios.post('https://https://mawuhi-back.onrender.com/results', result)
+                const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
                 // const response = await axios.post('http://localhost:3500/results', result)
                 let errorCheck = response ? '' : error.message
                 setSendError(errorCheck)
@@ -159,7 +159,7 @@ const handlePrevious =(index)=> {
 const getResult = async ()=> {
   setIsDone(false)
                   setIsAltLoading(true)
-                  const report = await axios.get(`https://https://mawuhi-back.onrender.com/results`)                  
+                  const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
                   // const report = await axios.get(`http://localhost:3500/results`)                  
                  if (report){
                     setIsAltLoading(false)
