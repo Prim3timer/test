@@ -21,7 +21,8 @@ setFinal})=> {
   
     const fetchResult = async() => {
         try {
-            const response = await axios.get('https://mawuhi-back.onrender.com/results')
+            // const response = await axios.get('https://mawuhi-back.onrender.com/results')
+            const response = await axios.get('http://localhost:3500/results')
             if (response){
                 const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate)
                 const allProps = {

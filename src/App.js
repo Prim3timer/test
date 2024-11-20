@@ -3,7 +3,7 @@
 import css from './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useState, useEffect, useRef } from "react"
-import axios, { all } from 'axios'
+import axios from 'axios'
 import quiz from './questions'
 import Assessment from './assessment'
 import CheckResult from './checkResult'
@@ -159,8 +159,8 @@ const handlePrevious =(index)=> {
 const getResult = async ()=> {
   setIsDone(false)
                   setIsAltLoading(true)
-                  const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
-                  // const report = await axios.get(`http://localhost:3500/results`)                  
+                  // const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
+                  const report = await axios.get(`http://localhost:3500/results`)                  
                  if (report){
                     setIsAltLoading(false)
                     setPresent(true)
