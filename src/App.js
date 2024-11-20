@@ -119,7 +119,6 @@ useEffect(()=> {
       colator.push('unattempted')
     } 
   }
-  console.log(colator)
   setAttempPop(true)
 }, [])
 
