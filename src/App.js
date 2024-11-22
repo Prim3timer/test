@@ -88,10 +88,10 @@ const inputRef3 = useRef('')
 
                 try {
                   const response = await axios.post('https://mawuhi-back.onrender.com/results',
-                      JSON.stringify(result),
+                      JSON.stringify({result}),
                       {
                           headers: { 'Content-Type': 'application/json' },
-                          withCredentials: true
+                          // withCredentials: true
                       }
                   );
 
