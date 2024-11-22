@@ -83,8 +83,18 @@ const inputRef3 = useRef('')
               }
         
               
-             try {             
-                const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
+            //  try {             
+                // const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
+
+                try {
+                  const response = await axios.post('https://mawuhi-back.onrender.com/results',
+                      JSON.stringify(result),
+                      {
+                          headers: { 'Content-Type': 'application/json' },
+                          // withCredentials: true
+                      }
+                  );
+
                 // const response = await axios.post('http://localhost:3500/results', result)
                 let errorCheck = response ? '' : error.message
                 setSendError(errorCheck)
@@ -169,11 +179,6 @@ const getResult = async ()=> {
                   }
 }             
          
-    const removeExcercise = async (id)=>{
-      await axios.delete(`https://dosal.onrender.com/excercises/remove/${id}`)
-      let newList = excercises.filter((excercise)=> excercise._id !== id )
-      console.log(id)
-  }
     
     const verifyName = ()=> {
       try {
