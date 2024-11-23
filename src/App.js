@@ -168,7 +168,7 @@ const handlePrevious =(index)=> {
 const getResult = async ()=> {
   setIsDone(false)
                   setIsAltLoading(true)
-                  const report = await axios.get(`https://mawuhi-back.onrender.com/results/${candidate}`)                  
+                  const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
                   // const report = await axios.get(`http://localhost:3500/results`)                  
                  if (report){
                     setIsAltLoading(false)
