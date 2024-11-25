@@ -248,7 +248,9 @@ setCandidate={setCandidate}
   arrival={arrival}
   final={final}
   setFinal={setFinal}
-  /> : <ResultSheet 
+  />
+   : 
+  <ResultSheet 
     showSheet={showSheet}
     final={final}
    candidate={candidate}
