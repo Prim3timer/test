@@ -11,7 +11,7 @@ import TestPage from './testPage'
 import ResultSheet from './resultSheet'
 import ResultWindow from './resultWindow'
 import logo from './facing.jpg'
-
+import {format} from 'date-fns'
 import Navbar from './navbar'
 import GetUsers from './users-list'
 import NameComponent from './nameComponent'
@@ -79,7 +79,7 @@ const inputRef3 = useRef('')
                   questions: qsArray,
                   attempt: colator,
                   answer: answersArray, 
-                  date: date
+                  date: format(date, 'dd/MM/yyyy HH:mm:ss')
               }
         
               
