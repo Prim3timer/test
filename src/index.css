@@ -172,13 +172,13 @@ font-size: 2rem;
   }
 
    #result-table th {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     padding: 5px;
   }
   
   #tableA td {
      padding: 5px;
-    border: 1px solid brown;
+    border-bottom: 1px solid brown;
    }
   
 

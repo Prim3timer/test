@@ -51,7 +51,7 @@ console.log(score)
                 'white' : 'palegreen'}}>
         <td
         style={{width: '5%'}}
-        >{prop.q_no}</td>
+        >{prop.q_no}.</td>
         <td className='questions'>{prop.qs}</td>
         <td style={{width: '20%'}}>{prop.attempt}</td>
         <td style={{width: '20%'}}>{prop.correctAnswer}</td>
