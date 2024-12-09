@@ -189,7 +189,7 @@ font-size: 2rem;
   }
 } */
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 585px) {
 
 
   #name-component {
