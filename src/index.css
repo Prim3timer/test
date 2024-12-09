@@ -1,4 +1,5 @@
 
+@media screen and (min-width: 586px) {
 #app {
   width: 100vw;
   height: 100vh;
@@ -171,6 +172,11 @@ font-size: 2rem;
     justify-content: center;
   }
 
+  #tableA {
+    /* font-size: 1.5rem; */
+    width: 100vw;
+  }
+
    #result-table th {
     /* border: 2px solid brown; */
     padding: 5px;
@@ -188,6 +194,7 @@ font-size: 2rem;
     font-size: 1.5rem;
   }
 } */
+  }
 
 @media screen and (max-width: 585px) {
 
