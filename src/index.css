@@ -170,7 +170,7 @@ font-size: 2rem;
   }
 
   #tableA {
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
     width: 100vw;
     max-width: 80vw;
     justify-self: center;
