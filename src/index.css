@@ -169,10 +169,12 @@ font-size: 2rem;
     justify-content: center;
   }
 
+  
+
   #tableA {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 100vw;
-    max-width: 80vw;
+    /* max-width: 80vw; */
     justify-self: center;
   }
 
@@ -201,9 +203,10 @@ font-size: 2rem;
 
 
   #tableA {
-    font-size: 1rem;
-    min-width: 160vw;
+    /* font-size: 1rem; */
+    min-width: 200vw;
     /* background-color: red; */
+    font-size: 1.5rem;
    }
 
 
