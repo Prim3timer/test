@@ -31,10 +31,11 @@ console.log(score)
     return (
         <article id='result-table'>
             <main id='cred' 
-            style={{margin: '2rem 0 0 0'}}>
+            // style={{margin: '2rem 0 0 0'}}
+            >
 
             <h2 id='name'
-              style={{margin: '0 2rem 0 0'}}
+            //   style={{margin: '0 2rem 0 0'}}
             >Name: {candidate},</h2>
             <h2 id='score'>Score: {score}%</h2>
             </main>
