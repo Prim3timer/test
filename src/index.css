@@ -143,10 +143,7 @@ button:active {
 #result-sheet {
   margin-top: 50vh;
 }
-#result-table {
-  margin: 0 auto;
-  width: 95vw;
-}
+
 #continuity {
   font-size: 1.5rem;
 }
@@ -174,7 +171,8 @@ font-size: 2rem;
 
   #tableA {
     /* font-size: 1.5rem; */
-    width: 100vw;
+    max-width: 800px;
+    justify-self: center;
   }
 
    #result-table th {
@@ -194,7 +192,9 @@ font-size: 2rem;
     font-size: 1.5rem;
   }
 } */
-
+/* #result-table {
+  max-width: 600px;
+} */
 
 @media screen and (max-width: 585px) {
 
@@ -272,10 +272,10 @@ text-align: left;
   margin: 0 1rem 1rem 0;
 }
   
-#result-table {
+/* #result-table {
   margin: 0 auto;
   width: 120vw;
-}
+} */
 #submit {
   width: 8rem;
   font-size: 1.5rem;
@@ -294,15 +294,12 @@ text-align: left;
      }
 
      #tableA {
-      width: 120%;
+      font-size: 1.5rem;
+      width: 120vw;
      }
 
      section {
       width: 90vw;
     }
-
-    
-
- 
 
 }  

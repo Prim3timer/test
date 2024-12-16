@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import quiz from './questions'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons"
 const ResultSheet = ({final, setFinal, candidate,
 next})=> {
 
@@ -39,10 +41,10 @@ console.log(score)
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>
                     <th>Q. no.</th>
-                    <th>questions</th>
+                    <th>comment</th>
                     <th>your answer</th>
                     <th>correct answer</th>
-                    <th>comment</th>
+                    <th>questions</th>
                 </tr>
             
                 {/* const {q_no, qs, yourAnswer, correctAnswer, comment} = final */}
@@ -52,11 +54,19 @@ console.log(score)
         <td
         style={{width: '5%'}}
         >{prop.q_no}.</td>
-        <td className='questions'>{prop.qs}</td>
+         {prop.attempt === prop.correctAnswer ? <td style={{color: 'green',
+            // fontSize: '1.2rem'
+        }}>
+            <FontAwesomeIcon icon={faCheck}/>
+            {/* correct */}
+            </td>
+         : <td style={{color: 'red'}}>
+                  <FontAwesomeIcon icon={faTimes}/>
+            </td>}
         <td style={{width: '20%'}}>{prop.attempt}</td>
         <td style={{width: '20%'}}>{prop.correctAnswer}</td>
-        {prop.attempt === prop.correctAnswer ? <td style={{color: 'green'}}>Right</td>
-         : <td style={{color: 'red'}}>Wrong</td>}
+        <td className='questions'>{prop.qs}</td>
+       
     </tr>
  })}
         
