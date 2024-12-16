@@ -263,7 +263,9 @@ setCandidate={setCandidate}
            <div id='app'>
             {allComponents}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
-            <h2 style={{marginLeft: '20rem'}}>{sendError}</h2>
+            <h2
+            //  style={{marginLeft: '20rem'}}
+            >{sendError}</h2>
             <sub
             // style={{height: '100vh'}} 
             >&copy; {year} Amalu Productions.</sub>
