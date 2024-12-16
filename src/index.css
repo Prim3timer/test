@@ -171,7 +171,8 @@ font-size: 2rem;
 
   #tableA {
     /* font-size: 1.5rem; */
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 80vw;
     justify-self: center;
   }
 
@@ -197,6 +198,13 @@ font-size: 2rem;
 } */
 
 @media screen and (max-width: 585px) {
+
+
+  #tableA {
+    font-size: 1rem;
+    min-width: 130vw;
+    /* background-color: red; */
+   }
 
 
   #name-component {
@@ -293,11 +301,7 @@ text-align: left;
    
      }
 
-     #tableA {
-      font-size: 1.5rem;
-      width: 120vw;
-     }
-
+    
      section {
       width: 90vw;
     }
