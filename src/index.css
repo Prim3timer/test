@@ -2,7 +2,7 @@
 
 #app {
   /* width: 100vw; */
-  height: 100vh;
+  /* height: 100vh; */
   text-align: center;
   justify-content: center;
   padding-bottom: 1rem;
@@ -165,18 +165,17 @@ font-size: 2rem;
     justify-content: center;
   } */
 #result-table {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100vw; */
 }
   
 
   #tableA {
     font-size: 1rem;
     width: 100vw;
-    /* width: 100vw; */
     /* max-width: 400px; */
     /* justify-self: center; */
   }
@@ -208,7 +207,8 @@ font-size: 2rem;
   #tableA {
     /* font-size: 1rem; */
     width: 150vw;
-    /* font-size: 1.3rem; */
+    /* margin-left: rem; */
+    font-size: 1.2rem;
    }
 
 
