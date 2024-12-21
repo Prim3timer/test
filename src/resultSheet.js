@@ -58,15 +58,17 @@ console.log(score)
     return    <tr style={{backgroundColor: index % 2 === 0 ?
                 'white' : 'palegreen'}}>
         <td
-        style={{width: '5%'}}
+        style={{width: '10%'}}
         >{prop.q_no}.</td>
          {prop.attempt === prop.correctAnswer ? <td style={{color: 'green',
-            // fontSize: '1.2rem'
+            fontSize: '1.2rem'
         }}>
             <FontAwesomeIcon icon={faCheck}/>
             {/* correct */}
             </td>
-         : <td style={{color: 'red'}}>
+         : <td style={{color: 'red',
+             fontSize: '1.2rem'
+         }}>
                   <FontAwesomeIcon icon={faTimes}/>
             </td>}
         <td style={{width: '20%'}}>{prop.attempt}</td>
