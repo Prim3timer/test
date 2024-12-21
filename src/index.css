@@ -1,16 +1,24 @@
 
 
 #app {
-  width: 100vw; 
+  /* width: 100vw; 
   height: 100vh; 
   text-align: center;
   justify-content: center;
+  padding-bottom: 1rem; */
 
-  /* display: flex;
-  flex-direction: column; 
-  justify-content: center; */
 
-  padding-bottom: 1rem;
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  justify-content: flex-start;
+  /* align-items: center; */
+  overflow-y: auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px gray;
+  /* max-width: 800px; */
 }
 
 #name-component {
@@ -179,9 +187,9 @@ font-size: 2rem;
   
 
   #tableA {
-    /* font-size: .8rem; */
+    font-size: .8rem;
     /* width: vw; */
-    /* max-width: 400px; */
+    /* width: 100vw; */
     /* justify-self: center; */
   }
 
@@ -211,7 +219,7 @@ font-size: 2rem;
 
   #tableA {
     /* font-size: 1rem; */
-    width: 150vw;
+    width: 180vw;
     /* margin-left: rem; */
     font-size: 1.2rem;
    }
