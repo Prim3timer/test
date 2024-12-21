@@ -31,6 +31,13 @@ console.log(score)
     return (
         <article id='result-table'>
             <main id='cred' 
+            style={{
+                marginTop: '2rem',
+               display: 'flex',
+               justifyContent: 'center',
+               columnGap: '1rem'
+                // backgroundColor: 'green'
+            }}
             >
 
             <h2 id='name'
