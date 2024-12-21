@@ -36,7 +36,7 @@ console.log(score)
                display: 'flex',
             //    alignItems: 'flexStart',
                columnGap: '1rem',
-               marginLeft: '1rem'
+               marginLeft: '2rem'
                 // backgroundColor: 'green'
             }}
             >
