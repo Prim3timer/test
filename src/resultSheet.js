@@ -34,8 +34,9 @@ console.log(score)
             style={{
                 marginTop: '2rem',
                display: 'flex',
-               justifyContent: 'center',
-               columnGap: '1rem'
+            //    alignItems: 'flexStart',
+               columnGap: '1rem',
+               marginLeft: '1rem'
                 // backgroundColor: 'green'
             }}
             >
@@ -67,7 +68,7 @@ console.log(score)
             {/* correct */}
             </td>
          : <td style={{color: 'red',
-             fontSize: '1.2rem'
+             fontSize: '1.2rem',
          }}>
                   <FontAwesomeIcon icon={faTimes}/>
             </td>}
