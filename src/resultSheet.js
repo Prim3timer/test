@@ -57,7 +57,7 @@ console.log(score)
                 {/* const {q_no, qs, yourAnswer, correctAnswer, comment} = final */}
  {assessmentArray.map((prop, index)=> {
     return    <tr style={{backgroundColor: index % 2 === 0 ?
-                'white' : 'palegreen'}}>
+                'white' : 'lightskyblue'}}>
         <td
         style={{width: '10%'}}
         >{prop.q_no}.</td>
