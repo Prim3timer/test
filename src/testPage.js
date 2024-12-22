@@ -66,7 +66,7 @@ const TestPage = ({ next,
       onClick={()=> handleNext(next)}
 
       >
-          <FontAwesomeIcon icon={faArrowRight}/>
+          <FontAwesomeIcon icon={faArrowRight} />
       </button>
     
       </section>
