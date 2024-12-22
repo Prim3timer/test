@@ -50,7 +50,6 @@ const TestPage = ({ next,
         style={{
           display: 'flex',
           flexDirection: 'row',
-          columnGap: '6rem',
          justifyContent: 'center'
         }}
         >
