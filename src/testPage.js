@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 const TestPage = ({ next,
     quiz,
     inputRef,
@@ -19,22 +21,41 @@ const TestPage = ({ next,
     let showSubmit = clock === 0 ? <section><button 
     id="submit"
     // style={{marginLeft: '10rem'}}
-    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section><button 
-    onClick={()=> handlePrevious(next)} 
-    id='previous'
-    >Previous</button>
-        <button onClick={()=> handleNext(next)}
-         id='next'
-        >Next</button><button onClick={(e)=> handleSubmit(e)}
-        id="submit"
-        >Submit</button></section> : <section><button 
+    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section>
+        <button 
         id= 'previous'
         onClick={()=> handlePrevious(next)}
-        >Previous</button>
+        style={{width: '6rem'}}
+        >
+       <FontAwesomeIcon icon={faArrowLeft}/>
+        </button>
+        <button 
+        id='next'
+      onClick={()=> handleNext(next)}
+      style={{width: '6rem'}}
+      >
+          <FontAwesomeIcon icon={faArrowRight}/>
+      </button>
+        <button onClick={(e)=> handleSubmit(e)}
+        id="submit"
+        >Submit</button></section> : <section>
+          <button 
+        id= 'previous'
+        onClick={()=> handlePrevious(next)}
+        style={{width: '6rem'}}
+        >
+       <FontAwesomeIcon icon={faArrowLeft}/>
+        </button>
+       
       <button 
         id='next'
       onClick={()=> handleNext(next)}
-      >Next</button></section>
+      style={{width: '6rem'}}
+      >
+          <FontAwesomeIcon icon={faArrowRight}/>
+      </button>
+    
+      </section>
 
 
 useEffect(()=> {

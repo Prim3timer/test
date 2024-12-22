@@ -64,13 +64,13 @@ console.log(score)
          {prop.attempt === prop.correctAnswer ? <td style={{color: 'green',
             fontSize: '1.2rem'
         }}>
-            <FontAwesomeIcon icon={faCheck}/>
+            <FontAwesomeIcon icon={faCheck} style={{fontWeight: 'bold'}}/>
             {/* correct */}
             </td>
          : <td style={{color: 'red',
              fontSize: '1.2rem',
          }}>
-                  <FontAwesomeIcon icon={faTimes}/>
+                  <FontAwesomeIcon icon={faTimes} />
             </td>}
         <td style={{width: '20%'}}>{prop.attempt}</td>
         <td style={{width: '20%'}}>{prop.correctAnswer}</td>
