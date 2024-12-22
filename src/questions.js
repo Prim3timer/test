@@ -144,7 +144,7 @@ let quiz = [
     {
       id: 22,
       quiz: " What is the name of the longest side of a right angled triangle?",
-      options: ["Hypotenus", "Base", "Tangent", "Adjent"],
+      options: ["Hypotenus", "Base", "Tangent", "Adjacent"],
       answer: "Hypotenus",
     },
     {
