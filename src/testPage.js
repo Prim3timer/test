@@ -18,10 +18,18 @@ const TestPage = ({ next,
     clock,
     setClock
   })=>{
-    let showSubmit = clock === 0 ? <section><button 
+    let showSubmit = clock === 0 ? <section
+    ><button 
     id="submit"
-    // style={{marginLeft: '10rem'}}
-    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section>
+ 
+    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section
+    style={{
+      display: 'flex',
+      flexDirection: 'row',
+      columnGap: '2rem',
+     justifyContent: 'center',
+    }}
+    >
         <button 
         id= 'previous'
         onClick={()=> handlePrevious(next)}
@@ -38,7 +46,14 @@ const TestPage = ({ next,
       </button>
         <button onClick={(e)=> handleSubmit(e)}
         id="submit"
-        >Submit</button></section> : <section>
+        >Submit</button></section> : <section
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          columnGap: '6rem',
+         justifyContent: 'center'
+        }}
+        >
           <button 
         id= 'previous'
         onClick={()=> handlePrevious(next)}
