@@ -234,7 +234,7 @@ font-size: 2rem;
 
   #test-page {
     width: 90vw;
-   margin-top: 2rem;
+   margin-top: 1rem;
   }
   #name-taker {
     width: 100vw;
@@ -324,6 +324,10 @@ section {
     
      section {
       width: 90vw;
+    }
+
+    #copy {
+      margin-top: 1rem;
     }
 
 }  
