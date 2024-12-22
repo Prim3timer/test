@@ -234,7 +234,7 @@ font-size: 2rem;
 
   #test-page {
     width: 90vw;
-   margin: 0 auto;
+   margin-top: 4rem;
   }
   #name-taker {
     width: 100vw;
