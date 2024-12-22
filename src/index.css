@@ -72,10 +72,10 @@ button:active {
   /* margin-right: 3rem; */
   font-size: 1.5rem;
   text-align: left;
-  flex-basis: 6rem;
+  flex-basis: 8rem;
 }
 #next {
-  flex-basis: 6rem;
+  flex-basis: 8rem;
   border-radius: 5px;
   font-size: 1.5rem;
   text-align: right;
@@ -140,7 +140,7 @@ button:active {
     /* text-align: left;   */
     width: 90vw;
     margin-top: 1rem;
-      column-gap: 8rem;
+      column-gap: 10rem;
       flex-wrap: wrap;
     }
 
