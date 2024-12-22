@@ -22,7 +22,9 @@ error})=> {
             margin: '.5rem 0 0 0'
         }}>{error}</h4><br/>
         <button id="continuity" 
-        onClick={verifyName}>Start</button> 
+        onClick={verifyName}
+        style={{borderRadius: '5px'}}
+        >Start</button> 
 </section>
     )
 }
