@@ -82,8 +82,8 @@ button:active {
   border-radius: 5px;
   margin-left: 1rem;
   font-size: 1.5rem;
-  background-color: green;
-  border-color: green;
+  background-color: forestgreen;
+  border-color: forestgreen;
 }
 
 #time-up {
