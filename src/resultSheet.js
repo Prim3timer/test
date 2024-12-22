@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import quiz from './questions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faCheck, faTimes, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 const ResultSheet = ({final, setFinal, candidate,
 next})=> {
 
@@ -41,9 +41,9 @@ console.log(score)
             }}
             >
 
-            <h2 id='name'
-            >Name: {candidate},</h2>
-            <h2 id='score'>Score: {score}%</h2>
+            <h4 id='name'
+            >Name: {candidate},</h4>
+            <h4 id='score'>Score: {score}%</h4>
             </main>
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>
