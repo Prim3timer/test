@@ -200,14 +200,10 @@ font-size: 2rem;
   
 
 
-/* @media screen and (min-width: 390px) {
-  .interview {
-    font-size: 1.5rem;
+   #copy {
+    margin-top: .5rem;
   }
-} */
-/* #result-table {
-  max-width: 600px;
-} */
+
 
 @media screen and (max-width: 585px) {
 #result-table {
