@@ -13,6 +13,7 @@ import {format} from 'date-fns'
 import Navbar from './navbar'
 import GetUsers from './users-list'
 import NameComponent from './nameComponent'
+const {v4: uuid} = require('uuid')
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
   const [submitButton, setSubmitButton] = useState(false)
   const [clock, setClock]= useState(quiz.length * 10)
   const [revisit, setRevisit]= useState(false)
+  const [id, setId] = useState('')
 
 
  
@@ -55,6 +57,7 @@ const inputRef3 = useRef('')
 
   const year = new Date().getFullYear()
               const handleSubmit = async (e)=> {
+                console.log(id)
                 e.preventDefault()
                 setStarted(false)
                 setIsLoading(true)
@@ -71,7 +74,7 @@ const inputRef3 = useRef('')
                 } 
              
                 const result = {
-                // id: 
+                id,
                   candidate: candidate,
                   q_no: qnArray,
                   questions: qsArray,
@@ -181,6 +184,7 @@ const getResult = async ()=> {
       try {
           
         if (candidate){
+          setId(uuid())
           setStarted(true)
           setStarting(false)
         }else throw new Error('Enter your name for unique ID')

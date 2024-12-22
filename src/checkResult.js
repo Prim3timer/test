@@ -24,7 +24,7 @@ setFinal
             // const response = await axios.get('http://localhost:3500/results')
             if (response){
                 console.log(response.data.questions)
-                const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate)
+                const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate )
                 const allProps = {
                     candidate:  currentResult.candidate,
                     q_no: currentResult.q_no,
@@ -49,6 +49,8 @@ setFinal
     }, [])
 
     console.log(date)
+
+  
      
     return (
         <button
