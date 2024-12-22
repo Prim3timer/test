@@ -56,7 +56,7 @@ const TestPage = ({ next,
           <button 
         id= 'previous'
         onClick={()=> handlePrevious(next)}
-        style={{width: '6rem'}}
+   
         >
        <FontAwesomeIcon icon={faArrowLeft}/>
         </button>
@@ -64,7 +64,7 @@ const TestPage = ({ next,
       <button 
         id='next'
       onClick={()=> handleNext(next)}
-      style={{width: '6rem'}}
+
       >
           <FontAwesomeIcon icon={faArrowRight}/>
       </button>
