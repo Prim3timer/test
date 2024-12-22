@@ -280,7 +280,7 @@ text-align: left;
 }
 
 section {
-  column-gap: 2rem;
+  column-gap: 4rem;
   flex-wrap: wrap;
 }
 
@@ -320,10 +320,6 @@ section {
    
      }
 
-    
-     section {
-      width: 90vw;
-    }
 
     #copy {
       margin-top: 1rem;
