@@ -124,6 +124,7 @@ button:active {
 
  li {
   text-align: left;
+  font-size: 1.2rem;
   /* background-color: yellow; */
  }
   
@@ -263,11 +264,10 @@ ul {
   font-size: 2rem;
   text-align: left;
   list-style-type: none; 
-  margin-left: 10%;
+  /* margin-left: 10%; */
   /* background-color: yellow; */
 }
 li {
-  width: 80vw;
   font-size: 1.24rem;
 }
 
@@ -301,10 +301,6 @@ section {
   text-align: center;
 }
   
-/* #result-table {
-  margin: 0 auto;
-  width: 120vw;
-} */
 #submit {
   width: 8rem;
   font-size: 1.5rem;

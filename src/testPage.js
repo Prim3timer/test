@@ -102,7 +102,9 @@ useEffect(()=>{
                 }}
                       >
                       <h5 id="clock"
-                      style={{margin: '0 1rem',
+                      style={
+                        {
+                          margin: '0 1rem',
                         color: '#008B8B'
                       }}
                   >{clock < 10 ? `:0${clock % 60}` : clock < 60 ? `:${clock % 60}`  : clock % 60 >= 10 ? `${Math.floor(clock / 60)}:${clock % 60}` : clock < 10 ? 0`${clock % 60}`:   `${Math.floor(clock / 60)}:0${clock % 60}`
