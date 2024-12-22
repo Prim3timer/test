@@ -234,7 +234,8 @@ setCandidate={setCandidate}
     <CheckResult getResult={getResult}
   setPresent={setPresent}
   setIsDone={setIsDone} 
-
+id={id}
+setId={setId}
 
   candidate={candidate}
     date={date}

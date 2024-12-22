@@ -7,7 +7,9 @@ const CheckResult = ({setPresent, setIsDone,getResult,
 showSheet,
 arrival,
 final,
-setFinal
+setFinal,
+id,
+setId
 })=> {
     const answers = quiz.map((nug)=> nug.answer)
    
@@ -24,7 +26,7 @@ setFinal
             // const response = await axios.get('http://localhost:3500/results')
             if (response){
                 console.log(response.data.questions)
-                const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate )
+                const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate && mula.uni === id )
                 const allProps = {
                     candidate:  currentResult.candidate,
                     q_no: currentResult.q_no,
