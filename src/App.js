@@ -275,7 +275,7 @@ setCandidate={setCandidate}
             //  style={{marginLeft: '20rem'}}
             >{sendError}</h2>
             <sub
-            // style={{height: '100vh'}} 
+            style={{margin: '1rem'}} 
             >&copy; {year} Amalu Productions.</sub>
           </div>
                    
