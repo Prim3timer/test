@@ -137,8 +137,9 @@ button:active {
     /* text-align: left;   */
     width: 90vw;
     margin-top: 1rem;
-    /* background-color: yellow; */
-}
+      column-gap: 8rem;
+      flex-wrap: wrap;
+    }
 
 #submitting {
   margin-top: 50vh;
