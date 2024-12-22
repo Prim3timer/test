@@ -32,7 +32,6 @@ setId
                     q_no: currentResult.q_no,
                     qs: currentResult.questions,
                     attempt: currentResult.attempt,
-                    // yourAnswer: answersArray,
                     correctAnswer: currentResult.answer,
                     // comment: ''
                 }
