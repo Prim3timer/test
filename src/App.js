@@ -5,11 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useState, useEffect, useRef } from "react"
 import axios from 'axios'
 import quiz from './questions'
-import Assessment from './assessment'
 import CheckResult from './checkResult'
 import TestPage from './testPage'
 import ResultSheet from './resultSheet'
-import ResultWindow from './resultWindow'
 import logo from './facing.jpg'
 import {format} from 'date-fns'
 import Navbar from './navbar'
@@ -120,7 +118,6 @@ const inputRef3 = useRef('')
                   colator.splice(index, 1, optionVal)
               }
             }
-            console.log(colator)
             }
 
 useEffect(()=> {
@@ -200,8 +197,8 @@ const getResult = async ()=> {
       console.log('back from lundry')
      } 
      const arrival = ()=> {
-       setPresent(false)
-      setView(true)
+       setPresent(true)
+      // setView(true)  
       console.log('on arrival')
      }
 
@@ -233,23 +230,34 @@ setCandidate={setCandidate}
     <CheckResult getResult={getResult}
   setPresent={setPresent}
   setIsDone={setIsDone} 
+
+
+  candidate={candidate}
+    date={date}
+    colator={colator}
+    quiz={quiz}
+    setView={setView}
+    setTruth={setTruth}
+    arrival={arrival}
+    final={final}
+    setFinal={setFinal}
  
   /> : isAltLoading ? <h2 id='getting'>Gettting Result</h2> : present ?
-  <Assessment
- candidate={candidate}
-  date={date}
-  setPresent={setPresent}
-  setIsDone={setIsDone}
-  colator={colator}
-  quiz={quiz}
-  getResult={getResult}
-  setView={setView}
-  setTruth={setTruth}
-  arrival={arrival}
-  final={final}
-  setFinal={setFinal}
-  />
-   : 
+//   <Assessment
+//  candidate={candidate}
+//   date={date}
+//   setPresent={setPresent}
+//   setIsDone={setIsDone}
+//   colator={colator}
+//   quiz={quiz}
+//   getResult={getResult}
+//   setView={setView}
+//   setTruth={setTruth}
+//   arrival={arrival}
+//   final={final}
+//   setFinal={setFinal}
+//   />
+//    : 
   <ResultSheet 
     showSheet={showSheet}
     final={final}
@@ -257,7 +265,7 @@ setCandidate={setCandidate}
     setCandidate={setCandidate}
     setFinal={setFinal}
     next={next}/>
-
+: ''
 
               return  (
            <div id='app'>

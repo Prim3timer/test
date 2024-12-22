@@ -48,7 +48,7 @@ console.log(score)
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>
                     <th>Q. no.</th>
-                    <th>comment</th>
+                    <th>remark</th>
                     <th>your answer</th>
                     <th>correct answer</th>
                     <th>questions</th>
