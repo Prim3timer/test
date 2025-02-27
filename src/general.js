@@ -4,13 +4,18 @@ import quiz from './questions'
 import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { FaTrashAlt } from "react-icons/fa";
+
 
 const General = ({
-    setFinal,
-    
-    setErrorMessage
+    setFinal,  
+    setErrorMessage,
+    setStarted, 
+    started
 })=> {
-    const [results, setResults] = useState(null)
+    const [results, setResults] = useState('')
+    // let [score, setScore] = useState(0)
+    const [scoreTracker, setScoreTracker] = useState(0)
     const fetchResult = async() => {
        
         try {
@@ -31,8 +36,9 @@ const General = ({
                 
                 // setFinal(allProps)   
                 setResults(response.data.questions)
-                console.log(results)
                 
+                // console.log(results)
+                console.log(response.data.questions)
             } else throw new Error('Network Error pleast try again')
             
         } catch (error) {
@@ -40,35 +46,141 @@ const General = ({
         }
         
     }
-    useEffect(()=> {
-        fetchResult()
-        // setPresent(true)
-    }, [])
-    const Result = ()=> {
+//     let assessmentArray = []
+//     // let moon = main[5][index] === main[6][index] ? score += 100 / main[5].length : score
+//     let mainMan = Object.values(results)
+//     for (let i = 0; i < quiz.length; i++){
+    //         const assessmentObject = {
+        //             q_no: mainMan[1][i], qs: mainMan[2][i], attempt: mainMan[3][i],
+        //              correctAnswer: mainMan[4][i]
+    
+        //         }
+        //         assessmentArray.push(assessmentObject)
+        //     }
+        
+        // for (let i = 0; i < quiz.length; i++){
+            //     if (assessmentArray[i].attempt === assessmentArray[i].correctAnswer){
+                //         score += 100 / quiz.length
+                //     } 
+                // }
+                
+                useEffect(()=> {
+                    fetchResult()
+                    // setPresent(true)
+                }, [])
+
+                const mainPage = () => {
+                    setStarted(true)
+                    console.log(started)
+                }
+                const Result =  ()=> {
+                    const remover = async (id) => {
+                        // await axios.delete(`/results/delete/${id}`)
+                        // await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
+                await axios.delete(`http://localhost:3500/results/delete/${id}`)
+                const getResult = results.filter((item)=> item.uni !== id)
+                console.log(getResult)
+                setResults(getResult)
+            }
+                // useEffect(()=> {
+                // }, [remover])
+            // const assertain = async (id) => {
+                //     await axios.delete(`/items/delete/${state.id}`)
+                //     const newGraw = state.items && state.items.filter((item)=> item._id !== state.id)
+                //     dispatch({type: 'items', payload: newGraw})
+                //     dispatch({type: 'cancel', payload: false})
+                // }
+                
         return (
             <div> 
-                 <table>
-            <tr style={{backgroundColor: 'aqua'}}>
-        <th>Q. no.</th>
-        <th>remark</th>
-        <th>your answer</th>
-        <th>correct answer</th>
-        <th>questions</th>
-            </tr>
-            {results && results.map((result)=> {
-             Object.values(result)
-            })}
-                </table>
+                <button
+                onClick={mainPage}
+                >Back to Test</button>
+        {
+            
+            results && results.map((result, index)=> {
+                let score = 0
+                const main = Object.values(result)
+                
+                console.log(main)
+                
+                return (
+                    <div>
+                        <h5>Name: {main[2]}</h5>
+                    {/* <h5>Score: {score} </h5> */}
+                        <table
+                        id="general"
+                        style={{
+                            border: '2px solid brown',
+                            padding: '5rem'
+                        }}
+                        >
+                                {/* <h5>{score}</h5> */}
+                               
+                         
+                                <tr
+                                
+                                >
+                                    <th>Q no.</th>
+                                    <th>remark</th>
+                                    <th>your answer</th>
+                                    <th>correct answer</th>
+                                    <th>questions</th>
+                                </tr>
+                {main[3].map((item, index)=> {
+                    return (
+                        <tbody>
+                        <tr>
+                        <td
+                        style={{
+                            display: 'none'
+                        }}
+                        >{ main[5][index] === main[6][index] ? score += 100 / main[5].length : score}</td>
+                             {/* <h5>{}</h5>  */}
+                        <td>{main[3][index]}</td> 
+                        {  main[5][index] === main[6][index] ? <td style={{color: 'green',
+            fontSize: '1.2rem'
+        }}>
+            <FontAwesomeIcon icon={faCheck} style={{fontWeight: 'bold'}}/>
+            {/* correct */}
+            </td>
+         : <td style={{color: 'red',
+            fontSize: '1.2rem',
+        }}>
+                  <FontAwesomeIcon icon={faTimes} />
+            </td>}
+                        <td>{main[5][index]}</td>
+                        <td>{main[6][index]}</td>
+                        <td>{main[4][index]}</td>
+                    <td>{score}</td>
+                    </tr>
+                </tbody>
+                 )
+                })}
+             
+               
+            </table>
+            {/* <button
+            id="del"
+            > */}
+            <FaTrashAlt role='button'
+           onClick={()=> remover(main[1])}
+           /> 
+            {/* </button> */}
+             <br/>
+             <br/>
+              
+                </div>
+        )
+    
+        
+        })}
+ 
                 </div>
             )
     }
 
     return (
-    //   results.map(()=> {
-    //    return (
-      
-    //     )
-    //   })
       <div
       >
            <Result/><br/>
