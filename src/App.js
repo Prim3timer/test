@@ -13,6 +13,7 @@ import {format} from 'date-fns'
 import Navbar from './navbar'
 import GetUsers from './users-list'
 import NameComponent from './nameComponent'
+import General from './general'
 const {v4: uuid} = require('uuid')
 
 
@@ -274,11 +275,12 @@ setId={setId}
 
               return  (
            <div id='app'>
-            {allComponents}
+            {/* {allComponents} */}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2
             //  style={{marginLeft: '20rem'}}
             >{sendError}</h2>
+            <General/>
             <sub
           id='copy'
             >&copy; {year} Amalu Productions.</sub>
