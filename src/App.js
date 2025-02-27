@@ -207,7 +207,10 @@ const getResult = async ()=> {
       console.log('on arrival')
      }
 
-  let allComponents = starting ? <NameComponent
+  let allComponents = reveal ? <General
+  setStarted={setStarted}
+  started={started}
+  /> : starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}
 setCandidate={setCandidate}
