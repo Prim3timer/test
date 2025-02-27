@@ -210,6 +210,7 @@ const getResult = async ()=> {
 
   let allComponents = reveal ? <General
   setStarted={setStarted}
+  setReveal={setReveal}
   started={started}
   /> : starting ? <NameComponent
   verifyName={verifyName}
@@ -230,6 +231,7 @@ setCandidate={setCandidate}
     handleNext={handleNext}
     radioCheck={radioCheck}
    started={started}
+   setReveal={setReveal}
    setSubmitButton={setSubmitButton}
    submitButton={submitButton}
    clock={clock}

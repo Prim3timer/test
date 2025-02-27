@@ -11,6 +11,7 @@ const General = ({
     setFinal,  
     setErrorMessage,
     setStarted, 
+    setReveal,
     started
 })=> {
     const [results, setResults] = useState('')
@@ -70,6 +71,7 @@ const General = ({
                 }, [])
 
                 const mainPage = () => {
+                    setReveal(false)
                     setStarted(true)
                     console.log(started)
                 }

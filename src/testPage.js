@@ -13,11 +13,17 @@ const TestPage = ({ next,
     radioCheck,
     handleNext,
     started,
+    setReveal,
     setSubmitButton,
     submitButton,
     clock,
     setClock
   })=>{
+
+    const showResults = () => {
+    
+      setReveal(true)
+    }
     let showSubmit = clock === 0 ? <section
     ><button 
     id="submit"
@@ -101,6 +107,9 @@ useEffect(()=>{
                       display: 'flex'
                 }}
                       >
+                         <button
+                    onClick={showResults}
+                    >View Results</button>
                       <h5 id="clock"
                       style={
                         {
