@@ -97,6 +97,9 @@ const General = ({
             <div> 
                 <button
                 onClick={mainPage}
+                style={{
+                    margin: '2rem'
+                }}
                 >Back to Test</button>
         {
             
