@@ -55,7 +55,7 @@ const inputRef1 = useRef('')
 const inputRef2 = useRef('')
 const inputRef3 = useRef('')
   const inputArray = [inputRef, inputRef1, inputRef2,  inputRef3]
-  
+  let mark = 0
 
   const year = new Date().getFullYear()
               const handleSubmit = async (e)=> {
@@ -74,20 +74,28 @@ const inputRef3 = useRef('')
                   answersArray.push(key.answer)
 
                 } 
-             
-                const result = {
-                id,
-                  candidate: candidate,
-                  q_no: qnArray,
-                  questions: qsArray,
-                  attempt: colator,
-                  answer: answersArray, 
-                  date: format(date, 'dd/MM/yyyy HH:mm:ss')
-              }
-        
+
+               for (let i = 0; i < answersArray.length; i++){
+                if (answersArray[i] === colator[i])   mark += 100 / quiz.length
+               }
+
+               
+               const result = {
+                 id,
+                 candidate: candidate,
+                 q_no: qnArray,
+                 questions: qsArray,
+                 attempt: colator,
+                 answer: answersArray, 
+                 date: format(date, 'dd/MM/yyyy HH:mm:ss'),
+                 mark
+                }
+                
+                console.log(mark)
               
              try {             
                 const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
+                // const response = await axios.post(`http://localhost:3500/results`, result)  
 
                 // try {
                 //   const response = await axios.post('https://mawuhi-back.onrender.com/results',
@@ -112,7 +120,7 @@ const inputRef3 = useRef('')
              } catch (error) {
               return sendError
              }     
-            
+             console.log(mark)
              
             }
                
@@ -123,6 +131,7 @@ const inputRef3 = useRef('')
                   colator.splice(index, 1, optionVal)
               }
             }
+            
             }
 
 useEffect(()=> {
@@ -255,21 +264,6 @@ setId={setId}
     setFinal={setFinal}
  
   /> : isAltLoading ? <h2 id='getting'>Gettting Result</h2> : present ?
-//   <Assessment
-//  candidate={candidate}
-//   date={date}
-//   setPresent={setPresent}
-//   setIsDone={setIsDone}
-//   colator={colator}
-//   quiz={quiz}
-//   getResult={getResult}
-//   setView={setView}
-//   setTruth={setTruth}
-//   arrival={arrival}
-//   final={final}
-//   setFinal={setFinal}
-//   />
-//    : 
   <ResultSheet 
     showSheet={showSheet}
     final={final}

@@ -78,8 +78,8 @@ const General = ({
                 const Result =  ()=> {
                     const remover = async (id) => {
                         // await axios.delete(`/results/delete/${id}`)
-                        // await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
-                await axios.delete(`http://localhost:3500/results/delete/${id}`)
+                        await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
+                // await axios.delete(`http://localhost:3500/results/delete/${id}`)
                 const getResult = results.filter((item)=> item.uni !== id)
                 console.log(getResult)
                 setResults(getResult)
@@ -111,8 +111,19 @@ const General = ({
                 
                 return (
                     <div>
+                         <main id='cred' 
+            style={{
+                marginTop: '2rem',
+               display: 'flex',
+            //    alignItems: 'flexStart',
+               columnGap: '1rem',
+               marginLeft: '2rem'
+                // backgroundColor: 'green'
+            }}
+            >
                         <h5>Name: {main[2]}</h5>
-                    {/* <h5>Score: {score} </h5> */}
+                    <h5>Score: {main[8]} </h5>
+                    </main>
                         <table
                         id="general"
                         style={{
@@ -135,7 +146,10 @@ const General = ({
                 {main[3].map((item, index)=> {
                     return (
                         <tbody>
-                        <tr>
+                        <tr
+                        style={{backgroundColor: index % 2 === 0 ?
+                            'white' : 'lightskyblue'}}
+                        >
                         <td
                         style={{
                             display: 'none'
@@ -157,7 +171,7 @@ const General = ({
                         <td>{main[5][index]}</td>
                         <td>{main[6][index]}</td>
                         <td>{main[4][index]}</td>
-                    <td>{score}</td>
+                    {/* <td>{score}</td> */}
                     </tr>
                 </tbody>
                  )
