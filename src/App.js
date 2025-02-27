@@ -35,6 +35,7 @@ function App() {
   const [attempPop, setAttempPop] = useState(false)
   const [view, setView]= useState(false)
   const [truth, setTruth] = useState(false)
+  const [reveal, setReveal] = useState(false)
   const [sendError, setSendError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isAltLoading, setIsAltLoading] = useState(false)
@@ -278,12 +279,12 @@ setId={setId}
 
               return  (
            <div id='app'>
-            {/* {allComponents} */}
+            {allComponents}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2
             //  style={{marginLeft: '20rem'}}
             >{sendError}</h2>
-            <General/>
+            {/* <General/> */}
             <sub
           id='copy'
             >&copy; {year} Amalu Productions.</sub>
