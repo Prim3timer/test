@@ -170,8 +170,8 @@ const handlePrevious =(index)=> {
 const getResult = async ()=> {
   setIsDone(false)
                   setIsAltLoading(true)
-                  const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
-                  // const report = await axios.get(`http://localhost:3500/results`)                  
+                  // const report = await axios.get(`https://mawuhi-back.onrender.com/results`)                  
+                  const report = await axios.get(`http://localhost:3500/results`)                  
                  if (report){
                     setIsAltLoading(false)
                     setPresent(true)
@@ -194,7 +194,6 @@ const getResult = async ()=> {
       catch (error) {
         setError(error.message)
       }
-
     }
 
     const showSheet = ()=> {
@@ -236,6 +235,7 @@ setCandidate={setCandidate}
    submitButton={submitButton}
    clock={clock}
    setClock={setClock}
+   candidate={candidate}
   setCandidate
     /> : isLoading ? <h2 id='submitting' >Submitting Work...</h2> : isDone ?
     <CheckResult getResult={getResult}

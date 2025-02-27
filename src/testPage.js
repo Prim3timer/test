@@ -17,7 +17,8 @@ const TestPage = ({ next,
     setSubmitButton,
     submitButton,
     clock,
-    setClock
+    setClock,
+    candidate
   })=>{
 
     const showResults = () => {
@@ -108,6 +109,9 @@ useEffect(()=>{
                 }}
                       >
                          <button
+                         style={{
+                          display: candidate === 'Dike' ? 'block' : 'none'
+                         }}
                     onClick={showResults}
                     >View Results</button>
                       <h5 id="clock"
