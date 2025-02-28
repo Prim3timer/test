@@ -124,7 +124,7 @@ const General = ({
             }}
             >
                         <h5>Name: {main[2]},</h5>
-                    <h5>Score: {main[8]} </h5>
+                    <h5>Score: {main[8]}% </h5>
                     </main>
                         <table
                         id="general"
