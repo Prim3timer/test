@@ -208,6 +208,10 @@ font-size: 2rem;
     margin-top: .5rem;
   }
 
+  #cred {
+    margin-left: 2rem
+}
+
 
 @media screen and (max-width: 585px) {
 #result-table {
@@ -224,6 +228,10 @@ font-size: 2rem;
     width: 180vw;
     margin-left: 18rem;
  
+   }
+
+   #cred {
+        margin-left: 20rem
    }
 
 

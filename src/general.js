@@ -119,7 +119,7 @@ const General = ({
                display: 'flex',
             //    alignItems: 'flexStart',
                columnGap: '1rem',
-               marginLeft: '20rem'
+           
                 // backgroundColor: 'green'
             }}
             >
