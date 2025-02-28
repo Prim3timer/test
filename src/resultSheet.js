@@ -3,16 +3,17 @@ import quiz from './questions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 const ResultSheet = ({final, setFinal, candidate,
+    reportCard,
 next})=> {
-
+console.log(reportCard)
     let assessmentArray = []
-    let mainMan = Object.values(final)
+    let mainMan = Object.values(reportCard)
 
 console.log(final)
 console.log(mainMan[2][0])   
 for (let i = 0; i < quiz.length; i++){
     const assessmentObject = {
-        q_no: mainMan[1][i], qs: mainMan[2][i], attempt: mainMan[3][i],
+        q_no: mainMan[3][i], qs: mainMan[4][i], attempt: mainMan[5][i],
          correctAnswer: mainMan[4][i]
     }
     assessmentArray.push(assessmentObject)

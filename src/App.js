@@ -25,6 +25,7 @@ function App() {
   const [candidate, setCandidate] = useState('')
   const [error, setError] = useState(null)
   const [final, setFinal] = useState('')
+  const [reportCard, setReportCard] = useState('')
   
 
   const [date, setDate] = useState(new Date())
@@ -184,8 +185,9 @@ const getResult = async ()=> {
                  if (report){
                     setIsAltLoading(false)
                     setPresent(true)
-                   const currentResult = report.data.questions.find((assess)=> assess.date === date)
+                   const currentResult = report.data.questions.find((assess)=> assess.ade === id)
                    console.log(currentResult)
+                    setReportCard(currentResult)
                     
                   }
 }             
@@ -268,6 +270,7 @@ setId={setId}
     showSheet={showSheet}
     final={final}
    candidate={candidate}
+   reportCard={reportCard}
     setCandidate={setCandidate}
     setFinal={setFinal}
     next={next}/>

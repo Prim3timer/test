@@ -6,11 +6,12 @@ const CheckResult = ({setPresent, setIsDone,getResult,
     candidate, date, colator,
 showSheet,
 arrival,
-final,
-setFinal,
+// final,
+// setFinal,
 id,
 setId
 })=> {
+     const [final, setFinal] = useState('')
     const answers = quiz.map((nug)=> nug.answer)
    
    
