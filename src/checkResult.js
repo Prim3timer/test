@@ -22,8 +22,8 @@ setId
   
     const fetchResult = async() => {
         try {
-            const response = await axios.get('https://mawuhi-back.onrender.com/results')
-            // const response = await axios.get('http://localhost:3500/results')
+            // const response = await axios.get('https://mawuhi-back.onrender.com/results')
+            const response = await axios.get('http://localhost:3500/results')
             if (response){
                 console.log(response.data.questions)
                 const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate && mula.uni === id )
@@ -36,23 +36,24 @@ setId
                     // comment: ''
                 }
                 setFinal(allProps)
+            
                 
             } else throw new Error('Network Error pleast try again')
             
         } catch (error) {
             setErrorMessage(error)
         }
+
         
     }
     useEffect(()=> {
         fetchResult()
-        // setPresent(true)
     }, [])
 
     console.log(date)
 
   
-     
+     console.log(final)
     return (
         <button
         // onClick={arrival} 

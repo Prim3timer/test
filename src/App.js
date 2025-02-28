@@ -88,7 +88,7 @@ const inputRef3 = useRef('')
                  attempt: colator,
                  answer: answersArray, 
                  date: format(date, 'dd/MM/yyyy HH:mm:ss'),
-                 mark
+                 mark: mark
                 }
                 
                 console.log(mark)
@@ -250,6 +250,8 @@ setCandidate={setCandidate}
     <CheckResult getResult={getResult}
   setPresent={setPresent}
   setIsDone={setIsDone} 
+  final={final}
+  setFinal={setFinal}
 id={id}
 setId={setId}
 
@@ -260,8 +262,6 @@ setId={setId}
     setView={setView}
     setTruth={setTruth}
     arrival={arrival}
-    final={final}
-    setFinal={setFinal}
  
   /> : isAltLoading ? <h2 id='getting'>Gettting Result</h2> : present ?
   <ResultSheet 

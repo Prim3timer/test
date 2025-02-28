@@ -7,12 +7,13 @@ next})=> {
 
     let assessmentArray = []
     let mainMan = Object.values(final)
-console.log(mainMan[2][0])
+
+console.log(final)
+console.log(mainMan[2][0])   
 for (let i = 0; i < quiz.length; i++){
     const assessmentObject = {
         q_no: mainMan[1][i], qs: mainMan[2][i], attempt: mainMan[3][i],
          correctAnswer: mainMan[4][i]
-
     }
     assessmentArray.push(assessmentObject)
 }
@@ -21,8 +22,7 @@ let score = 0
 for (let i = 0; i < quiz.length; i++){
     if (assessmentArray[i].attempt === assessmentArray[i].correctAnswer){
         score += 100 / quiz.length
-    }
-    
+    } 
 }
 
 
@@ -55,7 +55,7 @@ console.log(score)
                 </tr>
             
                 {/* const {q_no, qs, yourAnswer, correctAnswer, comment} = final */}
- {assessmentArray.map((prop, index)=> {
+ {assessmentArray && assessmentArray.map((prop, index)=> {
     return    <tr style={{backgroundColor: index % 2 === 0 ?
                 'white' : 'lightskyblue'}}>
         <td
