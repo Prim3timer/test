@@ -137,10 +137,7 @@ const General = ({
                                
                          
                                 <tr
-                                style={{
-                                    backgroundColor: 'lime',
-
-                                }}
+                              style={{backgroundColor: 'aqua'}}
                                 >
                                     <th>Q no.</th>
                                     <th>remark</th>
