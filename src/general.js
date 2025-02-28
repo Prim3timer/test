@@ -80,7 +80,7 @@ const General = ({
                         // await axios.delete(`/results/delete/${id}`)
                         await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
                 // await axios.delete(`http://localhost:3500/results/delete/${id}`)
-                const getResult = results.filter((item)=> item.uni !== id)
+                const getResult = results.filter((item)=> item.ade !== id)
                 console.log(getResult)
                 setResults(getResult)
             }
