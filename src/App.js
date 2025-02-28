@@ -190,7 +190,12 @@ const getResult = async ()=> {
                     setReportCard(currentResult)
                     
                   }
-}             
+}        
+
+const showResults = () => {
+    
+  setReveal(true)
+}
          
     
     const verifyName = ()=> {
@@ -247,7 +252,8 @@ setCandidate={setCandidate}
    clock={clock}
    setClock={setClock}
    candidate={candidate}
-  setCandidate
+  setCandidate={setCandidate}
+  showResults={showResults}
     /> : isLoading ? <h2 id='submitting' >Submitting Work...</h2> : isDone ?
     <CheckResult getResult={getResult}
   setPresent={setPresent}
@@ -273,6 +279,7 @@ setId={setId}
    reportCard={reportCard}
     setCandidate={setCandidate}
     setFinal={setFinal}
+    showResults={showResults}
     next={next}/>
 : ''
 

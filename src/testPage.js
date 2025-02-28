@@ -18,13 +18,11 @@ const TestPage = ({ next,
     submitButton,
     clock,
     setClock,
-    candidate
+    candidate,
+    showResults
   })=>{
 
-    const showResults = () => {
-    
-      setReveal(true)
-    }
+ 
     let showSubmit = clock === 0 ? <section
     ><button 
     id="submit"

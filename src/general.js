@@ -105,6 +105,7 @@ const General = ({
             
             results && results.map((result, index)=> {
                 let score = 0
+                console.log(result)
                 const main = Object.values(result)
                 
                 console.log(main)
@@ -135,7 +136,10 @@ const General = ({
                                
                          
                                 <tr
-                                
+                                style={{
+                                    backgroundColor: 'lime',
+
+                                }}
                                 >
                                     <th>Q no.</th>
                                     <th>remark</th>
@@ -145,7 +149,8 @@ const General = ({
                                 </tr>
                 {main[3].map((item, index)=> {
                     return (
-                        <tbody>
+                        <tbody
+                      >
                         <tr
                         style={{backgroundColor: index % 2 === 0 ?
                             'white' : 'lightskyblue'}}

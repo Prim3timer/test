@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 const ResultSheet = ({final, setFinal, candidate,
     reportCard,
-next})=> {
+showResults})=> {
 console.log(reportCard)
     let assessmentArray = []
     let mainMan = Object.values(reportCard)
@@ -41,7 +41,12 @@ console.log(score)
                 // backgroundColor: 'green'
             }}
             >
-
+ <button
+                         style={{
+                          display: candidate === 'Dike' ? 'block' : 'none'
+                         }}
+                    onClick={showResults}
+                    >View Results</button>
             <h4 id='name'
             >Name: {candidate},</h4>
             <h4 id='score'>Score: {score}%</h4>
