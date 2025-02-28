@@ -112,6 +112,7 @@ const General = ({
                 
                 return (
                     <div>
+                        <h2>RESULTS</h2>
                          <main
                           id='cred' 
             style={{
