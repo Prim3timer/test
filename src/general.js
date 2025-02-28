@@ -112,7 +112,8 @@ const General = ({
                 
                 return (
                     <div>
-                         <main id='cred' 
+                         <main
+                          id='cred' 
             style={{
                 marginTop: '2rem',
                display: 'flex',
