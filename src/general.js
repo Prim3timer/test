@@ -95,12 +95,7 @@ const General = ({
                 
         return (
             <div> 
-                <button
-                onClick={mainPage}
-                style={{
-                    margin: '2rem'
-                }}
-                >Back to Test</button>
+              
         {
             
             results && results.map((result, index)=> {
@@ -112,7 +107,7 @@ const General = ({
                 
                 return (
                     <div>
-                        <h2>RESULTS</h2>
+                      
                          <main
                           id='cred' 
             style={{
@@ -206,6 +201,13 @@ const General = ({
     return (
       <div
       >
+          <button
+                onClick={mainPage}
+                style={{
+                    margin: '2rem'
+                }}
+                >Back to Test</button>
+          <h2>RESULTS</h2>
            <Result/><br/>
        </div>
     )
