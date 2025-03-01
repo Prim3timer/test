@@ -105,9 +105,9 @@ const General = ({
                 
                 
                 return (
-                    <div>
-                      
-                      
+                    <div
+                    
+                    >
                          <main
                           id='cred' 
             style={{
@@ -139,7 +139,7 @@ const General = ({
                                     <th>remark</th>
                                     <th>your answer</th>
                                     <th>correct answer</th>
-                                    <th>questions</th>
+                                    {/* <th>questions</th> */}
                                 </tr>
                 {main[3].map((item, index)=> {
                     return (
@@ -149,13 +149,8 @@ const General = ({
                         style={{backgroundColor: index % 2 === 0 ?
                             'white' : 'lightskyblue'}}
                         >
-                        <td
-                        style={{
-                            display: 'none'
-                        }}
-                        >{ main[5][index] === main[6][index] ? score += 100 / main[5].length : score}</td>
-                             {/* <h5>{}</h5>  */}
-                        <td>{main[3][index]}</td> 
+                      
+                        <td>{main[3][index]}.</td> 
                         {  main[5][index] === main[6][index] ? <td style={{color: 'green',
             fontSize: '1.2rem'
         }}>
@@ -169,8 +164,8 @@ const General = ({
             </td>}
                         <td>{main[5][index]}</td>
                         <td>{main[6][index]}</td>
-                        <td>{main[4][index]}</td>
-                    {/* <td>{score}</td> */}
+                        { <td>{main[4][index]}</td>}
+                    { <td>{score}</td> }
                     </tr>
                 </tbody>
                  )
@@ -178,9 +173,6 @@ const General = ({
              
                
             </table>
-            {/* <button
-            id="del"
-            > */}
             <FaTrashAlt role='button'
            onClick={()=> remover(main[1])}
            /> 
@@ -200,14 +192,17 @@ const General = ({
 
     return (
       <div
+      
       >
           <button
                 onClick={mainPage}
                 style={{
-                    margin: '2rem'
+                    margin: '2rem',
+                    alignItems: 'left'
                 }}
                 >Back to Test</button>
-          <h2>RESULTS ({results.length})</h2>
+          <h2
+          >RESULTS ({results.length})</h2>
           { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
        </div>
     )
