@@ -119,8 +119,7 @@ const General = ({
                 // backgroundColor: 'green'
             }}
             >
-                        <h5>Name: {main[2]},</h5>
-                    <h5>Score: {main[8]}% </h5>
+                        
                     </main>
                     <table
                     style={{
@@ -138,13 +137,17 @@ const General = ({
                                 <th>DATE</th>
                             </tr>
                             <tr>
-                                 
+                            <td>{main[1]}</td>
+                            <td>{main[2]}</td>
+                            <td>{main[8]}</td>
+                            <td>{main[7]}</td>
+                            <td><FaTrashAlt role='button'
+           onClick={()=> remover(main[1])}
+           /></td>
                             </tr>
                         </tbody>
                     </table>
-            <FaTrashAlt role='button'
-           onClick={()=> remover(main[1])}
-           /> 
+             
             {/* </button> */}
              <br/>
              <br/>
