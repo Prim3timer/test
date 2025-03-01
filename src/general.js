@@ -12,7 +12,9 @@ const General = ({
     setErrorMessage,
     setStarted, 
     setReveal,
-    started
+    started,
+    verifyName,
+    id
 })=> {
     const [results, setResults] = useState('')
     // let [score, setScore] = useState(0)
@@ -96,95 +98,43 @@ const General = ({
         return (
             <div> 
               
-        {
-            
-            results && results.map((result, index)=> {
-                let score = 0
-                console.log(result)
-                const main = Object.values(result)
-                
-                
-                return (
-                    <div
+              <table
+              id="generalTable"
+                    style={{
+                        border: '2px solid brown',
+                        padding: '5rem'
+                    
+                    }}
                     
                     >
-                         <main
-                          id='cred' 
-            style={{
-                marginTop: '2rem',
-               display: 'flex',
-            //    alignItems: 'flexStart',
-               columnGap: '1rem',
-           
-                // backgroundColor: 'green'
-            }}
-            >
-                        <h5>Name: {main[2]},</h5>
-                    <h5>Score: {main[8]}% </h5>
-                    </main>
-                        <table
-                        id="general"
-                        style={{
-                            border: '2px solid brown',
-                            padding: '5rem'
-                        }}
-                        >
-                                {/* <h5>{score}</h5> */}
-                               
-                         
-                                <tr
-                              style={{backgroundColor: 'aqua'}}
-                                >
-                                    <th>Q no.</th>
-                                    <th>remark</th>
-                                    <th>your answer</th>
-                                    <th>correct answer</th>
-                                    <th>questions</th>
-                                </tr>
-                {main[3].map((item, index)=> {
-                    return (
-                        <tbody
-                      >
-                        <tr
-                        style={{backgroundColor: index % 2 === 0 ?
-                            'white' : 'lightskyblue'}}
-                        >
-                      
-                        <td>{main[3][index]}.</td> 
-                        {  main[5][index] === main[6][index] ? <td style={{color: 'green',
-            fontSize: '1.2rem'
-        }}>
-            <FontAwesomeIcon icon={faCheck} style={{fontWeight: 'bold'}}/>
-            {/* correct */}
-            </td>
-         : <td style={{color: 'red',
-            fontSize: '1.2rem',
-        }}>
-                  <FontAwesomeIcon icon={faTimes} />
-            </td>}
-                        <td>{main[5][index]}</td>
-                        <td>{main[6][index]}</td>
-                        { <td>{main[4][index]}</td>}
-                    {/* { <td>{score}</td> } */}
-                    </tr>
-                </tbody>
-                 )
-                })}
-             
-               
-            </table>
-            <FaTrashAlt role='button'
-           onClick={()=> remover(main[1])}
-           /> 
-            {/* </button> */}
-             <br/>
-             <br/>
-              
-                </div>
-        )
-    
-        
-        })}
+                        <tbody>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>SCORE</th>
+                                <th>DATE</th>
+                                <th>ACTION</th>
+                            </tr>
+                            {results.map((result, index)=> {
+                                return (
+                                    <tr
+                                    style={{backgroundColor: index % 2 === 0 ?
+                                        'white' : 'lightskyblue'}}
+                                    >
+                                        <td>{result.ade}</td>
+                                        <td>{result.candidate}</td>
+                                        <td>{result.mark}</td>
+                                        <td>{result.date.substring(0, 10)}</td>
+                                        <td><FaTrashAlt role='button'
+           onClick={()=> remover(result.ade)}
+           /></td>
+                                    </tr>
+                                )
+                            })}
+                    
+                        </tbody>
+                    </table>
+         
  
                 </div>
             )

@@ -202,7 +202,16 @@ font-size: 2rem;
     height: 55px;
    }
   
-
+#generalTable td, th {
+  padding: 10px;
+  border-bottom: 1px solid brown;
+  height: 55px;
+}
+#generalTable th {
+  padding: 10px;
+  border-bottom: 1px solid brown;
+  height: 55px;
+}
 
    #copy {
     margin-top: .5rem;
@@ -216,6 +225,11 @@ font-size: 2rem;
 @media screen and (max-width: 585px) {
 #result-table {
   margin-left: 18rem;
+}
+
+#generalTable {
+  margin-left: 18rem;
+  width: 180vw;
 }
 
   #tableA {
