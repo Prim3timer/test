@@ -52,12 +52,7 @@ console.log(score)
                     onClick={showResults}
                     >View Results</button>
                     <article
-                    style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        // background: 'yellow',
-                        width: '40%'
-                    }}
+                  id='strictCred'
                     >
                         
             <h4 id='name'
