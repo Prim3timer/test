@@ -224,6 +224,8 @@ const showResults = () => {
      }
 
   let allComponents = reveal ? <General
+  id={id}
+  verifyName={verifyName}
   setStarted={setStarted}
   setReveal={setReveal}
   started={started}

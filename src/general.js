@@ -12,7 +12,9 @@ const General = ({
     setErrorMessage,
     setStarted, 
     setReveal,
-    started
+    started,
+    verifyName,
+    id
 })=> {
     const [results, setResults] = useState('')
     // let [score, setScore] = useState(0)
@@ -145,6 +147,36 @@ const General = ({
            onClick={()=> remover(main[1])}
            /></td>
                             </tr>
+                            {main[3].map((item, index)=> {
+                    return (
+                        <tbody
+                      >
+                        <tr
+                        style={{backgroundColor: index % 2 === 0 ?
+                            'white' : 'lightskyblue'}}
+                        >
+                      
+                        <td>{main[3][index]}.</td> 
+                        {  main[5][index] === main[6][index] ? <td style={{color: 'green',
+            fontSize: '1.2rem'
+        }}>
+            <FontAwesomeIcon icon={faCheck} style={{fontWeight: 'bold'}}/>
+            {/* correct */}
+            </td>
+         : <td style={{color: 'red',
+            fontSize: '1.2rem',
+        }}>
+                  <FontAwesomeIcon icon={faTimes} />
+            </td>}
+                        <td>{main[5][index]}</td>
+                        <td>{main[6][index]}</td>
+                        { <td>{main[4][index]}</td>}
+                    { <td>{score}</td> }
+                    </tr>
+                </tbody>
+                 )
+                })}
+
                         </tbody>
                     </table>
              
