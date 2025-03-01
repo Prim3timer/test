@@ -48,7 +48,7 @@ console.log(score)
                     onClick={showResults}
                     >View Results</button>
             <h4 id='name'
-            >Name: {candidate},</h4>
+            >Name: {reportCard.candidate},</h4>
             <h4 id='score'>Score: {score}%</h4>
             </main>
             <table id='tableA'>

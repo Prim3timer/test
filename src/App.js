@@ -225,10 +225,15 @@ const showResults = () => {
 
   let allComponents = reveal ? <General
   id={id}
+  setId={setId}
   verifyName={verifyName}
   setStarted={setStarted}
   setReveal={setReveal}
   started={started}
+  present={present}
+  setIsLoading={setIsLoading}
+  setPresent={setPresent}
+setReportCard={setReportCard}
   /> : starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}

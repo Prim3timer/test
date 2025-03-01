@@ -14,11 +14,28 @@ const General = ({
     setReveal,
     started,
     verifyName,
-    id
+    id, setId,
+    present,
+    setPresent,
+    setIsLoading,
+    getResult,
+    setReportCard
 })=> {
     const [results, setResults] = useState('')
     // let [score, setScore] = useState(0)
     const [scoreTracker, setScoreTracker] = useState(0)
+    const showOne = async (id) => {
+        const report = await axios.get('https://mawuhi-back.onrender.com/results')
+        const currentResult = report.data.questions.find((assess)=> assess.ade === id)
+        console.log(currentResult)
+         setReportCard(currentResult)
+        setId(id)
+        console.log(id)
+        setReveal(false)
+        setStarted(false)
+        setPresent(true)
+        console.log('row your boat')
+    }
     const fetchResult = async() => {
        
         try {
@@ -120,6 +137,7 @@ const General = ({
                                     <tr
                                     style={{backgroundColor: index % 2 === 0 ?
                                         'white' : 'lightskyblue'}}
+                                        onClick={() => showOne(result.ade)}
                                     >
                                         <td>{result.ade}</td>
                                         <td>{result.candidate}</td>
