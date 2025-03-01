@@ -127,7 +127,7 @@ const General = ({
                         <tbody>
                             <tr>
                                 <th>NAME</th>
-                                <th>ID</th>
+                                <th>UNIQUE ID</th>
                                 <th>SCORE</th>
                                 <th>DATE</th>
                                 <th>ACTION</th>
@@ -170,7 +170,7 @@ const General = ({
                 }}
                 >Back to Test</button>
           <h2
-          >RESULTS ({results.length})</h2>
+          >CANDIDATE RESULTS ({results.length})</h2>
           { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
        </div>
     )
