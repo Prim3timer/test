@@ -138,7 +138,7 @@ const General = ({
                                 <th>DATE</th>
                             </tr>
                             <tr>
-                                 <td></td>
+                                 
                             </tr>
                         </tbody>
                     </table>
