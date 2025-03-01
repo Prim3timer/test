@@ -34,20 +34,22 @@ console.log(score)
             <main id='cred' 
             style={{
                 marginTop: '2rem',
+                marginBottom: '1rem',
             //    display: 'flex',
             //    alignItems: 'flexStart',
             flexDirection: 'row',
             // flexGrow: 1,
             // flexBasis: '5%',
             //    columnGap: '1rem',
-               marginLeft: '2rem'
+            // rowGap: '3rem',
+               marginLeft: '1rem'
                 // backgroundColor: 'green'
             }}
             >
  <button
                          style={{
                           display: candidate === 'Dike' ? 'block' : 'none',
-                          marginBottom: '2rem'
+                        //   marginBottom: '2rem'
                          }}
                     onClick={showResults}
                     >View Results</button>
