@@ -124,8 +124,11 @@ const General = ({
                     </main>
                     <table
                     style={{
-                        
+                        border: '2px solid brown',
+                        padding: '5rem'
+                    
                     }}
+                    
                     >
                         <tbody>
                             <tr>
@@ -133,6 +136,9 @@ const General = ({
                                 <th>NAME</th>
                                 <th>SCORE</th>
                                 <th>DATE</th>
+                            </tr>
+                            <tr>
+                                 <td></td>
                             </tr>
                         </tbody>
                     </table>
