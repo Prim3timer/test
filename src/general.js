@@ -103,10 +103,10 @@ const General = ({
                 console.log(result)
                 const main = Object.values(result)
                 
-                console.log(main)
                 
                 return (
                     <div>
+                      
                       
                          <main
                           id='cred' 
@@ -207,7 +207,7 @@ const General = ({
                     margin: '2rem'
                 }}
                 >Back to Test</button>
-          <h2>RESULTS</h2>
+          <h2>RESULTS ({results.length})</h2>
            <Result/><br/>
        </div>
     )
