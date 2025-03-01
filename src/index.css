@@ -218,7 +218,13 @@ font-size: 2rem;
   }
 
   #cred {
-    margin-left: 1rem
+    /* margin-left: 1rem */
+    display: flex;
+     column-gap: 1rem;
+     /* flex-wrap: nowrap; */
+     flex-basis: 20%;
+    /* background-color: green; */
+               /* marginLeft: '2rem' */
 }
 
 

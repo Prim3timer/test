@@ -34,22 +34,36 @@ console.log(score)
             <main id='cred' 
             style={{
                 marginTop: '2rem',
-               display: 'flex',
+            //    display: 'flex',
             //    alignItems: 'flexStart',
-               columnGap: '1rem',
+            flexDirection: 'row',
+            // flexGrow: 1,
+            // flexBasis: '5%',
+            //    columnGap: '1rem',
                marginLeft: '2rem'
                 // backgroundColor: 'green'
             }}
             >
  <button
                          style={{
-                          display: candidate === 'Dike' ? 'block' : 'none'
+                          display: candidate === 'Dike' ? 'block' : 'none',
+                          marginBottom: '2rem'
                          }}
                     onClick={showResults}
                     >View Results</button>
+                    <article
+                    style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        // background: 'yellow',
+                        width: '40%'
+                    }}
+                    >
+                        
             <h4 id='name'
             >Name: {reportCard.candidate},</h4>
             <h4 id='score'>Score: {score}%</h4>
+            </article>
             </main>
             <table id='tableA'>
                     <tr style={{backgroundColor: 'aqua'}}>

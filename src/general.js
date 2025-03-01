@@ -126,8 +126,8 @@ const General = ({
                     >
                         <tbody>
                             <tr>
-                                <th>ID</th>
                                 <th>NAME</th>
+                                <th>ID</th>
                                 <th>SCORE</th>
                                 <th>DATE</th>
                                 <th>ACTION</th>
@@ -139,8 +139,8 @@ const General = ({
                                         'white' : 'lightskyblue'}}
                                         onClick={() => showOne(result.ade)}
                                     >
-                                        <td>{result.ade}</td>
                                         <td>{result.candidate}</td>
+                                        <td>{result.ade}</td>
                                         <td>{result.mark}</td>
                                         <td>{result.date.substring(0, 10)}</td>
                                         <td><FaTrashAlt role='button'
