@@ -105,9 +105,9 @@ const General = ({
                 
                 
                 return (
-                    <div>
-                      
-                      
+                    <div
+                    
+                    >
                          <main
                           id='cred' 
             style={{
@@ -122,65 +122,16 @@ const General = ({
                         <h5>Name: {main[2]},</h5>
                     <h5>Score: {main[8]}% </h5>
                     </main>
-                        <table
-                        id="general"
-                        style={{
-                            border: '2px solid brown',
-                            padding: '5rem'
-                        }}
-                        >
-                                {/* <h5>{score}</h5> */}
-                               
-                         
-                                <tr
-                              style={{backgroundColor: 'aqua'}}
-                                >
-                                    <th>Q no.</th>
-                                    <th>remark</th>
-                                    <th>your answer</th>
-                                    <th>correct answer</th>
-                                    <th>questions</th>
-                                </tr>
-                {main[3].map((item, index)=> {
-                    return (
-                        <tbody
-                      >
-                        <tr
-                        style={{backgroundColor: index % 2 === 0 ?
-                            'white' : 'lightskyblue'}}
-                        >
-                        <td
-                        style={{
-                            display: 'none'
-                        }}
-                        >{ main[5][index] === main[6][index] ? score += 100 / main[5].length : score}</td>
-                             {/* <h5>{}</h5>  */}
-                        <td>{main[3][index]}</td> 
-                        {  main[5][index] === main[6][index] ? <td style={{color: 'green',
-            fontSize: '1.2rem'
-        }}>
-            <FontAwesomeIcon icon={faCheck} style={{fontWeight: 'bold'}}/>
-            {/* correct */}
-            </td>
-         : <td style={{color: 'red',
-            fontSize: '1.2rem',
-        }}>
-                  <FontAwesomeIcon icon={faTimes} />
-            </td>}
-                        <td>{main[5][index]}</td>
-                        <td>{main[6][index]}</td>
-                        <td>{main[4][index]}</td>
-                    {/* <td>{score}</td> */}
-                    </tr>
-                </tbody>
-                 )
-                })}
-             
-               
-            </table>
-            {/* <button
-            id="del"
-            > */}
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>id</th>
+                                <th>NAME</th>
+                                <th>SCORE</th>
+                                <th>DATE</th>
+                            </tr>
+                        </tbody>
+                    </table>
             <FaTrashAlt role='button'
            onClick={()=> remover(main[1])}
            /> 
@@ -200,14 +151,17 @@ const General = ({
 
     return (
       <div
+      
       >
           <button
                 onClick={mainPage}
                 style={{
-                    margin: '2rem'
+                    margin: '2rem',
+                    alignItems: 'left'
                 }}
                 >Back to Test</button>
-          <h2>RESULTS ({results.length})</h2>
+          <h2
+          >RESULTS ({results.length})</h2>
           { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
        </div>
     )
