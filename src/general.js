@@ -208,7 +208,7 @@ const General = ({
                 }}
                 >Back to Test</button>
           <h2>RESULTS ({results.length})</h2>
-           <Result/><br/>
+          { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
        </div>
     )
 }
