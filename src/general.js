@@ -139,7 +139,7 @@ const General = ({
                                     <th>remark</th>
                                     <th>your answer</th>
                                     <th>correct answer</th>
-                                    {/* <th>questions</th> */}
+                                    <th>questions</th>
                                 </tr>
                 {main[3].map((item, index)=> {
                     return (
@@ -165,7 +165,7 @@ const General = ({
                         <td>{main[5][index]}</td>
                         <td>{main[6][index]}</td>
                         { <td>{main[4][index]}</td>}
-                    { <td>{score}</td> }
+                    {/* { <td>{score}</td> } */}
                     </tr>
                 </tbody>
                  )
