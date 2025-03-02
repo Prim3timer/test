@@ -172,7 +172,7 @@ const General = ({
                                 <th>UNIQUE ID</th>
                                 <th>SCORE (%)</th>
                                 <th>DATE</th>
-                                <th>ACTION</th>
+                                <th>DELETE</th>
                             </tr>
                             {results.map((result, index)=> {
                                 return (
