@@ -144,7 +144,9 @@ const General = ({
               id="generalTable"
                     style={{
                         border: '2px solid brown',
-                        padding: '5rem'
+                        padding: '5rem',
+                        backgroundColor: 'yellow',
+                        justifySelf: 'center'
                     
                     }}
                     
