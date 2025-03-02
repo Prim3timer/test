@@ -124,7 +124,8 @@ const inputRef3 = useRef('')
              console.log(mark)
              
             }
-               
+
+                         
             const attemptTracker = (e, index)=> {
               let optionVal = e.target.value
               for (let key of inputArray) {
@@ -203,6 +204,8 @@ const showResults = () => {
           
         if (candidate){
           setId(uuid())
+          console.log(uuid())
+          console.log(id)
           setStarted(true)
           setStarting(false)
         }else throw new Error('Enter your name for unique ID')

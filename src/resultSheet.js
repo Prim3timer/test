@@ -63,7 +63,7 @@ console.log(score)
             </article>
             </main>
             <table id='tableA'>
-                    <tr style={{backgroundColor: 'aqua'}}>
+                    <tr style={{backgroundColor: 'cadetblue'}}>
                     <th>Q. no.</th>
                     <th>remark</th>
                     <th>your answer</th>
@@ -91,8 +91,7 @@ console.log(score)
             </td>}
         <td style={{width: '20%'}}>{prop.attempt}</td>
         <td style={{width: '20%'}}>{prop.correctAnswer}</td>
-        <td className='questions'>{prop.qs}</td>
-       
+        <td className='questions'>{prop.qs}</td>      
     </tr>
  })}
         
