@@ -286,7 +286,9 @@ width: '40%',
        type="text"
        role="searchbox"     
        placeholder="Search items by name"
-       style={{ margin: '.5rem 0',   fontSize: '1.5rem',}}
+       style={{ margin: '.5rem 0',   fontSize: '1.5rem',
+        width: '30%'
+       }}
        value={search}
        onChange={(e)=> setSearch(e.target.value)}
              
