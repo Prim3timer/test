@@ -139,7 +139,7 @@ const General = ({
                             >
                                 <th>NAME</th>
                                 <th>UNIQUE ID</th>
-                                <th>SCORE%</th>
+                                <th>SCORE (%)</th>
                                 <th>DATE</th>
                                 <th>ACTION</th>
                             </tr>
