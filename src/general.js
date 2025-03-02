@@ -25,6 +25,10 @@ const General = ({
     const [results, setResults] = useState('')
  const [cancel, setCancel] = useState(false)
  const [taskComplete, setTaskComplete] = useState(false)
+ const [search, setSearch] = useState('')
+
+ const resultRef = useRef()
+
     const showOne = async (id) => {
         const report = await axios.get('https://mawuhi-back.onrender.com/results')
         const currentResult = report.data.questions.find((assess)=> assess.ade === id)
@@ -116,6 +120,33 @@ const General = ({
                     setTaskComplete(false)
                 }, 3000)
             }
+
+            const getTrans = async ()=> {
+                // e.preventDefault()
+                try {
+                    const graw = await axios.get('https://mawuhi-back.onrender.com/results')
+                    // console.log(graw.data.items)
+                    if (graw.data.questions.length > 0) {
+                        setResults(graw.data.questions)
+                        // console.log(state.items.data)
+                        
+                        const filterate = graw.data.questions.filter((inner)=> inner.candidate.toLowerCase().includes(search.toLowerCase()))
+                       setResults(filterate)
+                        }
+                        
+                        
+                        
+                    } catch (error) {
+                    console.log(error)
+                }
+                // resultRef.current.focus( )
+            }
+
+            useEffect(()=> {
+                getTrans()
+               
+                
+        }, [search])
           
                 
         return (
@@ -249,6 +280,21 @@ width: '40%',
                     alignItems: 'left'
                 }}
                 >Back to Test</button>
+                  <form>
+               <input 
+        ref={resultRef}
+       type="text"
+       role="searchbox"     
+       placeholder="Search items by name"
+       style={{ margin: '.5rem 0'}}
+       value={search}
+       onChange={(e)=> setSearch(e.target.value)}
+   
+      
+           // https://www.npmjs.com/package/@react-google-maps/api
+       
+       />
+       </form>
           <h2
           >CANDIDATE RESULTS ({results.length})</h2>
           { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
