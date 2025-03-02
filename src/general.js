@@ -143,10 +143,11 @@ const General = ({
               <table
               id="generalTable"
                     style={{
-                        border: '2px solid brown',
-                        padding: '5rem',
-                        backgroundColor: 'yellow',
-                        justifySelf: 'center'
+                        // border: '2px solid brown',
+                        // padding: '5rem',
+                        // backgroundColor: 'yellow',
+                        justifyContent: 'center',
+                        display: 'flex'
                     
                     }}
                     
