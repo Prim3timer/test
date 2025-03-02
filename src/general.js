@@ -286,10 +286,10 @@ width: '40%',
        type="text"
        role="searchbox"     
        placeholder="Search items by name"
-       style={{ margin: '.5rem 0'}}
+       style={{ margin: '.5rem 0',   fontSize: '1.5rem',}}
        value={search}
        onChange={(e)=> setSearch(e.target.value)}
-   
+             
       
            // https://www.npmjs.com/package/@react-google-maps/api
        
