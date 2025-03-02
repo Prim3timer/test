@@ -153,7 +153,7 @@ const General = ({
                     >
                         <tbody>
                             <tr
-                            style={{backgroundColor: 'darkcyan'}}
+                            style={{backgroundColor: 'thistle'}}
                             >
                                 <th>NAME</th>
                                 <th>UNIQUE ID</th>
