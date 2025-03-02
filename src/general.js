@@ -283,11 +283,13 @@ width: '40%',
                   <form>
                <input 
         ref={resultRef}
+        id="searcher"
        type="text"
        role="searchbox"     
        placeholder="Search items by name"
        style={{ margin: '.5rem 0',   fontSize: '1.5rem',
-        width: '30%'
+        border: 'black 2px solid',
+
        }}
        value={search}
        onChange={(e)=> setSearch(e.target.value)}

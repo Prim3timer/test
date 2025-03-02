@@ -229,8 +229,16 @@ font-size: 2rem;
         /* background-color: yellow; */
  }
 
+ #searcher {
+  width: '70%'
+}
+
 
 @media screen and (max-width: 585px) {
+
+  #searcher {
+            width: '30%'
+  }
 #result-table {
   margin-left: 18rem;
 }
