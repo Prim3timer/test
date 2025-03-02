@@ -19,11 +19,11 @@ const General = ({
     setPresent,
     setIsLoading,
     getResult,
+    reportCard,
     setReportCard
 })=> {
     const [results, setResults] = useState('')
-    // let [score, setScore] = useState(0)
-    const [scoreTracker, setScoreTracker] = useState(0)
+ const [cancel, setCancel] = useState(false)
     const showOne = async (id) => {
         const report = await axios.get('https://mawuhi-back.onrender.com/results')
         const currentResult = report.data.questions.find((assess)=> assess.ade === id)
@@ -36,6 +36,29 @@ const General = ({
         setPresent(true)
         console.log('row your boat')
     }
+
+    const remain = ()=> {
+        setCancel(false)
+    }
+    
+    const clearer = ()=> {
+        setCancel(false)
+    }
+    
+    const assertain = async (candID)=> {
+        setId(candID)
+        console.log(id)
+        const response = await axios.get('https://mawuhi-back.onrender.com/results')
+        if (response){
+            const currentResult =  response.data.questions.find((item)=> item.ade == candID)
+            setReportCard(currentResult)
+            console.log(reportCard)
+            // console.log(response)
+
+        }
+        setCancel(true)
+    }
+    
     const fetchResult = async() => {
        
         try {
@@ -97,10 +120,12 @@ const General = ({
                 const Result =  ()=> {
                     const remover = async (id) => {
                         // await axios.delete(`/results/delete/${id}`)
+                        setCancel(true)
                         await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
                 // await axios.delete(`http://localhost:3500/results/delete/${id}`)
                 const getResult = results.filter((item)=> item.ade !== id)
                 console.log(getResult)
+                setCancel(false)
                 setResults(getResult)
             }
                 // useEffect(()=> {
@@ -125,10 +150,12 @@ const General = ({
                     
                     >
                         <tbody>
-                            <tr>
+                            <tr
+                            style={{backgroundColor: 'darkcyan'}}
+                            >
                                 <th>NAME</th>
                                 <th>UNIQUE ID</th>
-                                <th>SCORE</th>
+                                <th>SCORE%</th>
                                 <th>DATE</th>
                                 <th>ACTION</th>
                             </tr>
@@ -137,14 +164,29 @@ const General = ({
                                     <tr
                                     style={{backgroundColor: index % 2 === 0 ?
                                         'white' : 'lightskyblue'}}
-                                        onClick={() => showOne(result.ade)}
+                                      
                                     >
-                                        <td>{result.candidate}</td>
-                                        <td>{result.ade}</td>
-                                        <td>{result.mark}</td>
-                                        <td>{result.date.substring(0, 10)}</td>
+                                        <td
+                                        style={{
+                                            fontWeight: 'bold'
+                                        }}
+                                          onClick={() => showOne(result.ade)}
+                                         
+                                        >{result.candidate}</td>
+                                        <td
+                                         onClick={() => showOne(result.ade)}
+                                        >{result.ade}</td>
+                                        <td
+                                          style={{
+                                            fontWeight: 'bold'
+                                        }}
+                                           onClick={() => showOne(result.ade)}
+                                        >{result.mark}</td>
+                                        <td
+                                           onClick={() => showOne(result.ade)}
+                                        >{result.date.substring(0, 10)}</td>
                                         <td><FaTrashAlt role='button'
-           onClick={()=> remover(result.ade)}
+          onClick={() =>assertain(result.ade)}
            /></td>
                                     </tr>
                                 )
@@ -153,7 +195,57 @@ const General = ({
                         </tbody>
                     </table>
          
- 
+                    <section
+id="trans-verify-section"
+
+>
+    {cancel ? <div
+  style={{
+    display: `${cancel ? 'block' : 'none'}`,
+    position: 'absolute',
+textAlign: 'center',
+top: '35%',
+left: '5%',
+width: '90%',
+ padding: '1rem',
+   backgroundColor: '#DBBFDB',
+   borderRadius: '5px',
+   opacity: '.85'
+}}
+    >   <h3
+    id="verify-header"
+    style={{
+        margin: '.5rem auto',
+      //   display: 'flex',
+    }}
+    >Are you sure you want to delete "{reportCard.candidate}" ?</h3>
+        <article
+        style={{
+            display: 'flex',
+            flexDirection: 'row',
+            columnGap: '4vw',
+            justifyContent: 'center',
+        }}
+        ><button
+        onClick={remain}
+        >No</button><button
+        onClick={() => remover(id)}
+       style={{backgroundColor: 'red',
+           borderColor: 'red'
+       }}
+       >Yes</button></article></div> : <div
+        style={{
+            display: 'flex',
+            flexDirection: 'row',
+            columnGap: '4vw',
+            justifyContent: 'center',
+            margin: '1rem 0'
+        }}
+        >
+          
+            </div>}
+
+</section>
                 </div>
             )
     }
@@ -172,7 +264,62 @@ const General = ({
           <h2
           >CANDIDATE RESULTS ({results.length})</h2>
           { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
+
+         
        </div>
     )
 }
 export default General
+
+
+   
+{/* <section
+id="trans-verify-section"
+
+>
+    {state.cancel ? <div
+   style={{
+    margin: '1rem auto',
+    padding: '1rem auto',
+      backgroundColor: '#DBBFDB',
+      borderRadius: '5px',
+      width: '98vw'
+}}
+    ><h3
+    id="verify-header"
+    style={{
+        margin: '.5rem'
+    }}
+    >Are you sure you want to cancel
+        the transaction?</h3>
+        <article
+        style={{
+            display: 'flex',
+            flexDirection: 'row',
+            columnGap: '4vw',
+            justifyContent: 'center',
+        }}
+        ><button
+        onClick={remain}
+        >No</button><button
+        onClick={clearer}
+        style={{backgroundColor: 'red',
+            borderColor: 'red'
+        }}
+        >Yes</button></article></div> : <div
+        style={{
+            display: 'flex',
+            flexDirection: 'row',
+            columnGap: '4vw',
+            justifyContent: 'center',
+            margin: '1rem 0'
+        }}
+        >
+             <button onClick={assertain}
+           
+            // onClick={assertain}
+             >Cancel</button>
+             <button onClick={doneSales}>Done</button>
+            </div>}
+
+</section> */}

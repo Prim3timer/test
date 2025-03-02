@@ -234,6 +234,7 @@ const showResults = () => {
   setIsLoading={setIsLoading}
   setPresent={setPresent}
 setReportCard={setReportCard}
+reportCard={reportCard}
   /> : starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}
