@@ -1,4 +1,5 @@
 import ResultSheet from "./resultSheet"
+import AllResults from "./allResults"
 import React, { useState, useEffect, useRef } from "react"
 import quiz from './questions'
 import axios from "axios"
@@ -20,9 +21,13 @@ const General = ({
     setIsLoading,
     getResult,
     reportCard,
-    setReportCard
+    setReportCard,
+    results,
+    setResults,
+    allResults,
+    setAllResults
 })=> {
-    const [results, setResults] = useState('')
+
  const [cancel, setCancel] = useState(false)
  const [taskComplete, setTaskComplete] = useState(false)
  const [search, setSearch] = useState('')
@@ -105,13 +110,30 @@ const General = ({
                     setStarted(true)
                     console.log(started)
                 }
-                const Result =  ()=> {
+
+
+                // const AllResults = () => {
+           
+                //         return results && results.map((result)=> {
+                //             console.log(result)
+                //             return <ResultSheet reportCard={result}/>
+                //         })
+                // }
+
+                const changePages = () => {
+                    if (allResults) setAllResults(false)
+                        else setAllResults(true)
+                }    
+                const Result =  ({
+                    // results,
+                    // setResults
+                })=> {
                     const remover = async (id) => {
                         // await axios.delete(`/results/delete/${id}`)
                         setCancel(true)
                         await axios.delete(`https://mawuhi-back.onrender.com/results/delete/${id}`)
                 // await axios.delete(`http://localhost:3500/results/delete/${id}`)
-                const getResult = results.filter((item)=> item.ade !== id)
+                const getResult = results && results.filter((item)=> item.ade !== id)
                 console.log(getResult)
                 setCancel(false)
                 setResults(getResult)
@@ -148,10 +170,10 @@ const General = ({
                 
         }, [search])
           
-                
+        
         return (
             <div> 
-              
+        
               <table
               id="generalTable"
                     style={{
@@ -174,7 +196,7 @@ const General = ({
                                 <th>DATE</th>
                                 <th>DELETE</th>
                             </tr>
-                            {results.map((result, index)=> {
+                            {results && results.map((result, index)=> {
                                 return (
                                     <tr
                                     style={{backgroundColor: index % 2 === 0 ?
@@ -280,6 +302,9 @@ width: '40%',
                     alignItems: 'left'
                 }}
                 >Back to Test</button>
+                <button
+                onClick={changePages}
+                >Sheets</button>
                   <form>
                <input 
         ref={resultRef}
@@ -301,9 +326,14 @@ width: '40%',
        </form>
           <h2
           >CANDIDATE RESULTS ({results.length})</h2>
-          { !results  ? <h3>Loading...</h3> : <Result/>}<br/>
+          {/* { !results  ? <h3>Loading...</h3> : <Result/>}<br/> */}
 
-         
+          
+            {allResults ?  <AllResults
+                 results={results}
+                 /> : <Result/>}    
+
+
        </div>
     )
 }

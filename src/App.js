@@ -26,8 +26,7 @@ function App() {
   const [error, setError] = useState(null)
   const [final, setFinal] = useState('')
   const [reportCard, setReportCard] = useState('')
-  
-
+      const [results, setResults] = useState('')
   const [date, setDate] = useState(new Date())
   const [starting, setStarting] = useState(true)
   const [started, setStarted] = useState(false)
@@ -44,6 +43,7 @@ function App() {
   const [clock, setClock]= useState(quiz.length * 10)
   const [revisit, setRevisit]= useState(false)
   const [id, setId] = useState('')
+  const [allResults, setAllResults] = useState(false)
 
 
  
@@ -276,6 +276,10 @@ const showResults = () => {
   setPresent={setPresent}
 setReportCard={setReportCard}
 reportCard={reportCard}
+results={results}
+allResults={allResults}
+setAllResults={setAllResults}
+setResults={setResults}
   /> : starting ? <NameComponent
   verifyName={verifyName}
   candidate={candidate}
