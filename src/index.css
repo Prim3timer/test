@@ -237,7 +237,9 @@ font-size: 2rem;
 @media screen and (max-width: 585px) {
 
   #searcher {
-            width: '25%'
+            width: '25%';
+            /* background-color: blue; */
+            
   }
 #result-table {
   margin-left: 18rem;

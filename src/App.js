@@ -125,7 +125,43 @@ const inputRef3 = useRef('')
              
             }
 
-                         
+            const getForeign = async () => {
+              const chekered = await axios.get('https://dosal.onrender.com/results')
+              console.log(chekered)
+              if (chekered){
+                console.log(chekered.data.questions)
+                const oneChekered = chekered.data.questions.find((item)=> item._id === '66268fe13befb5723ec2a88a')
+                console.log(oneChekered)
+
+                console.log(oneChekered.q_no.length)
+
+                for (let i = 0; i < oneChekered.q_no.length; i++){
+                  if (oneChekered.attempt[i] === oneChekered.answer[i])   mark += 100 / quiz.length
+                 }
+  
+                 
+                 const result = {
+                   id: uuid(),
+                   candidate: oneChekered.candidate,
+                   q_no: oneChekered.q_no,
+                   questions: oneChekered.questions,
+                   attempt: oneChekered.attempt,
+                   answer: oneChekered.answer, 
+                   date: oneChekered.date,
+                   mark: mark
+                  }
+                  console.log(result)
+
+                  const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
+              }
+
+          
+              
+            
+
+              
+            }
+               
             const attemptTracker = (e, index)=> {
               let optionVal = e.target.value
               for (let key of inputArray) {
@@ -166,6 +202,8 @@ const radioCheck = ()=> {
     }
   }
 }
+
+
 
   useEffect(()=> {
     radioCheck()

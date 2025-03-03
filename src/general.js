@@ -42,6 +42,7 @@ const General = ({
         console.log('row your boat')
     }
 
+ 
     const remain = ()=> {
         setCancel(false)
     }
@@ -97,7 +98,6 @@ const General = ({
                 
                 useEffect(()=> {
                     fetchResult()
-                    // setPresent(true)
                 }, [])
 
                 const mainPage = () => {
@@ -288,7 +288,7 @@ width: '40%',
        role="searchbox"     
        placeholder="Search items by name"
        style={{ margin: '.5rem 0',   fontSize: '1.5rem',
-        border: 'black 2px solid',
+        border: '2px solid ingigo',
 
        }}
        value={search}
