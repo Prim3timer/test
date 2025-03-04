@@ -188,7 +188,7 @@ const General = ({
                     >
                         <tbody>
                             <tr
-                            style={{backgroundColor: 'thistle'}}
+                            style={{backgroundColor: '#4DE0D0'}}
                             >
                                 <th>NAME</th>
                                 <th>UNIQUE ID</th>
@@ -200,7 +200,7 @@ const General = ({
                                 return (
                                     <tr
                                     style={{backgroundColor: index % 2 === 0 ?
-                                        'white' : 'lightskyblue'}}
+                                        'white' : '#AFEEEE'}}
                                       
                                     >
                                         <td
@@ -329,7 +329,7 @@ width: '40%',
           {/* { !results  ? <h3>Loading...</h3> : <Result/>}<br/> */}
 
           
-            {allResults ?  <AllResults
+            {  <h3>Loading...</h3> && allResults ?  <AllResults
                  results={results}
                  /> : <Result/>}    
 
