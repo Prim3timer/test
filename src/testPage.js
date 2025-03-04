@@ -106,12 +106,7 @@ useEffect(()=>{
                       display: 'flex'
                 }}
                       >
-                         <button
-                         style={{
-                          display: candidate === 'Dike' ? 'block' : 'none'
-                         }}
-                    onClick={showResults}
-                    >View Results</button>
+                       
                       <h5 id="clock"
                       style={
                         {
@@ -124,6 +119,12 @@ useEffect(()=>{
                   <h3 id="time-up"
                       >{clock === 0 ? `Time's Up` : ''}
                       </h3>
+                      <button
+                         style={{
+                          display: candidate === 'Dike' ? 'block' : 'none'
+                         }}
+                    onClick={showResults}
+                    >View Results</button>
                       </article>
                       <article id='test-canvas'>
                
