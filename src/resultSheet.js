@@ -55,7 +55,7 @@ console.log(score)
                     >View Results</button>
                     <article
                   id='strictCred'
-                  style={{color: 'crimson'}}
+                  style={{color: 'darkslateblue'}}
                     >
                         
             <h4 id='name'

@@ -325,7 +325,7 @@ width: '40%',
        />
        </form>
           <h3
-          style={{color: 'crimson'}}
+          style={{color: 'darkslateblue'}}
           >CANDIDATE RESULTS ({results.length})</h3>
           {/* { !results  ? <h3>Loading...</h3> : <Result/>}<br/> */}
 
