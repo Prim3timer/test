@@ -195,6 +195,10 @@ font-size: 2rem;
     border-bottom: 1px solid brown;
     height: 55px;
    }
+
+   #tableA th {
+    height: 60px;
+   }
   
 #generalTable td {
   padding: 10px;

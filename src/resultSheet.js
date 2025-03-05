@@ -63,7 +63,7 @@ console.log(score)
             </article>
             </main>
             <table id='tableA'>
-                    <tr style={{backgroundColor: 'cadetblue'}}>
+                    <tr style={{backgroundColor: 'powderblue'}}>
                     <th>Q. no.</th>
                     <th>remark</th>
                     <th>your answer</th>
