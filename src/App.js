@@ -95,7 +95,7 @@ const inputRef3 = useRef('')
                 console.log(mark)
               
              try {             
-                const response = await axios.post('https://mawuhi-back.onrender.com/results', result)
+                const response = await axios.post('https://mawuhi-back.onrender.com/resultst', result)
                 // const response = await axios.post(`http://localhost:3500/results`, result)  
 
                 // try {
@@ -106,8 +106,6 @@ const inputRef3 = useRef('')
                 //           // withCredentials: true
                 //       }
                 //   );
-
-                // const response = await axios.post('http://localhost:3500/results', result)
                 let errorCheck = response ? '' : error.message
                 setSendError(errorCheck)
               if (response){

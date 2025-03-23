@@ -37,7 +37,7 @@ const General = ({
     const showOne = async (id) => {
         const report = await axios.get('https://mawuhi-back.onrender.com/results')
         const currentResult = report.data.questions.find((assess)=> assess.ade === id)
-        console.log(currentResult)
+        // console.log(currentResult)
          setReportCard(currentResult)
         setId(id)
         console.log(id)
@@ -59,10 +59,9 @@ const General = ({
     const assertain = async (candID)=> {
         setId(candID)
         console.log(id)
-        const response = await axios.get('https://mawuhi-back.onrender.com/results')
+        const response =  results.find((item)=> item.ade == candID)
         if (response){
-            const currentResult =  response.data.questions.find((item)=> item.ade == candID)
-            setReportCard(currentResult)
+            setReportCard(response)
             console.log(reportCard)
             // console.log(response)
 
