@@ -35,16 +35,12 @@ const General = ({
  const resultRef = useRef()
 
     const showOne = async (id) => {
-        const report = await axios.get('https://mawuhi-back.onrender.com/results')
-        const currentResult = report.data.questions.find((assess)=> assess.ade === id)
-        // console.log(currentResult)
+     const currentResult = results.find((assess)=> assess.ade === id)
          setReportCard(currentResult)
-        setId(id)
         console.log(id)
         setReveal(false)
         setStarted(false)
         setPresent(true)
-        console.log('row your boat')
     }
 
  
@@ -76,18 +72,6 @@ const General = ({
             // const response = await axios.get('http://localhost:3500/results')
             if (response){
                 console.log(response.data.questions)
-                // const currentResult =  response.data.questions.find((mula)=> mula.candidate === candidate)
-                // const allProps = {
-                //     candidate:  currentResult.candidate,
-                //     q_no: currentResult.q_no,
-                //     qs: currentResult.questions,
-                //     attempt: currentResult.attempt,
-                //     // yourAnswer: answersArray,
-                //     correctAnswer: currentResult.answer,
-                //     // comment: ''
-                // }
-                
-                // setFinal(allProps)   
                 setResults(response.data.questions)
                 
                 // console.log(results)
@@ -109,15 +93,6 @@ const General = ({
                     setStarted(true)
                     console.log(started)
                 }
-
-
-                // const AllResults = () => {
-           
-                //         return results && results.map((result)=> {
-                //             console.log(result)
-                //             return <ResultSheet reportCard={result}/>
-                //         })
-                // }
 
                 const changePages = () => {
                     if (allResults) setAllResults(false)
@@ -333,7 +308,7 @@ width: '40%',
                  results={results}
                  /> : <Result/>}    
 
-
+                
        </div>
     )
 }

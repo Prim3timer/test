@@ -205,6 +205,7 @@ const radioCheck = ()=> {
 
   useEffect(()=> {
     radioCheck()
+    // getForeign()
 }, [next])
 
 const handlePrevious =(index)=> {
