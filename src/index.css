@@ -325,12 +325,19 @@ font-size: 2rem;
   /* background-color: blue; */
 }
 
+#ul-container {
+  /* background-color: green; */
+  width: 80%;
+  align-items: center;
+  /* justify-content: center; */
+}
+
 ul {
-  width: 80vw;
   padding: 0 0 1rem 0;
   font-size: 2rem;
   text-align: left;
   list-style-type: none; 
+  /* width: 100vw; */
   /* margin-left: 10%; */
   /* background-color: yellow; */
 }
