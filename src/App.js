@@ -59,9 +59,8 @@ const inputRef3 = useRef('')
   let mark = 0
 
   const year = new Date().getFullYear()
-              const handleSubmit = async (e)=> {
+              const handleSubmit = async ()=> {
                 console.log(id)
-                e.preventDefault()
                 setStarted(false)
                 setIsLoading(true)
                 const qnArray = []
@@ -337,15 +336,18 @@ setId={setId}
 
               return  (
            <div id='app'>
+            <p
+            id='header'
+            >Auto Tester</p>
             {allComponents}
             {/* <i class="fa fa-caret-left" aria-hidden='true'></i> */}
             <h2
             //  style={{marginLeft: '20rem'}}
             >{sendError}</h2>
             {/* <General/> */}
-            <sub
+            <p
           id='copy'
-            >&copy; {year} Amalu Productions.</sub>
+            >&copy; {year} Amalu Productions.</p>
           </div>
                    
   );

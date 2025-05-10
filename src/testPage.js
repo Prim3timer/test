@@ -27,7 +27,7 @@ const TestPage = ({ next,
     ><button 
     id="submit"
  
-    onClick={(e)=> handleSubmit(e)}>Submit</button></section> : submitButton ? <section
+    onClick={handleSubmit}>View Result</button></section> : submitButton ? <section
     style={{
       display: 'flex',
       flexDirection: 'row',
@@ -76,7 +76,6 @@ const TestPage = ({ next,
     
       </section>
 
-
 useEffect(()=> {
   const interval = setInterval(()=>{
       if (started === true) {
@@ -84,6 +83,7 @@ useEffect(()=> {
       }
     }, 1000)
     if (clock < 1) {
+    handleSubmit()
       setClock(0)
     }
     return ()=> clearInterval(interval)
@@ -101,7 +101,7 @@ useEffect(()=>{
                     <div key={exam.id} id="test-page">
                       <article
                     style={{
-                      margin: '1rem  0 .5rem 0',
+                      // margin: '1rem  0 .5rem 0',
                     justifyContent: 'center',
                       display: 'flex'
                 }}
