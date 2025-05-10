@@ -22,7 +22,7 @@
   flex-direction: column;
   /* background-color: red; */
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   overflow-y: auto;
   border: 1px solid black;
   box-shadow: 0px 0px 15px gray;
@@ -35,9 +35,9 @@
   max-width: 70vw;
   margin: 0 auto;
   text-align: center;
-    min-height: 80vh;
+    min-height: 100vh;
   overflow-y: auto;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   
 }
@@ -51,7 +51,7 @@
   /* font-weight: bold; */
   padding: .5rem 0;
   position: fixed;
-  background-color: wheat;
+  background-color: palevioletred;
   width: 100%;
   /* font-size: 1.5rem; */
   text-align: center; 
