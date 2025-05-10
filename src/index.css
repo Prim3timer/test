@@ -13,8 +13,9 @@
 #app {
   width: 100vw; 
   /* min-height: 100vh;  */
+  flex-grow: 1;
   text-align: center;
-  /* padding-bottom: 1rem; */
+  padding: 1rem 0;
   /* background: radial-gradient(circle at 70%, rgb(92, 144, 88), rgb(51, 221, 139));   */
   min-height: 100vh;
   display: flex;
@@ -34,26 +35,37 @@
   max-width: 70vw;
   margin: 0 auto;
   text-align: center;
-  min-height: 100vh;
+    min-height: 80vh;
+  overflow-y: auto;
   /* justify-content: center; */
   align-items: center;
   
 }
 
-#copy {
-  text-align: center;
 
-  
-  margin-bottom: 0;
-}
+
+
 
 
 #copy,  #header {
   /* font-weight: bold; */
   padding: .5rem 0;
-  position: static;
-  background-color: rgb(211, 124, 240);
-  font-size: 1.5rem;
+  position: fixed;
+  background-color: wheat;
+  width: 100%;
+  /* font-size: 1.5rem; */
+  text-align: center; 
+}
+#header {
+  top: 0;
+
+}
+
+#copy {
+  bottom: 0;
+
+  
+  margin-bottom: 0;
 }
 
 #instructions {
@@ -93,7 +105,7 @@ button:active {
   justify-content: center;
   align-items: center;
   width: 800px;
-  min-height: 100vh;
+  min-height: 80vh;
   
 }
 
@@ -193,6 +205,7 @@ button:active {
 #result-sheet {
   /* margin-top: 50vh; */
   /* margin: 0 auto; */
+  background-color: red;
  }
 #getting {
   margin-top: 50vh;
@@ -222,7 +235,9 @@ font-size: 2rem;
     justify-content: center;
   } */
    
-
+#result-table {
+  padding: 0 0 2rem 0;
+}
 
    #result-table th {
     /* border: 2px solid brown; */
@@ -284,7 +299,7 @@ font-size: 2rem;
 
 
 #generalTable {
-  margin-left: 18rem;
+  /* margin-left: 18rem; */
   width: 180vw;
 }
 

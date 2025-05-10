@@ -33,8 +33,8 @@ console.log(score)
         <article id='result-table'>
             <main id='cred' 
             style={{
-                marginTop: '2rem',
-                marginBottom: '1rem',
+                marginTop: '4rem',
+                // marginBottom: '30rem',
             //    display: 'flex',
             //    alignItems: 'flexStart',
             flexDirection: 'row',
@@ -42,7 +42,7 @@ console.log(score)
             // flexBasis: '5%',
             //    columnGap: '1rem',
             // rowGap: '3rem',
-               marginLeft: '1rem'
+               marginLeft: '1rem',
                 // backgroundColor: 'green'
             }}
             >
